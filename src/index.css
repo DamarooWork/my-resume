@@ -6,7 +6,7 @@
   --main-color: #1e1b4b;
   --nav-width: 250px;
   height: 100vh;
-  width: calc(100vw - var(--nav-width));
+  max-width: calc(100vw - var(--nav-width));
   margin: 0;
   padding: 0;
   background: linear-gradient(70deg, var(--main-color), #4338ca);

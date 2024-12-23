@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  --main-color: #1e1b4b;
+  --nav-width: 250px;
+  height: 100vh;
+  width: calc(100vw - var(--nav-width));
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(70deg, var(--main-color), #4338ca);
+  margin-left: var(--nav-width);
+}
+header {
+  padding: 50px;
+}
+header h1 {
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 500;
+  color: white;
+  border-right: 4px solid white; /*This will be the blinking cursor*/
+  animation: cursor 1s infinite step-end, typing 7s infinite steps(36);
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes cursor {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0ch;
+  } /*Text is hidden*/
+  30% {
+    width: 36.5ch;
+  } /*The enitre header will be typed out 1 character at a time*/
+  80% {
+    width: 36.5ch;
+  } /*Text stays visible*/
+  90% {
+    width: 0ch;
+  } /*Text is deleted*/
+  100% {
+    width: 0ch;
+  } /*Text stays hidden*/
+}
+ul a {
+  color: var(--main-color);
+  background-image: linear-gradient(var(--main-color) 0 0);
+  background-size: 100% 0; /* .08em - фиксированная высота; если нужно, измените */
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0.3s 0.3s;
+}
+
+ul a:hover {
+  transition: background-size 0.3s 0.3s, background-position 0.3s;
+  background-size: 100% 0.06em;
+  background-position: 0% 100%;
+}

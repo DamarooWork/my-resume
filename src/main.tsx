@@ -7,10 +7,10 @@ import './i18n'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Suspense fallback="...is loading">
-      <BrowserRouter>
+    <BrowserRouter>
+      <Suspense fallback="...is loading">
         <App />
-      </BrowserRouter>
-    </Suspense>
+      </Suspense>
+    </BrowserRouter>
   </StrictMode>
 )

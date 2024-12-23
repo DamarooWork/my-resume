@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router'
 import MainPage from './pages/MainPage'
-import Navigation from './components/Navigation'
+import Navigation from './components/aside/Navigation'
 import PortfolioPage from './pages/PortfolioPage'
 import ContactsPage from './pages/ContactsPage'
 import ExperiencePage from './pages/ExperiencePage'

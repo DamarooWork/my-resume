@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 #root {
+  font-family: 'Yanone Kaffeesatz';
   --nav-width: 250px;
   --main-color: #1e1b4b;
   --main-dark-color: white;

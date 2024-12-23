@@ -5,6 +5,7 @@
     }
     .shadow {
       color: #ececec;
+      opacity: 0.5;
     }
   }
 }
@@ -29,7 +30,6 @@
     color: var(--main-color);
   }
   .text {
-    font-family: 'Yanone Kaffeesatz';
     font-size: 2rem;
     display: flex;
     position: absolute;
@@ -43,7 +43,7 @@
       padding-right: 5px;
       padding-top: 10px;
       .letter {
-        transition: ease-out 1s;
+        transition: ease-in 1s, ease-out 1s;
         transform: translateY(40%);
       }
       .shadow {

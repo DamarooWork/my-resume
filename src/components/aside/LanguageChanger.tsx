@@ -16,15 +16,15 @@ export default function LanguageChanger() {
     setSelectOpen(false)
   }
   return (
-    <details className=" w-[120px] border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative">
-      <summary
-        className="flex flex-row justify-start items-center cursor-pointer"
+    <section className=" w-[125px] border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative">
+      <div
+        className="flex flex-row justify-start items-center cursor-pointer px-1 py-1"
         onClick={() => setSelectOpen((prev) => !prev)}
       >
         <img width={40} src="src\assets\language.svg" alt="language" />
         <span>{t('nativeName')} </span>
         <img src="src\assets\arrow-down.svg" alt="arrow-down" sizes="20" />
-      </summary>
+      </div>
 
       {isSelectOpen && (
         <div
@@ -45,6 +45,6 @@ export default function LanguageChanger() {
           ))}
         </div>
       )}
-    </details>
+    </section>
   )
 }

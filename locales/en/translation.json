@@ -10,5 +10,8 @@
     "experience": "Experience",
     "portfolio": "Portfolio",
     "contacts": "Contacts"
+  },
+  "header": {
+    "h1": "My name is Lev and I'm Frontend-developer"
   }
 }

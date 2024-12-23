@@ -1,0 +1,14 @@
+{
+  "nativeName": "Русский",
+  "description": {
+    "part1": "Редактировать <1>src/App.js</1> и сохранить для перезагрузки.",
+    "part2": "Учить React"
+  },
+  "navigation": {
+    "home": "Главная",
+    "about": "О себе",
+    "experience": "Навыки",
+    "portfolio": "Портфолио",
+    "contacts": "Контакты"
+  }
+}

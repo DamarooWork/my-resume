@@ -1,0 +1,14 @@
+{
+  "nativeName": "한국인",
+ 
+  "navigation": {
+    "home": "집",
+    "about": "에 대한",
+    "experience": "경험",
+    "portfolio": "포트폴리오",
+    "contacts": "콘택트 렌즈"
+  },
+  "header": {
+    "h1": "제 이름은 Lev 이고 프런트엔드 개발자입니다."
+  }
+}

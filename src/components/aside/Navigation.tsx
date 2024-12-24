@@ -10,7 +10,7 @@ export default function Navigation() {
         className="flex flex-col justify-center text-[var(--main-color)]
        dark:text-[var(--main-dark-color)]"
       >
-        <Link to="/home">{t('navigation.home')}</Link>
+        <Link to="/">{t('navigation.home')}</Link>
         <Link to="/about">{t('navigation.about')}</Link>
         <Link to="/experience">{t('navigation.experience')}</Link>
         <Link to="/portfolio">{t('navigation.portfolio')}</Link>

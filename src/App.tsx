@@ -11,7 +11,7 @@ export default function App() {
     <>
       <AsideComponent />
       <Routes>
-        <Route path="//home" element={<MainPage />} />
+        <Route path="/" element={<MainPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/experience" element={<ExperiencePage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />

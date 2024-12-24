@@ -2,7 +2,7 @@ import './aside.css'
 export default function HeaderAside() {
   return (
     <>
-      <header className="headerAside">
+      <header className="headerAside" onClick={() => {}}>
         <div className="overlay"></div>
 
         <div className="text">

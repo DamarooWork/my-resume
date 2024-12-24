@@ -1,9 +1,13 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { ThemeContext } from '../../hooks/ThemeContext'
 
 export default function ThemeChanger() {
   const [isDarkMode, setDarkMode] = useState(true)
+  const { theme, toggleTheme } = useContext(ThemeContext)
+
   function handleChangeThemeLight() {
     localStorage.theme = 'light'
+    toggleTheme()
     setDarkMode(true)
     document.documentElement.classList.toggle(
       'dark',
@@ -14,6 +18,8 @@ export default function ThemeChanger() {
   }
   function handleChangeThemeDark() {
     localStorage.theme = 'dark'
+    toggleTheme()
+
     setDarkMode(false)
     document.documentElement.classList.toggle(
       'dark',
@@ -28,7 +34,7 @@ export default function ThemeChanger() {
         <img
           className="cursor-pointer"
           width={50}
-          src="src\assets\dark-mode-light.png"
+          src="src\assets\themesForLight.png"
           alt="Light theme"
           onClick={() => handleChangeThemeDark()}
         />
@@ -36,7 +42,7 @@ export default function ThemeChanger() {
         <img
           width={50}
           className="cursor-pointer"
-          src="src\assets\dark-mode-night.png"
+          src="src\assets\themeForDark.png"
           alt="Dark theme"
           onClick={() => handleChangeThemeLight()}
         />

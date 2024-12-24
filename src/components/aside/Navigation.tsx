@@ -10,11 +10,11 @@ export default function Navigation() {
         className="flex flex-col justify-center text-[var(--main-color)]
        dark:text-[var(--main-dark-color)]"
       >
-        <Link to="/my-resume/home">{t('navigation.home')}</Link>
-        <Link to="/my-resume/about">{t('navigation.about')}</Link>
-        <Link to="/my-resume/experience">{t('navigation.experience')}</Link>
-        <Link to="/my-resume/portfolio">{t('navigation.portfolio')}</Link>
-        <Link to="/my-resume/contacts">{t('navigation.contacts')}</Link>
+        <Link to="/home">{t('navigation.home')}</Link>
+        <Link to="/about">{t('navigation.about')}</Link>
+        <Link to="/experience">{t('navigation.experience')}</Link>
+        <Link to="/portfolio">{t('navigation.portfolio')}</Link>
+        <Link to="/contacts">{t('navigation.contacts')}</Link>
       </ul>
     </nav>
   )

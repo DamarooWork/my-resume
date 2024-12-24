@@ -8,9 +8,9 @@ import { ThemeProvider } from './hooks/ThemeContext.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename='/my-resume/'>
+    <BrowserRouter basename="/my-resume/">
       <Suspense fallback="...is loading">
-        <ThemeProvider >
+        <ThemeProvider>
           <App />
         </ThemeProvider>
       </Suspense>

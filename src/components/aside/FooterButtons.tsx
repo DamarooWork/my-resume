@@ -1,3 +1,4 @@
+import GithubBtn from './GitHubBtn'
 import LanguageChanger from './LanguageChanger'
 import ThemeChanger from './ThemeChanger'
 
@@ -12,13 +13,7 @@ export default function FooterAsideButtons() {
           <LanguageChanger />
         </li>
         <li>
-          <a
-            href="http://github.com/DamarooWork"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="src\assets\github.png" width={40} alt="Github button" />
-          </a>
+         <GithubBtn/>
         </li>
       </ul>
     </footer>

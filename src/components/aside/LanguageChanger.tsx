@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'react-i18next'
 import { ThemeContext } from '../../hooks/ThemeContext'
 
@@ -20,21 +20,91 @@ export default function LanguageChanger() {
   return (
     <section className=" w-[125px] border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative">
       <div
-        className="flex flex-row justify-start items-center cursor-pointer px-1 py-1"
+        className="relative flex flex-row justify-start items-center cursor-pointer px-1 py-1"
         onClick={() => setSelectOpen((prev) => !prev)}
       >
         {theme === 'dark' && (
-          <img
-            width={40}
-            src="src\assets\languageForLight.png"
-            alt="language"
-          />
+          <svg
+            className="fill-[var(--main-bg-dark-color)]"
+            width="30px"
+            height="30px"
+            viewBox="0 0 24 24"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-labelledby="languageIconTitle"
+            stroke="var(--main-dark-color)"
+            strokeWidth="1"
+            strokeLinecap="square"
+            strokeLinejoin="miter"
+            color="var(--main-dark-color)"
+          >
+            <title id="languageIconTitle">Language</title>
+            <circle cx="12" cy="12" r="10" />
+            <path
+              strokeLinecap="round"
+              d="M12,22 C14.6666667,19.5757576 16,16.2424242 16,12 C16,7.75757576 14.6666667,4.42424242 12,2 C9.33333333,4.42424242 8,7.75757576 8,12 C8,16.2424242 9.33333333,19.5757576 12,22 Z"
+            />
+            <path strokeLinecap="round" d="M2.5 9L21.5 9M2.5 15L21.5 15" />
+          </svg>
         )}
         {theme === 'light' && (
-          <img width={35} src="src\assets\languageForDark.png" alt="language" />
+          <svg
+            width="30px"
+            height="30px"
+            viewBox="0 0 24 24"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-labelledby="languageIconTitle"
+            stroke="var(--main-color)"
+            strokeWidth="1"
+            strokeLinecap="square"
+            strokeLinejoin="miter"
+            className="fill-[var(--main-bg-color)]"
+            color="var(--main-color)"
+          >
+            <title id="languageIconTitle">Language</title>
+            <circle cx="12" cy="12" r="10" />
+            <path
+              strokeLinecap="round"
+              d="M12,22 C14.6666667,19.5757576 16,16.2424242 16,12 C16,7.75757576 14.6666667,4.42424242 12,2 C9.33333333,4.42424242 8,7.75757576 8,12 C8,16.2424242 9.33333333,19.5757576 12,22 Z"
+            />{' '}
+            <path strokeLinecap="round" d="M2.5 9L21.5 9M2.5 15L21.5 15" />{' '}
+          </svg>
         )}
-        <span>{t('nativeName')} </span>
-        <img src="src\assets\arrow-down.svg" alt="arrow-down" sizes="20" />
+        <span className="ml-0.5 font-medium">{t('nativeName')} </span>
+        {theme === 'dark' && (
+          <svg
+            className="fill-[var(--main-dark-color)] absolute right-2"
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            fill="none"
+            color="var(--main-dark-color)"
+            stroke="var(--main-dark-color)"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+              fill="#0F0F0F"
+            />
+          </svg>
+        )}
+        {theme === 'light' && (
+          <svg
+            className="absolute right-2"
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            fill="none"
+            color="var(--main-color)"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+              fill="#0F0F0F"
+            />
+          </svg>
+        )}
       </div>
 
       {isSelectOpen && (

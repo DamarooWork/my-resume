@@ -1,14 +1,12 @@
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { ThemeContext } from '../../hooks/ThemeContext'
 
 export default function ThemeChanger() {
-  const [isDarkMode, setDarkMode] = useState(true)
-  const { toggleTheme } = useContext(ThemeContext)
+  const { theme, toggleTheme } = useContext(ThemeContext)
 
   function handleChangeThemeLight() {
     localStorage.theme = 'light'
     toggleTheme()
-    setDarkMode(true)
     document.documentElement.classList.toggle(
       'dark',
       localStorage.theme === 'dark' ||
@@ -19,7 +17,6 @@ export default function ThemeChanger() {
   function handleChangeThemeDark() {
     localStorage.theme = 'dark'
     toggleTheme()
-    setDarkMode(false)
     document.documentElement.classList.toggle(
       'dark',
       localStorage.theme === 'dark' ||
@@ -29,7 +26,7 @@ export default function ThemeChanger() {
   }
   return (
     <div>
-      {isDarkMode ? (
+      {theme === 'light' ? (
         <svg
           onClick={() => handleChangeThemeDark()}
           className="cursor-pointer fill-[var(--main-color)]"

@@ -1,31 +1,19 @@
 .mainPage {
   padding: 50px;
-  ul a {
-    color: var(--main-color);
-    background-image: linear-gradient(var(--main-color) 0 0);
-    background-size: 100% 0; /* .08em - фиксированная высота; если нужно, измените */
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.3s, background-position 0.3s 0.3s;
-  }
-
-  ul a:hover {
-    transition: background-size 0.3s 0.3s, background-position 0.3s;
-    background-size: 100% 0.06em;
-    background-position: 0% 100%;
-  }
 }
 .dark .mainPage h1 {
   color: var(--main-dark-color);
-  border-right: 4px solid white; /*This will be the blinking cursor*/
+  border-right: 4px solid var(--main-dark-color); /*This will be the blinking cursor*/
 }
 .mainPage h1 {
   font-size: 50px;
   line-height: 70px;
   font-weight: 500;
   color: var(--main-color);
-  border-right: 4px solid white; /*This will be the blinking cursor*/
-  animation: cursor 1s infinite step-end, typing 7s infinite steps(36);
+  border-right-width: 4px;
+  border-right-style: solid;
+  border-right-color: var(--main-color); /*This will be the blinking cursor*/
+  animation: cursor 1s infinite step-end, typing 7s infinite steps(37);
   white-space: nowrap;
   overflow: hidden;
 }
@@ -43,10 +31,10 @@
     width: 0ch;
   } /*Text is hidden*/
   30% {
-    width: 36.5ch;
+    width: 38ch;
   } /*The enitre header will be typed out 1 character at a time*/
   80% {
-    width: 36.5ch;
+    width: 38ch;
   } /*Text stays visible*/
   90% {
     width: 0ch;

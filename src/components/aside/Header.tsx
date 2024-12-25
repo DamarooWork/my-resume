@@ -1,8 +1,15 @@
 import './aside.css'
+import { useNavigate } from 'react-router-dom'
 export default function HeaderAside() {
+  const navigate = useNavigate()
   return (
     <>
-      <header className="headerAside" onClick={() => {}}>
+      <header
+        className="headerAside cursor-pointer"
+        onClick={() => {
+          navigate('/')
+        }}
+      >
         <div className="overlay"></div>
 
         <div className="text">

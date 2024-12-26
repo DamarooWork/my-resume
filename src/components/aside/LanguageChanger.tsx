@@ -25,7 +25,7 @@ export default function LanguageChanger() {
       >
         {theme === 'dark' && (
           <svg
-            className="fill-[var(--main-bg-dark-color)]"
+            className="fill-none"
             width="30px"
             height="30px"
             viewBox="0 0 24 24"
@@ -49,6 +49,7 @@ export default function LanguageChanger() {
         )}
         {theme === 'light' && (
           <svg
+             className="fill-none"
             width="30px"
             height="30px"
             viewBox="0 0 24 24"
@@ -59,7 +60,6 @@ export default function LanguageChanger() {
             strokeWidth="1"
             strokeLinecap="square"
             strokeLinejoin="miter"
-            className="fill-[var(--main-bg-color)]"
             color="var(--main-color)"
           >
             <title id="languageIconTitle">Language</title>

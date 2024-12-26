@@ -9,12 +9,16 @@
   --main-dark-color: white;
   --main-bg-dark-color: #1e1b4b;
   --main-bg-color: white;
+  --hover-bg-color: #a5b4fc;
+  --hover-bg-dark-color: #4338ca;
+  --neutral-color: #e5e7eb;
+  --link-color: #a21caf;
+  --dark-link-color: #f0abfc;
   min-height: 100vh;
   max-width: 100vw;
   margin: 0;
   padding: 0;
   color: var(--main-color);
-
   background: linear-gradient(70deg, var(--main-bg-color), white);
   padding-left: var(--nav-width);
 }
@@ -22,3 +26,59 @@
   color: var(--main-dark-color);
   background: linear-gradient(70deg, var(--main-bg-dark-color), #4338ca);
 }
+
+
+/*На будущее градиент бордер для карточек */
+/* .gradient-border {
+   position: relative;
+
+   --borderWidth: 3px;
+  background: #1d1f20;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */ 

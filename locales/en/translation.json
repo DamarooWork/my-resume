@@ -1,6 +1,6 @@
 {
   "nativeName": "English",
- 
+
   "navigation": {
     "home": "Home",
     "about": "About",
@@ -8,7 +8,8 @@
     "portfolio": "Portfolio",
     "contacts": "Contacts"
   },
-  "header": {
-    "h1": "My name is Lev and I'm Frontend-developer"
+  "home": {
+    "h1": "My name is Lev and I'm Frontend-developer",
+    "about": "I write functional, complex, beautiful websites"
   }
 }

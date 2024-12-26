@@ -1,11 +1,11 @@
-.mainPage {
-  padding: 50px;
+.headerHomePage {
+  /* padding: 50px; */
 }
-.dark .mainPage h1 {
+.dark .headerHomePage h1 {
   color: var(--main-dark-color);
   border-right: 4px solid var(--main-dark-color); /*This will be the blinking cursor*/
 }
-.mainPage h1 {
+.headerHomePage h1 {
   font-size: 50px;
   line-height: 70px;
   font-weight: 500;
@@ -42,4 +42,7 @@
   100% {
     width: 0ch;
   } /*Text stays hidden*/
+}
+.headerHomePage p{
+font-size: 2rem;
 }

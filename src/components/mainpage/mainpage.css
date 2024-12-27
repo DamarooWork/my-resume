@@ -6,7 +6,7 @@
   border-right: 4px solid var(--main-dark-color); /*This will be the blinking cursor*/
 }
 .headerHomePage h1 {
-  font-size: 50px;
+  font-size: 3rem;
   line-height: 70px;
   font-weight: 500;
   color: var(--main-color);
@@ -43,6 +43,18 @@
     width: 0ch;
   } /*Text stays hidden*/
 }
-.headerHomePage p{
-font-size: 2rem;
+.headerHomePage p {
+  font-size: 2rem;
+}
+.slice-effect {
+  --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+  --m: left var(--_i, 0%) top var(--_g), bottom var(--_i, 0%) left var(--_g),
+    top var(--_i, 0%) right var(--_g), right var(--_i, 0%) bottom var(--_g);
+  -webkit-mask: var(--m);
+  mask: var(--m);
+  transition: 0.5s linear;
+  cursor: pointer;
+}
+.slice-effect:hover {
+  --_i: 10%;
 }

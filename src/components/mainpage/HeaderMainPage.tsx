@@ -7,12 +7,14 @@ export default function HeaderMainPage() {
 
   return (
     <>
-      <header className="headerHomePage">
-        <h1>{t('home.h1')}</h1>
-        <p>{t('home.about')}</p>
+      <header className="headerHomePage flex flex-row justify-between">
+        <div className="max-w-[55%] ">
+          <h1>{t('home.h1')}</h1>
+          <p>{t('home.about')}</p>
+        </div>
+
         <img
-          sizes="100"
-          className="rounded-2xl max-w-[50%]"
+          className="slice-effect max-w-[40%]"
           src={avatar}
           alt="My photo, beatiful man with long hair"
         />

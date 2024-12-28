@@ -1,29 +1,37 @@
-.headerHomePage {
-  /* padding: 50px; */
-}
-.dark .headerHomePage h1 {
-  color: var(--main-dark-color);
-  border-right: 4px solid var(--main-dark-color); /*This will be the blinking cursor*/
-}
 .headerHomePage h1 {
   font-size: 3rem;
-  line-height: 70px;
   font-weight: 500;
   color: var(--main-color);
   border-right-width: 4px;
   border-right-style: solid;
-  border-right-color: var(--main-color); /*This will be the blinking cursor*/
   animation: cursor 1s infinite step-end, typing 7s infinite steps(37);
   white-space: nowrap;
   overflow: hidden;
+  inline-size: min-content;
+  overflow-wrap: break-word;
+  hyphens: manual;
 }
+.dark .headerHomePage h1 {
+  color: var(--main-dark-color);
+  animation: cursorDark 1s infinite step-end, typing 7s infinite steps(36);
+}
+
 @keyframes cursor {
   0%,
   100% {
-    border-color: transparent;
+    border-color: var(--main-color);
   }
   50% {
-    border-color: white;
+    border-color: transparent;
+  }
+}
+@keyframes cursorDark {
+  0%,
+  100% {
+    border-color: var(--main-dark-color);
+  }
+  50% {
+    border-color: transparent;
   }
 }
 @keyframes typing {
@@ -31,10 +39,10 @@
     width: 0ch;
   } /*Text is hidden*/
   30% {
-    width: 38ch;
+    width: 36ch;
   } /*The enitre header will be typed out 1 character at a time*/
   80% {
-    width: 38ch;
+    width: 36ch;
   } /*Text stays visible*/
   90% {
     width: 0ch;
@@ -43,6 +51,7 @@
     width: 0ch;
   } /*Text stays hidden*/
 }
+
 .headerHomePage p {
   font-size: 2rem;
 }

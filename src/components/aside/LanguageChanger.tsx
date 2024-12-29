@@ -18,13 +18,13 @@ export default function LanguageChanger() {
   }
   const mainBtnStyle = () => {
     if (isSelectOpen) {
-      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative border-t-0 rounded-t-none  '
+      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative border-t-0 rounded-t-none  transition ease-in  duration-300 hover:scale-115'
     } else
-      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative '
+      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative transition ease-in  duration-300 hover:scale-115'
   }
   const elemsStyle = () => {
     if (isSelectOpen) {
-      return 'relative flex flex-row justify-start items-center cursor-pointer px-1 pt-1.5'
+      return 'relative flex flex-row justify-start items-center cursor-pointer px-1 pt-1.5 '
     } else
       return 'relative flex flex-row justify-start items-center cursor-pointer px-1 pt-1'
   }
@@ -119,7 +119,7 @@ export default function LanguageChanger() {
       </div>
 
       {isSelectOpen && (
-        <div className="flex w-[calc(100%+4px)] flex-col absolute bottom-[38px] left-[-2px] border-2 border-[var(--main-color)] rounded-xl py-1 px-2   dark:border-[var(--main-dark-color)] rounded-b-none  border-b-0 z-40">
+        <div className="flex w-[calc(100%+4px)] flex-col absolute bottom-[38px] left-[-2px] border-2 border-[var(--main-color)] rounded-xl pt-1 px-2   dark:border-[var(--main-dark-color)] rounded-b-none  border-b-0 z-40">
           {Object.keys(lngs).map((lng: string) => (
             <button
               key={lng}

@@ -25,14 +25,12 @@ export default function ThemeChanger() {
     )
   }
   return (
-    <div>
+    <>
       {theme === 'light' ? (
         <svg
           onClick={() => handleChangeThemeDark()}
-          className="cursor-pointer fill-[var(--main-color)]"
-          height="40"
+          className="flex-none w-[40px] cursor-pointer fill-[var(--main-color)] transition ease-in  duration-300 hover:scale-115"
           viewBox="0 0 24 24"
-          width="40"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="m12 22c5.5228475 0 10-4.4771525 10-10s-4.4771525-10-10-10-10 4.4771525-10 10 4.4771525 10 10 10zm0-1.5v-17c4.6944204 0 8.5 3.80557963 8.5 8.5 0 4.6944204-3.8055796 8.5-8.5 8.5z" />
@@ -40,9 +38,7 @@ export default function ThemeChanger() {
       ) : (
         <svg
           onClick={() => handleChangeThemeLight()}
-          className="cursor-pointer  fill-[var(--main-dark-color)]"
-          height="40"
-          width="40"
+          className="flex-none w-[40px] cursor-pointer  fill-[var(--main-dark-color)] transition ease-in  duration-300 hover:scale-115"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -50,6 +46,6 @@ export default function ThemeChanger() {
           <path d="m0 0h32v32h-32z" fill="none" />
         </svg>
       )}
-    </div>
+    </>
   )
 }

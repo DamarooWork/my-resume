@@ -4,8 +4,8 @@ import ThemeChanger from './ThemeChanger'
 
 export default function FooterAsideButtons() {
   return (
-    <footer className="footerAside ">
-      <ul className="flex flex-row justify-between items-center gap-2">
+    <footer className="footerAside h-min-[42px]">
+      <ul className="flex flex-row justify-between items-center gap-2 ">
         <li>
           <ThemeChanger />
         </li>
@@ -13,7 +13,7 @@ export default function FooterAsideButtons() {
           <LanguageChanger />
         </li>
         <li>
-         <GithubBtn/>
+          <GithubBtn />
         </li>
       </ul>
     </footer>

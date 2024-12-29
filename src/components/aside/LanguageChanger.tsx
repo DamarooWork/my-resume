@@ -16,11 +16,22 @@ export default function LanguageChanger() {
     i18n.changeLanguage(lng)
     setSelectOpen(false)
   }
-
+  const mainBtnStyle = () => {
+    if (isSelectOpen) {
+      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative border-t-0 rounded-t-none  '
+    } else
+      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative '
+  }
+  const elemsStyle = () => {
+    if (isSelectOpen) {
+      return 'relative flex flex-row justify-start items-center cursor-pointer px-1 pt-1.5'
+    } else
+      return 'relative flex flex-row justify-start items-center cursor-pointer px-1 pt-1'
+  }
   return (
-    <section className=" w-[125px] border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative">
+    <section className={mainBtnStyle()}>
       <div
-        className="relative flex flex-row justify-start items-center cursor-pointer px-1 py-1"
+        className={elemsStyle()}
         onClick={() => setSelectOpen((prev) => !prev)}
       >
         {theme === 'dark' && (
@@ -49,7 +60,7 @@ export default function LanguageChanger() {
         )}
         {theme === 'light' && (
           <svg
-             className="fill-none"
+            className="fill-none"
             width="30px"
             height="30px"
             viewBox="0 0 24 24"
@@ -72,7 +83,7 @@ export default function LanguageChanger() {
           </svg>
         )}
         <span className="ml-0.5 font-medium">{t('nativeName')} </span>
-        {theme === 'dark' && (
+        {/* {theme === 'dark' && (
           <svg
             className="fill-[var(--main-dark-color)] absolute right-2"
             width="20px"
@@ -104,14 +115,11 @@ export default function LanguageChanger() {
               fill="#0F0F0F"
             />
           </svg>
-        )}
+        )} */}
       </div>
 
       {isSelectOpen && (
-        <div
-          className="flex flex-col absolute top-[-84px] left-[20px] border-2 border-[var(--main-color)]
-          rounded-xl py-1 px-2   dark:border-[var(--main-dark-color)] rounded-b-none  border-b-0 z-40 "
-        >
+        <div className="flex w-[calc(100%+4px)] flex-col absolute bottom-[38px] left-[-2px] border-2 border-[var(--main-color)] rounded-xl py-1 px-2   dark:border-[var(--main-dark-color)] rounded-b-none  border-b-0 z-40">
           {Object.keys(lngs).map((lng: string) => (
             <button
               key={lng}

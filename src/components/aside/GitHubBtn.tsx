@@ -12,7 +12,11 @@ export default function GithubBtn() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={githubBlack} alt="Github button" />
+          <img
+            className="flex-none w-[40px] transition ease-in  duration-300 hover:scale-115"
+            src={githubBlack}
+            alt="Github button"
+          />
         </a>
       ) : (
         <a
@@ -20,7 +24,11 @@ export default function GithubBtn() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={githubWhite} alt="Github button" />
+          <img
+            className="flex-none w-[40px] transition ease-in  duration-300 hover:scale-115"
+            src={githubWhite}
+            alt="Github button"
+          />
         </a>
       )}
     </>

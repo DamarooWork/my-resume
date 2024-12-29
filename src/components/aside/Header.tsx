@@ -5,7 +5,7 @@ export default function HeaderAside() {
   return (
     <>
       <header
-        className="headerAside cursor-pointer"
+        className="headerAside cursor-pointer "
         onClick={() => {
           navigate('/')
         }}

@@ -9,7 +9,8 @@
     "contacts": "Contacts"
   },
   "home": {
-    "h1": "My name is Lev and I'm Frontend-developer",
+    "h1": "My name is Lev, nice to meet you!",
+    "h2": "I'm Frontend-developer!",
     "about": "I write functional, complex, beautiful websites"
   }
 }

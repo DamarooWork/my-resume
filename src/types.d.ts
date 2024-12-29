@@ -4,5 +4,5 @@ interface ILngs {
 interface ILng {
   nativeName: string
 }
-type Theme = string
+type Theme = 'light' | 'dark'
 type ThemeContext = { theme: Theme; toggleTheme: () => void }

@@ -7,11 +7,7 @@ export default function GithubBtn() {
   return (
     <>
       {theme === 'light' ? (
-        <a
-          href="http://github.com/DamarooWork"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="http://github.com/DamarooWork" target="_blank">
           <img
             className="flex-none w-[40px] transition ease-in  duration-300 hover:scale-115"
             src={githubBlack}
@@ -19,11 +15,7 @@ export default function GithubBtn() {
           />
         </a>
       ) : (
-        <a
-          href="http://github.com/DamarooWork"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="http://github.com/DamarooWork" target="_blank">
           <img
             className="flex-none w-[40px] transition ease-in  duration-300 hover:scale-115"
             src={githubWhite}

@@ -28,6 +28,9 @@ export default function LanguageChanger() {
     } else
       return 'relative flex flex-row justify-start items-center cursor-pointer px-1 pt-1'
   }
+  const modalStyle = () => {
+    return 'flex  w-[calc(100%+4px)] flex-col absolute bottom-[38px] left-[-2px] border-2 border-[var(--main-color)] rounded-xl pt-1 px-2   dark:border-[var(--main-dark-color)] rounded-b-none  border-b-0 z-40'
+  }
   return (
     <section className={mainBtnStyle()}>
       <div
@@ -119,7 +122,7 @@ export default function LanguageChanger() {
       </div>
 
       {isSelectOpen && (
-        <div className="flex w-[calc(100%+4px)] flex-col absolute bottom-[38px] left-[-2px] border-2 border-[var(--main-color)] rounded-xl pt-1 px-2   dark:border-[var(--main-dark-color)] rounded-b-none  border-b-0 z-40">
+        <div className={modalStyle()}>
           {Object.keys(lngs).map((lng: string) => (
             <button
               key={lng}

@@ -1,5 +1,6 @@
 .headerHomePage h1 {
   font-size: 4rem;
+  line-height: 70px;
   font-weight: 500;
   color: var(--main-color);
   overflow: hidden;

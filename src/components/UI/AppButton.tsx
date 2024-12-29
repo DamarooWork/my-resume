@@ -1,9 +1,12 @@
 import { useNavigate } from 'react-router-dom'
 
-export const AppButton: React.FC<IButtonProps> = (
-  { children }: Children,
-  { href, link_out, btnClasses, download }: IButtonProps
-) => {
+export default function AppButton({
+  href,
+  link_out,
+  btnClasses,
+  download,
+  children,
+}: IButtonProps) {
   const navigate = useNavigate()
   function handleClick() {
     if (href) {

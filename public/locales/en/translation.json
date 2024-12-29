@@ -11,6 +11,7 @@
   "home": {
     "h1": "My name is Lev, nice to meet you!",
     "h2": "I'm Frontend-developer!",
+    "btnText": "My resume",
     "about": "I write functional, complex, beautiful websites"
   }
 }

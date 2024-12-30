@@ -1,7 +1,6 @@
 .headerHomePage h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 70px;
-  font-weight: 500;
   color: var(--main-color);
   overflow: hidden;
 }
@@ -10,7 +9,6 @@
 }
 .headerHomePage h2 {
   font-size: 3rem;
-  font-weight: 500;
   color: var(--main-color);
   border-right-width: 4px;
   border-right-style: solid;

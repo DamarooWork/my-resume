@@ -3,8 +3,6 @@ import './mainpage.css'
 import avatar from '/Projects/React/my-resume/src/assets/images/avatar_rounded.png'
 import AppButton from '../UI/AppButton'
 import Resume_Kichigin_LA from '/Projects/React/my-resume/src/assets/files/Resume_Kichigin_LA.pdf'
-import { AsyncImage } from 'loadable-image'
-import { Grow } from 'transitions-kit'
 
 export default function HeaderMainPage() {
   const { t } = useTranslation()
@@ -31,11 +29,10 @@ export default function HeaderMainPage() {
           </AppButton>
         </div>
         <div className="w-[40%]">
-          <AsyncImage
+          <img
             className="p-8 slice-effect w-[100%] max-w-[500px]  h-auto "
             src={avatar}
             alt="Beatiful man with long hair"
-            Transition={Grow}
           />
         </div>
       </header>

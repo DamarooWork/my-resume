@@ -44,6 +44,7 @@ html {
     var(--hover-bg-color)
   );
   padding-left: var(--nav-width);
+  transition: background-color ease-in-out 150ms;
 }
 .dark #root {
   color: var(--main-dark-color);

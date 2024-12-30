@@ -13,5 +13,8 @@
     "h2": "I'm Frontend-developer!",
     "btnText": "My resume",
     "about": "I write functional, complex, beautiful websites"
+  },
+  "gift":{
+    "title": "Hooray, you've won an award! You've found the best resume in the world!"
   }
 }

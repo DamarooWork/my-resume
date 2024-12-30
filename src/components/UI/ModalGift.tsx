@@ -1,6 +1,6 @@
 import close from '/Projects/React/my-resume/src/assets/icons/closeRed.png'
 
-export default function Modal({ children, title, onClose }: ModalProps) {
+export default function ModalGift({ children, title, onClose }: ModalProps) {
   return (
     <>
       <div
@@ -8,7 +8,7 @@ export default function Modal({ children, title, onClose }: ModalProps) {
         onClick={onClose}
       />
       <img
-        className="absolute top-10 right-20 w-[100%] max-w-[50px]  h-auto cursor-pointer z-20"
+        className="absolute top-10 right-20 w-[100%] max-w-[50px]  h-auto  z-20"
         src={close}
         alt="Кнопка закрыть"
         onClick={onClose}
@@ -16,9 +16,9 @@ export default function Modal({ children, title, onClose }: ModalProps) {
       {children}
       <div
         onClick={onClose}
-        className="w-[100vw] h-[100vh]  fixed top-0 pt-[50vh] left-1/2 -translate-x-1/2   text-[var(--main-color)] dark:text-[var(--dark-main-color)] z-30"
+        className="w-[100vw] h-[100vh]  fixed top-0 pt-[40vh] left-1/2 -translate-x-1/2   text-[var(--main-dark-color)] dark:text-[var(--dark-main-color)] z-30 cursor-pointer"
       >
-        <h2 className=" text-2xl text-center  font-bold z-10 ">{title}</h2>
+        <h2 className=" text-4xl text-center  font-bold z-10 ">{title}</h2>
       </div>
     </>
   )

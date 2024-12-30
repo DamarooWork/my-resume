@@ -10,7 +10,7 @@ import GiftBox from './components/UI/GiftBox'
 import { useContext } from 'react'
 import { ModalContext } from './hooks/ModalContext'
 import Gift from './components/Gift/Gift'
-import Modal from './components/UI/Modal'
+import ModalGift from './components/UI/ModalGift'
 import { useTranslation } from 'react-i18next'
 export default function App() {
   const { t } = useTranslation()
@@ -28,9 +28,9 @@ export default function App() {
       </Routes>
       <GiftBox click={() => openModal()} />
       {modal && (
-        <Modal onClose={() => closeModal()} title={t('gift.title')}>
-          <Gift onClose={() => closeModal()}/>
-        </Modal>
+        <ModalGift onClose={() => closeModal()} title={t('gift.title')}>
+          <Gift />
+        </ModalGift>
       )}
     </>
   )

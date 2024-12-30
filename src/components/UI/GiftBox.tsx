@@ -1,12 +1,22 @@
-export default function GiftBox() {
-  function handleClick() {}
+import { useEffect, useState } from 'react'
+
+export default function GiftBox({ click }: GiftBoxClick) {
+  const [isBoxClicked, setBoxClicked] = useState<boolean>(false)
+  const [displayBoxStyle, setDisplayBoxStyle] = useState<string>(
+    'fixed bottom-10 right-10 cursor-pointer transition ease-in  duration-150 hover:scale-125 active:scale-115'
+  )
+
+  function handleClick() {
+    setDisplayBoxStyle('hidden transition ease-in  duration-300')
+    click()
+  }
+  useEffect(() => {
+    if (isBoxClicked) {
+      handleClick()
+    }
+  }, [isBoxClicked])
   return (
-    <div
-      className=" fixed bottom-10 right-10 cursor-pointer transition ease-in  duration-150 hover:scale-125 active:scale-115"
-      onClick={() => {
-        handleClick()
-      }}
-    >
+    <div className={displayBoxStyle} onClick={() => setBoxClicked(true)}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
@@ -42,7 +52,7 @@ export default function GiftBox() {
               opacity: 1,
             }}
             transform=" matrix(1 0 0 1 0 0) "
-            stroke-linecap="round"
+            strokeLinecap="round"
           />
           <rect
             x="6.43"
@@ -78,7 +88,7 @@ export default function GiftBox() {
               opacity: 1,
             }}
             transform=" matrix(1 0 0 1 0 0) "
-            stroke-linecap="round"
+            strokeLinecap="round"
           />
           <path
             d="M 64.939 20.124 H 45 c -0.838 0 -1.586 -0.522 -1.876 -1.308 c -0.29 -0.786 -0.059 -1.669 0.578 -2.213 L 58.866 3.656 c 2.811 -2.397 6.639 -2.925 9.99 -1.381 c 3.354 1.547 5.438 4.802 5.438 8.495 C 74.294 15.927 70.097 20.124 64.939 20.124 z M 50.423 16.124 h 14.517 c 2.952 0 5.354 -2.402 5.354 -5.354 c 0 -2.146 -1.163 -3.963 -3.112 -4.862 c -1.951 -0.898 -4.087 -0.603 -5.718 0.79 L 50.423 16.124 z"
@@ -94,7 +104,7 @@ export default function GiftBox() {
               opacity: 1,
             }}
             transform=" matrix(1 0 0 1 0 0) "
-            stroke-linecap="round"
+            strokeLinecap="round"
           />
           <path
             d="M 45 20.124 H 25.06 c -5.158 0 -9.354 -4.196 -9.354 -9.354 c 0 -3.693 2.083 -6.948 5.437 -8.494 c 3.354 -1.546 7.182 -1.017 9.99 1.38 l 15.165 12.947 c 0.637 0.544 0.867 1.427 0.577 2.213 C 46.587 19.602 45.838 20.124 45 20.124 z M 25.096 5.395 c -0.761 0 -1.533 0.169 -2.278 0.513 c -1.948 0.898 -3.112 2.716 -3.112 4.862 c 0 2.952 2.401 5.354 5.354 5.354 h 14.517 L 28.536 6.698 C 27.528 5.837 26.326 5.395 25.096 5.395 z"
@@ -111,7 +121,7 @@ export default function GiftBox() {
               opacity: 1,
             }}
             transform=" matrix(1 0 0 1 0 0) "
-            stroke-linecap="round"
+            strokeLinecap="round"
           />
           <rect
             x="39.24"

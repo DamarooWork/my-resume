@@ -19,7 +19,7 @@ export default function HeaderMainPage() {
           <h3 className="mb-4 mt-4">{t('home.about')}</h3>
           <AppButton
             link_out={Resume_Kichigin_LA}
-            btnClasses="border-2 rounded-2xl border-[var(--hover-bg-color)] py-4 px-8  text-2xl gradient-bg text-white"
+            btnClasses="border-2 rounded-2xl border-[var(--hover-bg-color)] py-4 px-8  text-2xl gradient-bg text-white active:opacity-80"
           >
             {t('home.btnText')}
           </AppButton>

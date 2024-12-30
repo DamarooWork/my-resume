@@ -29,3 +29,11 @@ interface IButtonProps {
   btnClasses: string
   download?: boolean
 }
+interface ModalProps {
+  children: React.ReactNode
+  title: string
+  onClose: () => void
+}
+interface GiftBoxClick {
+  click: () => void
+}

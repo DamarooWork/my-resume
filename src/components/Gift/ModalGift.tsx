@@ -1,6 +1,16 @@
+import { useEffect } from 'react'
 import close from '/Projects/React/my-resume/src/assets/icons/closeRed.png'
 
 export default function ModalGift({ children, title, onClose }: ModalProps) {
+  useEffect(() => {
+    const close = (e: KeyboardEvent) => {
+      if (e.code === 'Escape') {
+        onClose()
+      }
+    }
+    window.addEventListener('keydown', close)
+    return () => window.removeEventListener('keydown', close)
+  }, [])
   return (
     <>
       <div

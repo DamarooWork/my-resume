@@ -37,3 +37,13 @@ interface ModalProps {
 interface GiftBoxClick {
   click: () => void
 }
+interface IImgContact {
+  src: string
+  alt: string
+}
+interface IContact {
+  title: string
+  linkHref?: string
+  content: string
+  img: IImgContact
+}

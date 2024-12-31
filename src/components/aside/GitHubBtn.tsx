@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { ThemeContext } from '../../hooks/ThemeContext'
-import githubWhite from '/Projects/React/my-resume/src/assets/icons/github-mark-white.png'
-import githubBlack from '/Projects/React/my-resume/src/assets/icons/github-mark.png'
+import githubWhite from '/Projects/React/my-resume/src/assets/icons/github/github-mark-white.png'
+import githubBlack from '/Projects/React/my-resume/src/assets/icons/github/github-mark.png'
 export default function GithubBtn() {
   const { theme } = useContext(ThemeContext)
   return (

@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import close from '/Projects/React/my-resume/src/assets/icons/closeRed.png'
+import close from '/Projects/React/my-resume/src/assets/icons/Others/closeRed.png'
 
 export default function ModalGift({ children, title, onClose }: ModalProps) {
   useEffect(() => {

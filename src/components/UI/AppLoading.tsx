@@ -7,7 +7,7 @@ export default function AppLoading() {
     <section className="w-[100%] h-[100%]  fixed top-0 pt-[10%] left-1/2 -translate-x-1/2">
       {theme === 'dark' && (
         <svg
-          className="w-[20%] m-auto"
+          className="w-[20%] max-w-52 m-auto"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 200 200"
         >
@@ -63,7 +63,7 @@ export default function AppLoading() {
       )}
       {theme === 'light' && (
         <svg
-          className="w-[20%] m-auto"
+          className="w-[20%] max-w-52 m-auto"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 200 200"
         >

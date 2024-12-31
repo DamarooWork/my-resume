@@ -16,5 +16,8 @@
   },
   "gift":{
     "title": "Congratulations, you are very lucky! You've found the best resume in the world!"
+  },
+  "contacts": {
+    "h1": "Contacts"
   }
 }

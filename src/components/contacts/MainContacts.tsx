@@ -4,7 +4,7 @@ const Contacts: IContact[] = ContactsJson
 
 export default function MainContacts() {
   return (
-    <main className="grid grid-cols-3 gap-12 justify-items-center">
+    <main className="grid grid-cols-3  justify-items-center">
       {Contacts.map((contact) => {
         return (
           <Contact

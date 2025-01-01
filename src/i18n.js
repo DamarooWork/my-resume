@@ -18,7 +18,7 @@ i18n
     debug: true,
     fallbackLng: 'en',
     interpolation: {
-      escapeValue: false, 
+      escapeValue: false,
     },
     backend: {
       loadPath: '/my-resume/locales/{{lng}}/{{ns}}.json',

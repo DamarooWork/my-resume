@@ -5,7 +5,7 @@ import salut1 from '/Projects/React/my-resume/src/assets/sounds/salut1.mp3'
 import salut2 from '/Projects/React/my-resume/src/assets/sounds/salut2.mp3'
 import salut3 from '/Projects/React/my-resume/src/assets/sounds/salut3.mp3'
 import salut4 from '/Projects/React/my-resume/src/assets/sounds/salut4.mp3'
-export default function Gift() {
+export default function FireworksComponent() {
   const ref = useRef<FireworksHandlers>(null)
   // const toggle = () => {
   //   if (!ref.current) return
@@ -23,7 +23,7 @@ export default function Gift() {
           opacity: 0.5,
           acceleration: 1,
           explosion: 5,
-          particles: 200,
+          particles: 50,
           mouse: {
             click: false,
             move: false,
@@ -34,7 +34,7 @@ export default function Gift() {
             files: [salut1, salut2, salut3, salut4],
             volume: {
               min: 5,
-              max: 22,
+              max: 15,
             },
           },
         }}

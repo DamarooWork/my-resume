@@ -66,12 +66,12 @@
         }
       },
       {
-        "title": "Portfolio",
-        "linkHref": "https://damaroowork.github.io/my-resume/",
-        "content": "This site",
+        "title": "Resume",
+        "linkHref": "/Projects/React/my-resume/src/assets/files/Resume_Kichigin_LA.pdf",
+        "content": "My resume",
         "img": {
           "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-portfolio-48.png",
-          "alt": "Мое резюме"
+          "alt": "My resume"
         }
       },
       {

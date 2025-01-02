@@ -9,7 +9,7 @@ import AsideComponent from './components/aside/AsideComponent'
 import GiftBox from './components/Gift/GiftBox'
 import { useContext } from 'react'
 import { ModalContext } from './hooks/ModalContext'
-import Gift from './components/Gift/Gift'
+import FireworksComponent from './components/Gift/Fireworks'
 import ModalGift from './components/Gift/ModalGift'
 import { useTranslation } from 'react-i18next'
 export default function App() {
@@ -29,7 +29,7 @@ export default function App() {
       <GiftBox click={() => openModal()} />
       {modal && (
         <ModalGift onClose={() => closeModal()} title={t('gift.title')}>
-          <Gift />
+          <FireworksComponent />
         </ModalGift>
       )}
     </>

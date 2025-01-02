@@ -41,37 +41,37 @@
       {
         "title": "VK",
         "linkHref": "https://vk.com/damaroo",
-        "content": "Damaroo",
+        "content": "다마루",
         "img": {
           "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-vk-com-48.png",
           "alt": "VK"
         }
       },
       {
-        "title": "VK Group",
+        "title": "VK 그룹",
         "linkHref": "https://vk.com/damaroo_fanpage",
-        "content": "Damaroo fanpage",
+        "content": "다마루 팬페이지",
         "img": {
           "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-vk-circled-48.png",
-          "alt": "VK Group"
+          "alt": "VK 그룹"
         }
       },
       {
-        "title": "Email",
+        "title": "이메일",
         "linkHref": "",
         "content": "levkichigin@yandex.ru",
         "img": {
           "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-email-48.png",
-          "alt": "Email"
+          "alt": "이메일"
         }
       },
       {
-        "title": "Portfolio",
-        "linkHref": "https://damaroowork.github.io/my-resume/",
-        "content": "This site",
+        "title": "재개하다",
+        "linkHref": "/Projects/React/my-resume/src/assets/files/Resume_Kichigin_LA.pdf",
+        "content": "내 이력서",
         "img": {
           "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-portfolio-48.png",
-          "alt": "Мое резюме"
+          "alt": "재개하다"
         }
       },
       {

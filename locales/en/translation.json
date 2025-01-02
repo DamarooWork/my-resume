@@ -22,8 +22,8 @@
     "contacts": [
       {
         "title": "Telegram",
-        "linkHref": "",
-        "content": "@damaroo8",
+        "linkHref": "https://t.me/damaroo8",
+        "content": "t.me/damaroo8",
         "img": {
           "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-telegram-app-48.png",
           "alt": "Telegram"

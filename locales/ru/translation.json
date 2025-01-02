@@ -22,10 +22,10 @@
     "contacts": [
       {
         "title": "Telegram",
-        "linkHref": "",
+        "linkHref": "https://t.me/damaroo8",
         "content": "@damaroo8",
         "img": {
-          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-telegram-app-48.png",
+          "src": "my-resume/src/assets/icons/contacts/icons8-telegram-app-48.png",
           "alt": "Telegram"
         }
       },
@@ -34,7 +34,7 @@
         "linkHref": "https://github.com/DamarooWork",
         "content": "DamarooWork",
         "img": {
-          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-github-50.png",
+          "src": "my-resume/src/assets/icons/contacts/icons8-github-50.png",
           "alt": "Github"
         }
       },
@@ -43,34 +43,34 @@
         "linkHref": "https://vk.com/damaroo",
         "content": "Damaroo",
         "img": {
-          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-vk-com-48.png",
-          "alt": "VK"
+          "src": "my-resume/src/assets/icons/contacts/icons8-vk-com-48.png",
+          "alt": "ВК"
         }
       },
       {
-        "title": "VK Group",
+        "title": "Группа VK",
         "linkHref": "https://vk.com/damaroo_fanpage",
         "content": "Damaroo fanpage",
         "img": {
-          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-vk-circled-48.png",
-          "alt": "VK Group"
+          "src": "my-resume/src/assets/icons/contacts/icons8-vk-circled-48.png",
+          "alt": "Группа VK"
         }
       },
       {
-        "title": "Email",
+        "title": "Почта",
         "linkHref": "",
         "content": "levkichigin@yandex.ru",
         "img": {
-          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-email-48.png",
-          "alt": "Email"
+          "src": "my-resume/src/assets/icons/contacts/icons8-email-48.png",
+          "alt": "Почта"
         }
       },
       {
-        "title": "Portfolio",
-        "linkHref": "https://damaroowork.github.io/my-resume/",
-        "content": "This site",
+        "title": "Резюме",
+        "linkHref": "/Projects/React/my-resume/src/assets/files/Resume_Kichigin_LA.pdf",
+        "content": "Мое резюме",
         "img": {
-          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-portfolio-48.png",
+          "src": "my-resume/src/assets/icons/contacts/icons8-portfolio-48.png",
           "alt": "Мое резюме"
         }
       },
@@ -79,11 +79,10 @@
         "linkHref": "",
         "content": "damaroo",
         "img": {
-          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-discord-48.png",
+          "src": "my-resume/src/assets/icons/contacts/icons8-discord-48.png",
           "alt": "Discord"
         }
       }
     ]
-    
   }
 }

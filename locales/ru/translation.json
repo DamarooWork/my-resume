@@ -25,7 +25,7 @@
         "linkHref": "",
         "content": "@damaroo8",
         "img": {
-          "src": "/my-resume/src/assets/icons/contacts/icons8-telegram-app-48.png",
+          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-telegram-app-48.png",
           "alt": "Telegram"
         }
       },
@@ -34,7 +34,7 @@
         "linkHref": "https://github.com/DamarooWork",
         "content": "DamarooWork",
         "img": {
-          "src": "/my-resume/src/assets/icons/contacts/icons8-github-50.png",
+          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-github-50.png",
           "alt": "Github"
         }
       },
@@ -43,7 +43,7 @@
         "linkHref": "https://vk.com/damaroo",
         "content": "Damaroo",
         "img": {
-          "src": "/my-resume/src/assets/icons/contacts/icons8-vk-com-48.png",
+          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-vk-com-48.png",
           "alt": "VK"
         }
       },
@@ -52,7 +52,7 @@
         "linkHref": "https://vk.com/damaroo_fanpage",
         "content": "Damaroo fanpage",
         "img": {
-          "src": "/my-resume/src/assets/icons/contacts/icons8-vk-circled-48.png",
+          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-vk-circled-48.png",
           "alt": "VK Group"
         }
       },
@@ -61,7 +61,7 @@
         "linkHref": "",
         "content": "levkichigin@yandex.ru",
         "img": {
-          "src": "/my-resume/src/assets/icons/contacts/icons8-email-48.png",
+          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-email-48.png",
           "alt": "Email"
         }
       },
@@ -70,7 +70,7 @@
         "linkHref": "https://damaroowork.github.io/my-resume/",
         "content": "This site",
         "img": {
-          "src": "/my-resume/src/assets/icons/contacts/icons8-portfolio-48.png",
+          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-portfolio-48.png",
           "alt": "Мое резюме"
         }
       },
@@ -79,7 +79,7 @@
         "linkHref": "",
         "content": "damaroo",
         "img": {
-          "src": "/my-resume/src/assets/icons/contacts/icons8-discord-48.png",
+          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-discord-48.png",
           "alt": "Discord"
         }
       }

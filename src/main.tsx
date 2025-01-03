@@ -10,7 +10,7 @@ import AppLoading from './components/UI/AppLoading.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/my-resume/">
+    <BrowserRouter basename="/my-resume">
       <ThemeProvider>
         <Suspense fallback={<AppLoading />}>
           <ModalState>

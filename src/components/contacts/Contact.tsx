@@ -1,7 +1,8 @@
+import { useTranslation } from 'react-i18next'
 import downloadIcon from '/Projects/React/my-resume/src/assets/icons/Contacts/download.png'
 import openLinkIcon from '/Projects/React/my-resume/src/assets/icons/Contacts/open-link.png'
 import copyIcon from '/Projects/React/my-resume/src/assets/icons/Contacts/copy-link-icon.png'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 export default function Contact({
   title,
@@ -10,13 +11,17 @@ export default function Contact({
   img,
   download,
 }: IContact) {
+  const { t } = useTranslation()
   const [contentValue, setContentValue] = useState(content)
   function handleCopyText(content: string) {
     navigator.clipboard.writeText(content)
-    setContentValue('Copied!')
-    setTimeout(() => {
-      setContentValue(content)
-    }, 4000)
+    if (contentValue !== t('contactsPage.copyText')) {
+      setContentValue(t('contactsPage.copyText'))
+      setTimeout(() => {
+        setContentValue(content)
+      }, 3000)
+      clearTimeout
+    }
   }
   return (
     <>

@@ -19,6 +19,7 @@
   },
   "contactsPage": {
     "h1": "Contacts",
+    "copyText": "Copied!",
     "contacts": [
       {
         "title": "Telegram",

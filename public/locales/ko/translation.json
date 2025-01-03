@@ -19,6 +19,7 @@
   },
   "contactsPage": {
     "h1": "콘택트 렌즈",
+    "copyText": "복사됨!",
     "contacts": [
       {
         "title": "Telegram",

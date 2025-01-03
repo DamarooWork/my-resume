@@ -21,9 +21,9 @@ export default function LanguageChanger() {
   }
   const mainBtnStyle = () => {
     if (isSelectOpen) {
-      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative border-t-0 rounded-t-none  transition-transform ease-in  duration-300 hover:scale-115 backface-hidden '
+      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative border-t-0 rounded-t-none  transition-transform ease-in  duration-300 hover:scale-115 '
     } else
-      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative transition-transform ease-in  duration-300 hover:scale-115 backface-hidden'
+      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative transition-transform ease-in  duration-300 hover:scale-115'
   }
   const elemsStyle = () => {
     if (isSelectOpen) {

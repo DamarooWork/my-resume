@@ -27,14 +27,14 @@ export default function Contact({
     <>
       {download && linkHref ? (
         <a
-          className="max-w-[30vw] min-w-[15vw] dark:bg-[var(--hover-bg-color)]  bg-[var(--neutral-color)] dark:text-[var(--main-color)]   border-0 rounded-3xl py-4 px-6  transition ease-in  duration-300 hover:scale-[105%] active:scale-[100%]"
+          className="max-w-[30vw] min-w-[15vw] dark:bg-[var(--hover-bg-color)]  bg-[var(--neutral-color)] dark:text-[var(--main-color)]   border-0 rounded-3xl py-4 px-6  transition ease-in  duration-300 hover:scale-[105%] active:scale-[100%] will-change-transform"
           href={linkHref}
           download
         >
           <section className="relative flex flex-col justify-between items-center">
             <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
 
-            <h2 className="text-[2rem]">{title}</h2>
+            <h2 className="text-[2rem] ">{title}</h2>
 
             <p className="text-[1.5rem]">{content}</p>
             <img
@@ -46,7 +46,7 @@ export default function Contact({
         </a>
       ) : linkHref ? (
         <a
-          className="max-w-[30vw]  min-w-[15vw] dark:bg-[var(--hover-bg-color)]  bg-[var(--neutral-color)] dark:text-[var(--main-color)]  border-0 rounded-3xl py-4 px-6 transition ease-in  duration-300 hover:scale-[105%] active:scale-[100%]"
+          className="max-w-[30vw]  min-w-[15vw] dark:bg-[var(--hover-bg-color)]  bg-[var(--neutral-color)] dark:text-[var(--main-color)]  border-0 rounded-3xl py-4 px-6 transition ease-in  duration-300 hover:scale-[105%] active:scale-[100%] will-change-transform"
           href={linkHref}
           target="_blank"
         >
@@ -65,7 +65,7 @@ export default function Contact({
         </a>
       ) : (
         <section
-          className="relative max-w-[30vw] min-w-[15vw] flex flex-col justify-between items-center   bg-[var(--neutral-color)] dark:bg-[var(--hover-bg-color)] dark:text-[var(--main-color)]  transition ease-in  duration-300  border-0 rounded-3xl py-4 px-6 cursor-pointer hover:scale-[105%] active:scale-[100%] "
+          className="relative max-w-[30vw] min-w-[15vw] flex flex-col justify-between items-center   bg-[var(--neutral-color)] dark:bg-[var(--hover-bg-color)] dark:text-[var(--main-color)]  transition ease-in  duration-300  border-0 rounded-3xl py-4 px-6 cursor-pointer hover:scale-[105%] active:scale-[100%] will-change-transform"
           onClick={() => handleCopyText(content)}
         >
           <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />

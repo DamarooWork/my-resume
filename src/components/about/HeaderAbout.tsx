@@ -4,7 +4,7 @@ export default function HeaderAbout() {
   const { t } = useTranslation()
   return (
     <header>
-      <h1 className="text-[4rem] text-center mb-20">{t('HeaderAbout.h1')}</h1>
+      <h1 className="text-[4rem] text-center mb-20">{t('aboutPage.h1')}</h1>
     </header>
   )
 }

@@ -72,7 +72,7 @@
         "content": "Скачать",
         "download": true,
         "img": {
-          "src": "src/assets/icons/contacts/icons8-portfolio-48.png",
+          "src": "src/assets/icons/contacts/resumeIcon.png",
           "alt": "Мое резюме"
         }
       },

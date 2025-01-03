@@ -21,9 +21,9 @@ export default function LanguageChanger() {
   }
   const mainBtnStyle = () => {
     if (isSelectOpen) {
-      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative border-t-0 rounded-t-none  transition ease-in  duration-300 hover:scale-115'
+      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative border-t-0 rounded-t-none  transition-transform ease-in  duration-300 hover:scale-115 backface-hidden '
     } else
-      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative transition ease-in  duration-300 hover:scale-115'
+      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative transition-transform ease-in  duration-300 hover:scale-115 backface-hidden'
   }
   const elemsStyle = () => {
     if (isSelectOpen) {
@@ -42,7 +42,7 @@ export default function LanguageChanger() {
       >
         {theme === 'dark' && (
           <svg
-            className="fill-none"
+            className="fill-none transition-all ease-in  duration-300"
             width="30px"
             height="30px"
             viewBox="0 0 24 24"
@@ -66,7 +66,7 @@ export default function LanguageChanger() {
         )}
         {theme === 'light' && (
           <svg
-            className="fill-none"
+            className="fill-none transition-all ease-in  duration-300"
             width="30px"
             height="30px"
             viewBox="0 0 24 24"
@@ -88,40 +88,9 @@ export default function LanguageChanger() {
             <path strokeLinecap="round" d="M2.5 9L21.5 9M2.5 15L21.5 15" />{' '}
           </svg>
         )}
-        <span className="ml-0.5 font-medium">{t('nativeName')} </span>
-        {/* {theme === 'dark' && (
-          <svg
-            className="fill-[var(--main-dark-color)] absolute right-2"
-            width="20px"
-            height="20px"
-            viewBox="0 0 24 24"
-            fill="none"
-            color="var(--main-dark-color)"
-            stroke="var(--main-dark-color)"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
-              fill="#0F0F0F"
-            />
-          </svg>
-        )}
-        {theme === 'light' && (
-          <svg
-            className="absolute right-2"
-            width="20px"
-            height="20px"
-            viewBox="0 0 24 24"
-            fill="none"
-            color="var(--main-color)"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
-              fill="#0F0F0F"
-            />
-          </svg>
-        )} */}
+        <span className="ml-0.5 font-medium  will-change-transform">
+          {t('nativeName')}{' '}
+        </span>
       </div>
 
       {isSelectOpen && (

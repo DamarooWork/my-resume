@@ -10,7 +10,7 @@ export default function HeaderMainPage() {
 
   return (
     <>
-      <header className="headerHomePage flex flex-row justify-between ">
+      <header className="headerHomePage flex flex-row justify-between  text-center ">
         <div className="max-w-[55%]  ">
           <h1 className="mb-4">{t('home.h1')}</h1>
           <hr className="border-[var(--main-color)] dark:border-[var(--dakr-main-color)]" />

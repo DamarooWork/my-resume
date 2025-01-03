@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import './mainpage.css'
-import avatar from '/Projects/React/my-resume/src/assets/images/avatar_rounded.png'
+import avatar from '/Projects/React/my-resume/src/assets/images/myAvatar.jpg'
 import AppButton from '../UI/AppButton'
 import Resume_Kichigin_LA from '/Projects/React/my-resume/src/assets/files/Resume_Kichigin_LA.pdf'
 
@@ -30,7 +30,7 @@ export default function HeaderMainPage() {
         </div>
         <div className="w-[40%]">
           <img
-            className="p-8 slice-effect w-[100%] max-w-[500px]  h-auto "
+            className="parallax-effect w-[100%] max-w-[500px]  h-auto "
             src={avatar}
             alt="Beatiful man with long hair"
           />

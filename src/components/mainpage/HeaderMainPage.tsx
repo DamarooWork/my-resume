@@ -10,8 +10,8 @@ export default function HeaderMainPage() {
 
   return (
     <>
-      <header className="headerHomePage flex flex-row justify-between  text-center ">
-        <div className="max-w-[55%]  ">
+      <header className="basis-[100%] headerHomePage flex flex-col-reverse xl:flex-row  justify-between  text-center   ">
+        <div className="xl:basis-[50%] mt-8 mb-8 ">
           <h1 className="mb-4">{t('home.h1')}</h1>
           <hr className="border-[var(--main-color)] dark:border-[var(--dakr-main-color)]" />
           <h2 className="  mb-4 mt-4 m-auto">{t('home.h2')}</h2>
@@ -29,14 +29,14 @@ export default function HeaderMainPage() {
             </>
           </AppButton>
         </div>
-        <div className="w-[40%] relative">
+        <div className=" relative mt-8 xl:mt-0 xl:basis-[40%]  ">
           <img
-            className="absolute  top-0 left-0 parallax-effect w-[100%] max-w-[600px]  h-auto  "
+            className="absolute top-[10%] left-[25%]   xl:top-[10%] 2xl:top-0 xl:left-0 parallax-effect w-[50%] xl:w-[100%] max-w-[600px]  h-auto  "
             src={avatar}
             alt="Beatiful man with long hair"
           />
           <img
-            className="absolute top-5 right-[25%] w-[5%] h-auto"
+            className="absolute top-[20%]  xl:top-[15%] 2xl:top-[5%] right-[30%]  xl:right-[25%] w-[3%] xl:w-[5%] h-auto"
             src={hoverIconSrc}
             alt="Hover icon"
           />

@@ -1,5 +1,7 @@
 import downloadIcon from '/Projects/React/my-resume/src/assets/icons/Contacts/download.png'
 import openLinkIcon from '/Projects/React/my-resume/src/assets/icons/Contacts/open-link.png'
+import copyIcon from '/Projects/React/my-resume/src/assets/icons/Contacts/copy-link-icon.png'
+import { useEffect, useState } from 'react'
 
 export default function Contact({
   title,
@@ -8,6 +10,14 @@ export default function Contact({
   img,
   download,
 }: IContact) {
+  const [contentValue, setContentValue] = useState(content)
+  function handleCopyText(content: string) {
+    navigator.clipboard.writeText(content)
+    setContentValue('Copied!')
+    setTimeout(() => {
+      setContentValue(content)
+    }, 4000)
+  }
   return (
     <>
       {download && linkHref ? (
@@ -49,12 +59,20 @@ export default function Contact({
           </section>
         </a>
       ) : (
-        <section className="max-w-[30vw] min-w-[15vw] flex flex-col justify-between items-center   bg-[var(--neutral-color)] dark:bg-[var(--hover-bg-color)] dark:text-[var(--main-color)]  transition ease-in  duration-300  border-0 rounded-3xl py-4 px-6  ">
+        <section
+          className="relative max-w-[30vw] min-w-[15vw] flex flex-col justify-between items-center   bg-[var(--neutral-color)] dark:bg-[var(--hover-bg-color)] dark:text-[var(--main-color)]  transition ease-in  duration-300  border-0 rounded-3xl py-4 px-6 cursor-pointer hover:scale-[105%] active:scale-[100%] "
+          onClick={() => handleCopyText(content)}
+        >
           <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
 
           <h2 className="text-[2rem]">{title}</h2>
 
-          <p className="text-[1.5rem]">{content}</p>
+          <img
+            className="absolute top-[1rem] right-[1.5rem] w-5 h-auto opacity-60"
+            src={copyIcon}
+            alt="Copy icon"
+          />
+          <p className="text-[1.5rem]">{contentValue}</p>
         </section>
       )}
     </>

@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import './mainpage.css'
 import avatar from '/Projects/React/my-resume/src/assets/images/myAvatar.jpg'
+import hoverIconSrc from '/Projects/React/my-resume/src/assets/icons/Others/hover-icon-png-23.jpg'
 import AppButton from '../UI/AppButton'
 import Resume_Kichigin_LA from '/Projects/React/my-resume/src/assets/files/Resume_Kichigin_LA.pdf'
 
@@ -28,11 +29,16 @@ export default function HeaderMainPage() {
             </>
           </AppButton>
         </div>
-        <div className="w-[40%]">
+        <div className="w-[40%] relative">
           <img
-            className="parallax-effect w-[100%] max-w-[500px]  h-auto "
+            className="absolute  top-0 left-0 parallax-effect w-[100%] max-w-[600px]  h-auto  "
             src={avatar}
             alt="Beatiful man with long hair"
+          />
+          <img
+            className="absolute top-5 right-[25%] w-[5%] h-auto"
+            src={hoverIconSrc}
+            alt="Hover icon"
           />
         </div>
       </header>

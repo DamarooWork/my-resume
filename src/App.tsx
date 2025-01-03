@@ -6,11 +6,11 @@ import ExperiencePage from './pages/ExperiencePage'
 import AboutPage from './pages/AboutPage'
 import AsideComponent from './components/aside/AsideComponent'
 
-import GiftBox from './components/Gift/GiftBox'
+import GiftBox from './components/gift/GiftBox'
 import { useContext } from 'react'
 import { ModalContext } from './hooks/ModalContext'
-import FireworksComponent from './components/Gift/Fireworks'
-import ModalGift from './components/Gift/ModalGift'
+import FireworksComponent from './components/gift/Fireworks'
+import ModalGift from './components/gift/ModalGift'
 import { useTranslation } from 'react-i18next'
 export default function App() {
   const { t } = useTranslation()

@@ -1,7 +1,7 @@
-import { useState, useContext } from 'react'
+import { useState, useContext, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { ThemeContext } from '../../hooks/ThemeContext'
-
+import { useClickOutside } from '/Projects/React/my-resume/src/hooks/useClickOutside'
 const lngs: ILngs = {
   en: { nativeName: 'English' },
   ru: { nativeName: 'Russian' },
@@ -12,6 +12,9 @@ export default function LanguageChanger() {
   const [isSelectOpen, setSelectOpen] = useState(false)
   const { t, i18n } = useTranslation()
   const { theme } = useContext(ThemeContext)
+  const ref = useRef<HTMLElement>(null)
+  useClickOutside(ref, () => setSelectOpen(false))
+
   function handleChangeLanguage(lng: string) {
     i18n.changeLanguage(lng)
     setSelectOpen(false)
@@ -32,7 +35,7 @@ export default function LanguageChanger() {
     return 'flex  w-[calc(100%+4px)] flex-col absolute bottom-[38px] left-[-2px] border-2 border-[var(--main-color)] rounded-xl pt-1 px-2   dark:border-[var(--main-dark-color)] rounded-b-none  border-b-0 z-40'
   }
   return (
-    <section className={mainBtnStyle()}>
+    <section className={mainBtnStyle()} ref={ref}>
       <div
         className={elemsStyle()}
         onClick={() => setSelectOpen((prev) => !prev)}

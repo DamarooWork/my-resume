@@ -5,8 +5,6 @@ export default function Contact({
   img,
   download,
 }: IContact) {
-  console.log(download)
-
   return (
     <>
       {download && linkHref ? (

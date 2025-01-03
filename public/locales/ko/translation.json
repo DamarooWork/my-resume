@@ -25,7 +25,7 @@
         "linkHref": "https://t.me/damaroo8",
         "content": "@damaroo8",
         "img": {
-          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-telegram-app-48.png",
+          "src": "src/assets/icons/contacts/icons8-telegram-app-48.png",
           "alt": "Telegram"
         }
       },
@@ -34,7 +34,7 @@
         "linkHref": "https://github.com/DamarooWork",
         "content": "DamarooWork",
         "img": {
-          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-github-50.png",
+          "src": "src/assets/icons/contacts/icons8-github-50.png",
           "alt": "Github"
         }
       },
@@ -43,7 +43,7 @@
         "linkHref": "https://vk.com/damaroo",
         "content": "다마루",
         "img": {
-          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-vk-com-48.png",
+          "src": "src/assets/icons/contacts/icons8-vk-com-48.png",
           "alt": "VK"
         }
       },
@@ -52,7 +52,7 @@
         "linkHref": "https://vk.com/damaroo_fanpage",
         "content": "다마루 팬페이지",
         "img": {
-          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-vk-circled-48.png",
+          "src": "src/assets/icons/contacts/icons8-vk-circled-48.png",
           "alt": "VK 그룹"
         }
       },
@@ -61,16 +61,17 @@
         "linkHref": "",
         "content": "levkichigin@yandex.ru",
         "img": {
-          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-email-48.png",
+          "src": "src/assets/icons/contacts/icons8-email-48.png",
           "alt": "이메일"
         }
       },
       {
         "title": "재개하다",
-        "linkHref": "/Projects/React/my-resume/src/assets/files/Resume_Kichigin_LA.pdf",
+        "linkHref": "src/assets/files/Resume_Kichigin_LA.pdf",
         "content": "내 이력서",
+
         "img": {
-          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-portfolio-48.png",
+          "src": "src/assets/icons/contacts/icons8-portfolio-48.png",
           "alt": "재개하다"
         }
       },
@@ -79,12 +80,10 @@
         "linkHref": "",
         "content": "damaroo",
         "img": {
-          "src": "/Projects/React/my-resume/src/assets/icons/contacts/icons8-discord-48.png",
+          "src": "src/assets/icons/contacts/icons8-discord-48.png",
           "alt": "Discord"
         }
       }
     ]
-    
-  
   }
 }

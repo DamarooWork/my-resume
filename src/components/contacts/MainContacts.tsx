@@ -18,6 +18,7 @@ export default function MainContacts() {
             linkHref={contact.linkHref}
             content={contact.content}
             img={contact.img}
+            download={contact.download}
           />
         )
       })}

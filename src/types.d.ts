@@ -46,4 +46,5 @@ interface IContact {
   linkHref?: string
   content: string
   img: IImgContact
+  download?: boolean
 }

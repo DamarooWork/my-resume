@@ -48,3 +48,14 @@ interface IContact {
   img: IImgContact
   download?: boolean
 }
+interface IProfExp {
+  position: string
+  job: string
+  description: string
+  linkJob: string
+  date: {
+    start: string
+    end: string
+  }
+  stack: string[]
+}

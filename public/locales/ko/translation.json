@@ -12,7 +12,7 @@
     "h1": "제 이름은 Lev, 만나서 반가워요!",
     "h2": "이고 프런트엔드 개발자요!",
     "btnText": "내 이력서",
-    "about": "저는 기능적이고 복잡하며 아름다운 웹사이트를 작성합니다"
+    "about": "Crafting intuitive digital experiences through clean code and thoughtful design."
   },
   "gift": {
     "title": "축하합니다. 당신은 정말 행운이군요! 당신은 세상에서 가장 좋은 이력서를 찾으셨요!"
@@ -88,6 +88,63 @@
     ]
   },
   "aboutPage": {
-    "h1":"Расскажу о себе"
+    "h1": "나에 대해서",
+    "h2": "내 자신에 대해 말해보자",
+    "aboutMe": "UI/UX 디자인에 대한 열정을 가진 소프트웨어 엔지니어로서, 저는 기술적 전문성과 창의적인 디자인 사고를 결합하여 뛰어난 디지털 경험을 구축합니다. 저는 깔끔하고 효율적인 코드를 유지하면서 실제 문제를 해결하는 직관적이고 사용자 중심적인 솔루션을 만드는 데 중점을 둡니다",
+    "profExpHeader": "전문적 경험",
+    "profExpSumTime": "9 месяцев",
+    "stack": "Stack:",
+    "profExps": [
+      {
+        "position": "Frontend Developer",
+        "job": "Интернет-агентство «Infospice», Москва",
+        "linkJob": "http://www.infospice.ru",
+        "description": "Поддержка и работа над сайтом Третьяковской галереи. Результат работы - https://www.tretyakovgallery.ru/. Я выполнял работу и улучшение дизайна после получения правок и желаемых изменений в дизайне и функционале сайта от клиента.",
+        "date": {
+          "start": "Май 2021",
+          "end": "Сентябрь 2021"
+        },
+        "stack": [
+          "Vue",
+          "Nuxt.js",
+          "Vuetify",
+          "Vuex",
+          "SCSS",
+          "Figma",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      {
+        "position": "Frontend Developer",
+        "job": "Sensorium, Москва",
+        "linkJob": "https://sensorium.cloud/ru/",
+        "description": "Frontend-разработка сайта.Результат моей работы: https://knpam.rusneb.ru/ Выполненные задачи: \n- разработка SPA \n- работа с API(axios) \n- обработка ошибок и перенаправление на страницу 404\n- навигация\n- отрисовка данных, полученных с Backend(списки элементов)\n- глобальный поиск (axios)\n- фильтрация, поиск в фильтрах, и сортировки поиска книг (по типу, дате, языку и т.д.)",
+        "date": {
+          "start": "Январь 2021",
+          "end": "май 2021"
+        },
+        "stack": [
+          "Vue",
+          "Nuxt.js",
+          "Vuetify",
+          "Vuex",
+          "Axios",
+          "SCSS",
+          "Figma",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      }
+    ]
+  },
+
+  "experiencePage": {
+    "h1": "기술"
+  },
+  "portfolioPage": {
+    "h1": "포트폴리오"
   }
 }

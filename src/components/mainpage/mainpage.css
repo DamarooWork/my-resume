@@ -9,10 +9,11 @@
 }
 .headerHomePage h2 {
   font-size: 3rem;
+  line-height: normal;
   color: var(--main-color);
   border-right-width: 4px;
   border-right-style: solid;
-  animation: cursor 1s infinite step-end, typing 7s infinite steps(21);
+  animation: cursor 1s infinite step-end, typing 7s infinite steps(22);
   white-space: nowrap;
   overflow: hidden;
   letter-spacing: normal;
@@ -20,7 +21,7 @@
 }
 .dark .headerHomePage h2 {
   color: var(--main-dark-color);
-  animation: cursorDark 1s infinite step-end, typing 7s infinite steps(21);
+  animation: cursorDark 1s infinite step-end, typing 7s infinite steps(22);
 }
 
 @keyframes cursor {
@@ -46,10 +47,10 @@
     width: 0ch;
   }
   40% {
-    width: 21ch;
+    width: 22.1ch;
   }
   80% {
-    width: 21ch;
+    width: 22.1ch;
   }
   90% {
     width: 0ch;

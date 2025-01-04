@@ -3,6 +3,33 @@
 @tailwind utilities;
 
 html {
+  font-family: monospace;
+  --nav-width: 250px;
+  --main-color: #1e1b4b;
+  --main-dark-color: white;
+  --main-bg-dark-color: #1e1b4b;
+  --main-bg-color: white;
+  --hover-bg-color: #a5b4fc;
+  --hover-bg-dark-color: #4338ca;
+  --neutral-color: #e5e7eb;
+  --link-color: #a21caf;
+  --dark-link-color: #f0abfc;
+  --dark-section-color: #312e81;
+  --section-color: #e0e7ff;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: linear-gradient(
+    70deg,
+    var(--main-bg-color),
+    var(--hover-bg-color)
+  );
+
+  background-attachment: fixed;
+
+  transition: background-color ease-in-out 150ms;
+  color: var(--main-color);
+
   position: relative;
   font-size: 8px;
   @media (min-width: 640px) {
@@ -21,34 +48,17 @@ html {
     font-size: 16px;
   }
 }
-#root {
-  font-family: 'Yanone Kaffeesatz';
-  --nav-width: 250px;
-  --main-color: #1e1b4b;
-  --main-dark-color: white;
-  --main-bg-dark-color: #1e1b4b;
-  --main-bg-color: white;
-  --hover-bg-color: #a5b4fc;
-  --hover-bg-dark-color: #4338ca;
-  --neutral-color: #e5e7eb;
-  --link-color: #a21caf;
-  --dark-link-color: #f0abfc;
-  min-height: 100vh;
-  max-width: 100vw;
-  margin: 0;
-  padding: 0;
-  color: var(--main-color);
-  background: linear-gradient(
-    70deg,
-    var(--main-bg-color),
-    var(--hover-bg-color)
-  );
-  padding-left: var(--nav-width);
-  transition: background-color ease-in-out 150ms;
+body {
+  height: 100%;
 }
-.dark #root {
-  color: var(--main-dark-color);
+#root {
+  padding-left: var(--nav-width);
+}
+html.dark {
   background: linear-gradient(70deg, var(--main-bg-dark-color), #4338ca);
+  background-attachment: fixed;
+  color-scheme: dark;
+  color: var(--main-dark-color);
 }
 .gradient-bg {
   background: linear-gradient(

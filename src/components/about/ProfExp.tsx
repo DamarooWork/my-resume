@@ -1,29 +1,47 @@
-export default function ProfExp() {
+import calendarIcon from '/Projects/React/my-resume/src/assets/icons/aboutPage/calendar.png'
+import { useTranslation } from 'react-i18next'
+export default function ProfExp({
+  position,
+  job,
+  description,
+  date,
+  stack,
+  linkJob,
+}: IProfExp) {
+  const { t } = useTranslation()
   return (
-    <section className="relative flex flex-col">
-      <hgroup className="mb-4">
-        <h2 className="text-3xl font-semibold text-[var(--link-color)] dark:text-[var(--dark-link-color)] ">
-          FrontEnd Developer
-        </h2>
-        <h3 className="text-2xl">Sensorium</h3>
-      </hgroup>
-      <p className="text-2xl">
-        Я работал в Sensorium с такого-то по такое-то. Делал такое и такое
-      </p>
-      <p>Stack</p>
-      <div className="flex flex-row justify-start">
-        <span>vue</span>
-        <span>vue</span>
-        <span>vue</span>
-        <span>vue</span>
-        <span>vue</span>
-        <span>vue</span>
-      </div>
-      <div className="absolute right-5 top-2 flex flex-row gap-5 justify-end items-center">
-        <img src="" alt="calendar" />
-        <time dateTime="2008-02-14 20:00">Январь 2021 -</time>
-        <time dateTime="2009-02-14 20:00">Мая 2021</time>
-      </div>
-    </section>
+    <>
+      <section className="relative flex flex-col bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] py-4 px-8 rounded-2xl">
+        <hgroup className="mb-8">
+          <h2 className="text-3xl font-semibold text-[var(--link-color)] dark:text-[var(--dark-link-color)] ">
+            {position}
+          </h2>
+          <h3 className="text-2xl font-black hover:underline">
+            <a href={linkJob} target="_blank">
+              {job}
+            </a>
+          </h3>
+        </hgroup>
+        <p className="text-2xl mb-8">{description}</p>
+        <p className="text-2xl mb-4">{t('aboutPage.stack')}</p>
+        <div className="flex flex-row flex-wrap gap-4 ">
+          {stack.map((s) => {
+            return (
+              <div
+                key={s}
+                className="border-2 border-[var(--main-color)] dark:border-[var(--dark-main-color)] rounded-3xl py-2 px-4"
+              >
+                {s}
+              </div>
+            )
+          })}
+        </div>
+        <div className="absolute right-5 top-5 flex flex-row  gap-2 justify-end items-center">
+          <img className="w-5 h-auto" src={calendarIcon} alt="Calendar icon" />
+          <time dateTime={date.start}>{date.start} -</time>
+          <time dateTime={date.end}>{date.end}</time>
+        </div>
+      </section>
+    </>
   )
 }

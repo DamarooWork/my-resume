@@ -12,7 +12,7 @@
     "h1": "My name is Lev, nice to meet you!",
     "h2": "I'm Frontend-developer!",
     "btnText": "My resume",
-    "about": "I write functional, complex, beautiful websites"
+    "about": "Crafting intuitive digital experiences through clean code and thoughtful design."
   },
   "gift": {
     "title": "Congratulations, you are very lucky! You've found the best resume in the world!"
@@ -88,6 +88,63 @@
     ]
   },
   "aboutPage": {
-    "h1": "Расскажу о себе"
+    "h1": "About me",
+    "h2": "Let me tell you about myself",
+    "aboutMe": "As a Software Engineer with a passion for UI/UX design, I blend technical expertise with creative design thinking to build exceptional digital experiences. I focus on creating intuitive, user-centered solutions that solve real-world problems while maintaining clean, efficient code",
+    "profExpHeader": "Professional Experience",
+    "profExpSumTime": "9 месяцев",
+    "stack": "Stack:",
+    "profExps": [
+      {
+        "position": "Frontend Developer",
+        "job": "Интернет-агентство «Infospice», Москва",
+        "linkJob": "http://www.infospice.ru",
+        "description": "Поддержка и работа над сайтом Третьяковской галереи. Результат работы - https://www.tretyakovgallery.ru/. Я выполнял работу и улучшение дизайна после получения правок и желаемых изменений в дизайне и функционале сайта от клиента.",
+        "date": {
+          "start": "Май 2021",
+          "end": "Сентябрь 2021"
+        },
+        "stack": [
+          "Vue",
+          "Nuxt.js",
+          "Vuetify",
+          "Vuex",
+          "SCSS",
+          "Figma",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      {
+        "position": "Frontend Developer",
+        "job": "Sensorium, Москва",
+        "linkJob": "https://sensorium.cloud/ru/",
+        "description": "Frontend-разработка сайта.Результат моей работы: https://knpam.rusneb.ru/ Выполненные задачи: \n- разработка SPA \n- работа с API(axios) \n- обработка ошибок и перенаправление на страницу 404\n- навигация\n- отрисовка данных, полученных с Backend(списки элементов)\n- глобальный поиск (axios)\n- фильтрация, поиск в фильтрах, и сортировки поиска книг (по типу, дате, языку и т.д.)",
+        "date": {
+          "start": "Январь 2021",
+          "end": "май 2021"
+        },
+        "stack": [
+          "Vue",
+          "Nuxt.js",
+          "Vuetify",
+          "Vuex",
+          "Axios",
+          "SCSS",
+          "Figma",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      }
+    ]
+  },
+
+  "experiencePage": {
+    "h1": "Experience"
+  },
+  "portfolioPage": {
+    "h1": "Portfolio"
   }
 }

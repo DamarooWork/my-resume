@@ -2,8 +2,11 @@ import { useTranslation } from 'react-i18next'
 import ProfExp from './ProfExps'
 import jobBlackIcon from '/Projects/React/my-resume/src/assets/icons/aboutPage/jobBlack.png'
 import jobWhiteIcon from '/Projects/React/my-resume/src/assets/icons/aboutPage/jobWhite.png'
+import educationBlackIcon from '/Projects/React/my-resume/src/assets/icons/aboutPage/educationBlack.png'
+import educationWhiteIcon from '/Projects/React/my-resume/src/assets/icons/aboutPage/educationWhite.png'
 import { ThemeContext } from '../../hooks/ThemeContext'
 import { useContext } from 'react'
+import Education from './Education'
 export default function MainAbout() {
   const { t } = useTranslation()
   const { theme } = useContext(ThemeContext)
@@ -34,16 +37,25 @@ export default function MainAbout() {
           <ProfExp />
         </section>
         <section className="flex flex-col justify-start gap-5 w-[48%]">
-          <header className="text-4xl">
-            <h2>
-              {t('aboutPage.profExpHeader')}
-              <span className="ml-5 border-2 border-[var(--main-color)] dark:border-[var(--dark-main-color)] rounded-2xl py-1 px-3 text-2xl">
-                {t('aboutPage.profExpSumTime')}
-              </span>
-            </h2>
+          <header className="flex items-center gap-5">
+            {theme === 'dark' && (
+              <img
+                className="w-10 h-auto"
+                src={educationWhiteIcon}
+                alt="Education icon"
+              />
+            )}
+            {theme === 'light' && (
+              <img
+                className="w-10 h-auto"
+                src={educationBlackIcon}
+                alt="Education icon"
+              />
+            )}
+            <h2 className="text-4xl">{t('aboutPage.education')}</h2>
           </header>
 
-          <ProfExp />
+          <Education />
         </section>
       </div>
     </main>

@@ -26,7 +26,7 @@
         "linkHref": "https://t.me/damaroo8",
         "content": "@damaroo8",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-telegram-app-48.png",
+          "src": "/assets/icons/contacts/icons8-telegram-app-48.png",
           "alt": "Telegram"
         }
       },
@@ -35,7 +35,7 @@
         "linkHref": "https://github.com/DamarooWork",
         "content": "DamarooWork",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-github-50.png",
+          "src": "/assets/icons/contacts/icons8-github-50.png",
           "alt": "Github"
         }
       },
@@ -44,7 +44,7 @@
         "linkHref": "https://vk.com/damaroo",
         "content": "Damaroo",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-vk-com-48.png",
+          "src": "/assets/icons/contacts/icons8-vk-com-48.png",
           "alt": "ВК"
         }
       },
@@ -53,7 +53,7 @@
         "linkHref": "https://vk.com/damaroo_fanpage",
         "content": "Damaroo fanpage",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-vk-circled-48.png",
+          "src": "/assets/icons/contacts/icons8-vk-circled-48.png",
           "alt": "Группа VK"
         }
       },
@@ -62,17 +62,17 @@
         "linkHref": "",
         "content": "levkichigin@yandex.ru",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-email-48.png",
+          "src": "/assets/icons/contacts/icons8-email-48.png",
           "alt": "Почта"
         }
       },
       {
         "title": "Резюме",
-        "linkHref": "src/assets/files/Resume_Kichigin_LA.pdf",
+        "linkHref": "/assets/files/Resume_Kichigin_LA.pdf",
         "content": "Скачать",
         "download": true,
         "img": {
-          "src": "src/assets/icons/contacts/resumeIcon.png",
+          "src": "/assets/icons/contacts/resumeIcon.png",
           "alt": "Мое резюме"
         }
       },
@@ -81,7 +81,7 @@
         "linkHref": "",
         "content": "damaroo",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-discord-48.png",
+          "src": "/assets/icons/contacts/icons8-discord-48.png",
           "alt": "Discord"
         }
       }

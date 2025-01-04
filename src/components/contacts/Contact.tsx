@@ -1,9 +1,8 @@
 import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
 import downloadIcon from '/Projects/React/my-resume/src/assets/icons/contacts/download.png'
 import openLinkIcon from '/Projects/React/my-resume/src/assets/icons/contacts/open-link.png'
 import copyIcon from '/Projects/React/my-resume/src/assets/icons/contacts/copy-link-icon.png'
-import { Suspense, useState } from 'react'
-import AppLoading from '../UI/AppLoading'
 
 export default function Contact({
   title,
@@ -25,7 +24,7 @@ export default function Contact({
     }
   }
   return (
-    <Suspense fallback={<AppLoading />}>
+    <>
       {download && linkHref ? (
         <a
           className="max-w-[30vw] min-w-[15vw] dark:bg-[var(--hover-bg-color)]  bg-[var(--neutral-color)] dark:text-[var(--main-color)]   border-0 rounded-3xl py-4 px-6  transition ease-in  duration-300 hover:scale-[105%] active:scale-[100%] will-change-transform"
@@ -35,7 +34,7 @@ export default function Contact({
           <section className="relative flex flex-col justify-between items-center">
             <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
 
-            <h2 className="text-[2rem] ">{title}</h2>
+            <h3 className="text-[2rem] ">{title}</h3>
 
             <p className="text-[1.5rem]">{content}</p>
             <img
@@ -54,7 +53,7 @@ export default function Contact({
           <section className="relative flex flex-col justify-between items-center">
             <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
 
-            <h2 className="text-[2rem]">{title}</h2>
+            <h3 className="text-[2rem]">{title}</h3>
 
             <p className="text-[1.5rem]">{content}</p>
             <img
@@ -71,7 +70,7 @@ export default function Contact({
         >
           <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
 
-          <h2 className="text-[2rem]">{title}</h2>
+          <h3 className="text-[2rem]">{title}</h3>
 
           <img
             className="absolute top-[1rem] right-[1.5rem] w-5 h-auto opacity-60"
@@ -81,6 +80,6 @@ export default function Contact({
           <p className="text-[1.5rem]">{contentValue}</p>
         </section>
       )}
-    </Suspense>
+    </>
   )
 }

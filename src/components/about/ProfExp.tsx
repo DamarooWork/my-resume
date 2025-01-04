@@ -22,8 +22,8 @@ export default function ProfExp({
             </a>
           </h3>
         </hgroup>
-        <p className="text-2xl mb-8">{description}</p>
-        <p className="text-2xl mb-4">{t('aboutPage.stack')}</p>
+        <p className="text-xl mb-8">{description}</p>
+        <h4 className="text-2xl mb-4">{t('aboutPage.stack')}</h4>
         <div className="flex flex-row flex-wrap gap-4 ">
           {stack.map((s) => {
             return (

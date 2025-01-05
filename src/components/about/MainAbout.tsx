@@ -12,15 +12,15 @@ export default function MainAbout() {
   const { theme } = useContext(ThemeContext)
   return (
     <main className="">
-      <section className="mb-20">
+      <section className="fade-effect mb-20">
         <h2 className="text-4xl font-semibold text-[var(--link-color)] dark:text-[var(--dark-link-color)] mb-4">
           {t('aboutPage.h2')}
         </h2>
 
         <p className="text-2xl">{t('aboutPage.aboutMe')}</p>
       </section>
-      <div className="flex flex-row justify-between">
-        <section className="flex flex-col justify-start gap-5 w-[48%]">
+      <div className=" flex flex-row justify-between">
+        <section className="fade-effect-250 flex flex-col justify-start gap-5 w-[48%]">
           <header className="flex items-center gap-5">
             {theme === 'dark' && (
               <img className="w-10 h-auto" src={jobWhiteIcon} alt="Job icon" />
@@ -36,7 +36,7 @@ export default function MainAbout() {
 
           <ProfExp />
         </section>
-        <section className="flex flex-col justify-start gap-5 w-[48%]">
+        <section className="fade-effect-500 flex flex-col justify-start gap-5 w-[48%]">
           <header className="flex items-center gap-5">
             {theme === 'dark' && (
               <img
@@ -52,7 +52,10 @@ export default function MainAbout() {
                 alt="Education icon"
               />
             )}
-            <h2 className="text-4xl">{t('aboutPage.education')}</h2>
+            <h2 className="text-4xl">{t('aboutPage.educationHeader')}</h2>
+            <span className="border-2 border-[var(--main-color)] dark:border-[var(--dark-main-color)] rounded-2xl py-1 px-3 text-2xl">
+              {t('aboutPage.education')}
+            </span>
           </header>
 
           <Education />

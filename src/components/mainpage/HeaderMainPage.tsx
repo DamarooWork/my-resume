@@ -10,11 +10,11 @@ export default function HeaderMainPage() {
 
   return (
     <>
-      <header className="basis-[100%] headerHomePage flex flex-col-reverse xl:flex-row  justify-between  text-center   ">
-        <div className="xl:basis-[50%] mt-8 mb-8 ">
-          <h1 className="mb-4">{t('home.h1')}</h1>
+      <header className=" basis-[100%] headerHomePage flex flex-col-reverse xl:flex-row  justify-between  text-center   ">
+        <div className="fade-effect xl:basis-[50%] mt-8 mb-8 ">
+          <h1 className="mb-4  ">{t('home.h1')}</h1>
           <hr className="border-[var(--main-color)] dark:border-[var(--dakr-main-color)]" />
-          <h2 className="  mb-4 mt-4 m-auto">{t('home.h2')}</h2>
+          <h2 className="mb-4 mt-4 m-auto">{t('home.h2')}</h2>
           <hr className="border-[var(--main-color)] dark:border-[var(--dakr-main-color)]" />
 
           <h3 className="mb-12 mt-4">{t('home.about')}</h3>
@@ -31,7 +31,7 @@ export default function HeaderMainPage() {
         </div>
         <div className=" relative mt-8 xl:mt-0 xl:basis-[40%]  ">
           <img
-            className="absolute top-[10%] left-[25%]   xl:top-[10%] 2xl:top-0 xl:left-0 parallax-effect w-[50%] xl:w-[100%] max-w-[600px]  h-auto  "
+            className=" absolute top-[10%] left-[25%]   xl:top-[10%] 2xl:top-0 xl:left-0 parallax-effect w-[50%] xl:w-[100%] max-w-[600px]  h-auto  "
             src={avatar}
             alt="Beatiful man with long hair"
           />

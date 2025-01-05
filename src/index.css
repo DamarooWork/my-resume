@@ -86,3 +86,46 @@ html.dark {
     background-position: 0% 50%;
   }
 }
+.fade-effect {
+  overflow: hidden;
+
+  transform: translateY(30px);
+  animation: fadeInText 1s 0ms forwards;
+  opacity: 0;
+}
+.fade-effect-250 {
+  overflow: hidden;
+  transform: translateY(30px);
+  animation: fadeInText 1s forwards;
+  animation-delay: 250ms;
+  opacity: 0;
+}
+.fade-effect-500 {
+  overflow: hidden;
+  transform: translateY(30px);
+  animation: fadeInText 1s forwards;
+  animation-delay: 500ms;
+  opacity: 0;
+}
+
+@keyframes fadeInText {
+  from {
+    transform: translateY(30px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}

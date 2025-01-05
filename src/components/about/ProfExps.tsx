@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import ProfExp from './ProfExp'
+import { FadeInSection } from '../../hooks/FadeinSection'
 
 export default function ProfExps() {
   const { t } = useTranslation()
@@ -11,15 +12,16 @@ export default function ProfExps() {
     <div className="flex flex-col justify-start gap-10">
       {profExps.map((profExp) => {
         return (
-          <ProfExp
-            key={profExp.date.start}
-            linkJob={profExp.linkJob}
-            position={profExp.position}
-            job={profExp.job}
-            description={profExp.description}
-            date={profExp.date}
-            stack={profExp.stack}
-          />
+          <FadeInSection key={profExp.date.start}>
+            <ProfExp
+              linkJob={profExp.linkJob}
+              position={profExp.position}
+              job={profExp.job}
+              description={profExp.description}
+              date={profExp.date}
+              stack={profExp.stack}
+            />
+          </FadeInSection>
         )
       })}
     </div>

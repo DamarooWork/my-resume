@@ -1,8 +1,8 @@
-import calendarIcon from '/Projects/React/my-resume/src/assets/icons/aboutPage/calendar.png'
-import { useTranslation } from 'react-i18next'
+// import calendarIcon from '/Projects/React/my-resume/src/assets/icons/aboutPage/calendar.png'
+// import { useTranslation } from 'react-i18next'
 
 export default function EducationSchool() {
-  const { t } = useTranslation()
+  // const { t } = useTranslation()
   return (
     <>
       <section className="relative flex flex-col bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] py-4 px-8 rounded-2xl">

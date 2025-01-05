@@ -1,3 +1,4 @@
+
 import calendarIcon from '/Projects/React/my-resume/src/assets/icons/aboutPage/calendar.png'
 import { useTranslation } from 'react-i18next'
 export default function ProfExp({
@@ -10,7 +11,7 @@ export default function ProfExp({
 }: IProfExp) {
   const { t } = useTranslation()
   return (
-    <>
+
       <section className="relative flex flex-col bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] py-4 px-8 rounded-2xl">
         <hgroup className="mb-8">
           <h2 className="text-3xl font-semibold text-[var(--link-color)] dark:text-[var(--dark-link-color)] ">
@@ -42,6 +43,6 @@ export default function ProfExp({
           <time dateTime={date.end}>{date.end}</time>
         </div>
       </section>
-    </>
+  
   )
 }

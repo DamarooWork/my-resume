@@ -17,14 +17,14 @@ export default function MainAbout() {
     <main className="">
       <FadeInSection>
         <section className=" fade-effect mb-16">
-          <div className="flex flex-row  gap-2 justify-start items-center  mb-4">
+          <div className="flex flex-row  gap-5 justify-start items-center  mb-4">
             <img
               className="w-9 h-auto"
               src={theme === 'dark' ? meDarkIcon : meLightIcon}
               alt="Icon man"
             />
 
-            <h2 className="text-4xl font-semibold text-[var(--link-color)] dark:text-[var(--dark-link-color)]">
+            <h2 className="text-4xl text-[var(--link-color)] dark:text-[var(--dark-link-color)]">
               {t('aboutPage.h2')}
             </h2>
           </div>

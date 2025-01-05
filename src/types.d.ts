@@ -52,11 +52,14 @@ interface IContact {
 interface IProfExp {
   position: string
   job: string
-  description: string
   linkJob: string
+  workDoneTitle: string
+  workDone: string
+  description: string
   date: {
     start: string
     end: string
   }
-  stack: string[]
+  stack: string[],
+  backgroundImg?: string
 }

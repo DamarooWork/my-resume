@@ -101,7 +101,9 @@
         "position": "Frontend-разработчик",
         "job": "Интернет-агентство «Infospice», Москва",
         "linkJob": "http://www.infospice.ru",
-        "description": "Поддержка и работа над сайтом Третьяковской галереи. Результат работы - https://www.tretyakovgallery.ru/. Я выполнял работу и улучшение дизайна после получения правок и желаемых изменений в дизайне и функционале сайта от клиента.",
+        "workDoneTitle": "Результат работы",
+        "workDone": "https://www.tretyakovgallery.ru/",
+        "description": "Поддержка и работа над сайтом Третьяковской галереи. Я выполнял работу и улучшение дизайна после получения правок и желаемых изменений в дизайне и функционале сайта от клиента",
         "date": {
           "start": "Май 2021",
           "end": "Сентябрь 2021"
@@ -116,13 +118,16 @@
           "HTML",
           "CSS",
           "JavaScript"
-        ]
+        ],
+        "backgroundImg": "/Projects/React/my-resume/src/assets/images/tretyakovskaya.PNG"
       },
       {
         "position": "Frontend-разработчик",
         "job": "Sensorium, Москва",
         "linkJob": "https://sensorium.cloud/ru/",
-        "description": "Frontend-разработка сайта.Результат моей работы: https://knpam.rusneb.ru/ Выполненные задачи: \n- разработка SPA \n- работа с API(axios) \n- обработка ошибок и перенаправление на страницу 404\n- навигация\n- отрисовка данных, полученных с Backend(списки элементов)\n- глобальный поиск (axios)\n- фильтрация, поиск в фильтрах, и сортировки поиска книг (по типу, дате, языку и т.д.)",
+        "workDoneTitle": "Результат моей работы",
+        "workDone": "https://knpam.rusneb.ru/",
+        "description": "Frontend-разработка сайта с нуля. Выполненные задачи: разработка SPA, работа с API(axios), обработка ошибок и перенаправление на страницу 404, навигация, отрисовка данных, полученных с Backend, глобальный поиск, фильтрация, поиск в фильтрах, и сортировки поиска книг (по типу, дате, языку и т.д.)",
         "date": {
           "start": "Январь 2021",
           "end": "Май 2021"
@@ -138,7 +143,8 @@
           "HTML",
           "CSS",
           "JavaScript"
-        ]
+        ],
+        "backgroundImg": "/Projects/React/my-resume/src/assets/images/knpam.PNG"
       }
     ],
     "educationHeader": "Образование",

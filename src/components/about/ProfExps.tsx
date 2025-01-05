@@ -17,9 +17,13 @@ export default function ProfExps() {
               linkJob={profExp.linkJob}
               position={profExp.position}
               job={profExp.job}
+              workDoneTitle={profExp.workDoneTitle}
+              workDone={profExp.workDone}
               description={profExp.description}
               date={profExp.date}
               stack={profExp.stack}
+              backgroundImg={profExp.backgroundImg}
+              
             />
           </FadeInSection>
         )

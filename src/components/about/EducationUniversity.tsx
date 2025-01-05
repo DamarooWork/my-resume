@@ -16,7 +16,7 @@ export default function EducationUniversity() {
   })
   return (
     <>
-      <section className="relative flex flex-col bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] py-4 px-8 rounded-2xl">
+      <section className="relative flex flex-col bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] py-4 px-8 rounded-2xl border-2 border-[var(--link-color)] dark:border-[var(--dark-link-color)]">
         <hgroup className="mb-8">
           <h2 className=" text-3xl font-semibold text-[var(--link-color)] dark:text-[var(--dark-link-color)] mb-2">
             {t('aboutPage.educationUniversity.position')}

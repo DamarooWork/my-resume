@@ -10,11 +10,23 @@ export default function ProfExp({
   date,
   stack,
   linkJob,
+  workDoneTitle,
+  workDone,
+  backgroundImg,
 }: IProfExp) {
   const { theme } = useContext(ThemeContext)
   const { t } = useTranslation()
+  console.log(backgroundImg)
+
   return (
-    <section className="relative flex flex-col bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] py-4 px-8 rounded-2xl border-[var(--dark-link-color)] border-2">
+    <section
+      style={
+        !backgroundImg
+          ? { backgroundImage: `${backgroundImg}`, backgroundColor: '' }
+          : {}
+      }
+      className="relative flex flex-col bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] py-4 px-8 border-2 rounded-2xl  border-[var(--link-color)] dark:border-[var(--dark-link-color)] "
+    >
       <hgroup className="mb-8">
         <h2 className="text-3xl font-semibold text-[var(--link-color)] dark:text-[var(--dark-link-color)] ">
           {position}
@@ -23,6 +35,17 @@ export default function ProfExp({
           <h3 className="text-2xl font-black ">{job}</h3>
         </a>
       </hgroup>
+      <section className="flex flex-row flex-wrap gap-2 text-xl mb-4">
+        <h3>{workDoneTitle}</h3>
+        {'-'}
+        <a
+          className="text-[var(--link-color)] dark:text-[var(--dark-link-color)] hover:underline"
+          href={workDone}
+          target="_blank"
+        >
+          {workDone}
+        </a>
+      </section>
       <p className="text-xl mb-8">{description}</p>
       <h4 className="text-2xl mb-4">{t('aboutPage.stack')}</h4>
       <div className="flex flex-row flex-wrap gap-4 ">

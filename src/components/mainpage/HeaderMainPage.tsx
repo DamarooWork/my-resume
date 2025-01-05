@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import './mainpage.css'
 import avatar from '/Projects/React/my-resume/src/assets/images/myAvatar.jpg'
 import hoverIconSrc from '/Projects/React/my-resume/src/assets/icons/Others/hover-icon-png-23.jpg'
 import AppButton from '../UI/AppButton'
@@ -13,11 +12,13 @@ export default function HeaderMainPage() {
       <header className=" basis-[100%] headerHomePage flex flex-col-reverse xl:flex-row  justify-between  text-center   ">
         <div className=" xl:basis-[50%] mt-8 mb-8 ">
           <div className="fade-effect">
-            <h1 className="mb-8  ">{t('home.h1')}</h1>
+            <h1 className="text-6xl mb-8">{t('home.h1')}</h1>
             <hr className="border-[var(--main-color)] dark:border-[var(--dakr-main-color)]" />
-            <h2 className="mb-4 mt-4 m-auto">{t('home.h2')}</h2>
+            <h2 className="text-4xl text-typing mb-4 mt-4 m-auto">
+              {t('home.h2')}
+            </h2>
             <hr className="border-[var(--main-color)] dark:border-[var(--dakr-main-color)]" />
-            <h3 className="mt-8">{t('home.about')}</h3>
+            <h3 className="text-3xl mt-8">{t('home.about')}</h3>
           </div>
           <div className="fade-effect fade-time-500 py-[8vh]">
             <AppButton

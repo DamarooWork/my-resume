@@ -4,6 +4,9 @@ export default function EducationSchool() {
   // const { t } = useTranslation()
   return (
     <section className="relative flex flex-col bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] py-4 px-8 rounded-2xl border-2 border-[var(--link-color)] dark:border-[var(--dark-link-color)]">
+      <h2 className="text-typing text-3xl leading-relaxed text-center">
+        Coding................
+      </h2>
       <hgroup className="mb-8">
         <h2 className="text-3xl font-semibold text-[var(--link-color)] dark:text-[var(--dark-link-color)] "></h2>
         <h3 className="text-2xl font-black hover:underline"></h3>

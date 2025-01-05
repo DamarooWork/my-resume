@@ -40,6 +40,7 @@ export default function HeaderMainPage() {
             alt="Beatiful man with long hair"
           />
           <img
+            loading="lazy"
             className="absolute top-[20%]  xl:top-[15%] 2xl:top-[5%] right-[30%]  xl:right-[25%] w-[3%] xl:w-[5%] h-auto"
             src={hoverIconSrc}
             alt="Hover icon"

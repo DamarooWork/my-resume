@@ -16,7 +16,7 @@ export default function MainAbout() {
   return (
     <main className="">
       <FadeInSection>
-        <section className=" fade-effect mb-20">
+        <section className=" fade-effect mb-16">
           <div className="flex flex-row  gap-2 justify-start items-center  mb-4">
             <img
               className="w-9 h-auto"
@@ -34,39 +34,49 @@ export default function MainAbout() {
       </FadeInSection>
       <div className=" flex flex-row justify-between">
         <section className="fade-effect fade-time-250 flex flex-col justify-start gap-5 w-[48%]">
-          <header className="flex items-center gap-5">
-            {theme === 'dark' && (
-              <img className="w-10 h-auto" src={jobWhiteIcon} alt="Job icon" />
-            )}
-            {theme === 'light' && (
-              <img className="w-10 h-auto" src={jobBlackIcon} alt="Job icon" />
-            )}
-            <h2 className="text-4xl text-[var(--link-color)] dark:text-[var(--dark-link-color)]">
-              {t('aboutPage.profExpHeader')}
-            </h2>
-            <span className="border-2 border-[var(--main-color)] dark:border-[var(--dark-main-color)] rounded-2xl py-1 px-3 text-2xl">
-              {t('aboutPage.profExpSumTime')}
-            </span>
-          </header>
-
+          <FadeInSection>
+            <header className="flex items-center gap-5">
+              {theme === 'dark' && (
+                <img
+                  className="w-10 h-auto"
+                  src={jobWhiteIcon}
+                  alt="Job icon"
+                />
+              )}
+              {theme === 'light' && (
+                <img
+                  className="w-10 h-auto"
+                  src={jobBlackIcon}
+                  alt="Job icon"
+                />
+              )}
+              <h2 className="text-4xl text-[var(--link-color)] dark:text-[var(--dark-link-color)]">
+                {t('aboutPage.profExpHeader')}
+              </h2>
+              <span className="border-2 border-[var(--main-color)] dark:border-[var(--dark-main-color)] rounded-2xl py-1 px-3 text-2xl">
+                {t('aboutPage.profExpSumTime')}
+              </span>
+            </header>
+          </FadeInSection>
           <ProfExp />
         </section>
         <section className="fade-effect fade-time-500 flex flex-col justify-start gap-5 w-[48%]">
-          <header className="flex items-center gap-5">
-            <img
-              className="w-10 h-auto"
-              src={theme === 'dark' ? educationWhiteIcon : educationBlackIcon}
-              alt="Education icon"
-            />
+          <FadeInSection>
+            <header className="flex items-center gap-5">
+              <img
+                className="w-10 h-auto"
+                src={theme === 'dark' ? educationWhiteIcon : educationBlackIcon}
+                alt="Education icon"
+              />
 
-            <h2 className="text-4xl text-[var(--link-color)] dark:text-[var(--dark-link-color)]">
-              {t('aboutPage.educationHeader')}
-            </h2>
-            <span className="border-2 border-[var(--main-color)] dark:border-[var(--dark-main-color)] rounded-2xl py-1 px-3 text-2xl">
-              {t('aboutPage.education')}
-            </span>
-          </header>
-
+              <h2 className="text-4xl text-[var(--link-color)] dark:text-[var(--dark-link-color)]">
+                {t('aboutPage.educationHeader')}
+              </h2>
+              <span className="border-2 border-[var(--main-color)] dark:border-[var(--dark-main-color)] rounded-2xl py-1 px-3 text-2xl">
+                {t('aboutPage.education')}
+              </span>
+            </header>
+          </FadeInSection>
           <Education />
         </section>
       </div>

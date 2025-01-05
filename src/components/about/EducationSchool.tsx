@@ -1,12 +1,9 @@
 // import calendarIcon from '/Projects/React/my-resume/src/assets/icons/aboutPage/calendar.png'
 // import { useTranslation } from 'react-i18next'
-
-import { FadeInSection } from '../../hooks/FadeinSection'
-
 export default function EducationSchool() {
   // const { t } = useTranslation()
   return (
-    <FadeInSection>
+
       <section className="relative flex flex-col bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] py-4 px-8 rounded-2xl">
         <hgroup className="mb-8">
           <h2 className="text-3xl font-semibold text-[var(--link-color)] dark:text-[var(--dark-link-color)] "></h2>
@@ -17,6 +14,6 @@ export default function EducationSchool() {
         <div className="flex flex-row flex-wrap gap-4 "></div>
         <div className="absolute right-5 top-5 flex flex-row  gap-2 justify-end items-center"></div>
       </section>
-    </FadeInSection>
+   
   )
 }

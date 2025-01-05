@@ -14,7 +14,7 @@ export default function ProfExp({
   const { theme } = useContext(ThemeContext)
   const { t } = useTranslation()
   return (
-    <section className="relative flex flex-col bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] py-4 px-8 rounded-2xl border-[var(--dark-link-color)] border-2" >
+    <section className="relative flex flex-col bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] py-4 px-8 rounded-2xl border-[var(--dark-link-color)] border-2">
       <hgroup className="mb-8">
         <h2 className="text-3xl font-semibold text-[var(--link-color)] dark:text-[var(--dark-link-color)] ">
           {position}
@@ -38,11 +38,11 @@ export default function ProfExp({
         })}
       </div>
       <div className="absolute right-5 top-6 flex flex-row  gap-2 justify-end items-center">
-        {theme === 'dark' ? (
-          <img className="w-5 h-auto" src={calendarDark} alt="Calendar icon" />
-        ) : (
-          <img className="w-5 h-auto" src={calendarLight} alt="Calendar icon" />
-        )}
+        <img
+          className="w-5 h-auto"
+          src={theme === 'dark' ? calendarDark : calendarLight}
+          alt="Calendar icon"
+        />
         <time dateTime={date.start}>{date.start} -</time>
         <time dateTime={date.end}>{date.end}</time>
       </div>

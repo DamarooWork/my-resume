@@ -37,36 +37,24 @@ export default function Contact({
           download
         >
           <section className="relative flex flex-col justify-between items-center">
-            {img.srcWhite ? (
-              theme === 'dark' ? (
-                <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
-              ) : (
-                <img
-                  className="w-[40px] h-auto"
-                  src={img.srcWhite}
-                  alt={img.alt}
-                />
-              )
-            ) : (
-              <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
-            )}
-
+            <img
+              className="w-[40px] h-auto"
+              src={
+                img.srcWhite
+                  ? theme === 'dark'
+                    ? img.src
+                    : img.srcWhite
+                  : img.src
+              }
+              alt={img.alt}
+            />
             <h3 className="text-[2rem] ">{title}</h3>
-
             <p className="text-[1.5rem]">{content}</p>
-            {theme === 'dark' ? (
-              <img
-                className="absolute top-0 right-0 w-6 h-auto"
-                src={downloadDark}
-                alt="Download icon"
-              />
-            ) : (
-              <img
-                className="absolute top-0 right-0 w-6 h-auto"
-                src={downloadLight}
-                alt="Download icon"
-              />
-            )}
+            <img
+              className="absolute top-0 right-0 w-6 h-auto"
+              src={theme === 'dark' ? downloadDark : downloadLight}
+              alt="Download icon"
+            />
           </section>
         </a>
       ) : linkHref ? (
@@ -76,36 +64,24 @@ export default function Contact({
           target="_blank"
         >
           <section className="relative flex flex-col justify-between items-center">
-            {img.srcWhite ? (
-              theme === 'dark' ? (
-                <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
-              ) : (
-                <img
-                  className="w-[40px] h-auto"
-                  src={img.srcWhite}
-                  alt={img.alt}
-                />
-              )
-            ) : (
-              <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
-            )}
-
+            <img
+              className="w-[40px] h-auto"
+              src={
+                img.srcWhite
+                  ? theme === 'dark'
+                    ? img.src
+                    : img.srcWhite
+                  : img.src
+              }
+              alt={img.alt}
+            />
             <h3 className="text-[2rem]">{title}</h3>
-
             <p className="text-[1.5rem]">{content}</p>
-            {theme === 'dark' ? (
-              <img
-                className="absolute top-0 right-0 w-5 h-auto"
-                src={openLinkDark}
-                alt="Open link icon"
-              />
-            ) : (
-              <img
-                className="absolute top-0 right-0 w-5 h-auto"
-                src={openLinkLight}
-                alt="Open link icon"
-              />
-            )}
+            <img
+              className="absolute top-0 right-0 w-5 h-auto"
+              src={theme === 'dark' ? openLinkDark : openLinkLight}
+              alt="Open link icon"
+            />
           </section>
         </a>
       ) : (
@@ -113,35 +89,23 @@ export default function Contact({
           className=" relative max-w-[30vw] min-w-[15vw] flex flex-col justify-between items-center   bg-[var(--section-color)] dark:bg-[var(--dark-section-color)]   transition ease-in  duration-300  border-0 rounded-3xl py-4 px-6 cursor-pointer hover:scale-[105%] active:scale-[100%] will-change-transform "
           onClick={() => handleCopyText(content)}
         >
-          {img.srcWhite ? (
-            theme === 'dark' ? (
-              <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
-            ) : (
-              <img
-                className="w-[40px] h-auto"
-                src={img.srcWhite}
-                alt={img.alt}
-              />
-            )
-          ) : (
-            <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
-          )}
-
+          <img
+            className="w-[40px] h-auto"
+            src={
+              img.srcWhite
+                ? theme === 'dark'
+                  ? img.src
+                  : img.srcWhite
+                : img.src
+            }
+            alt={img.alt}
+          />
           <h3 className="text-[2rem]">{title}</h3>
-          {theme === 'dark' ? (
-            <img
-              className="absolute top-[1rem] right-[1.5rem] w-5 h-auto "
-              src={copyIconDark}
-              alt="Copy icon"
-            />
-          ) : (
-            <img
-              className="absolute top-[1rem] right-[1.5rem] w-5 h-auto "
-              src={copyIconLight}
-              alt="Copy icon"
-            />
-          )}
-
+          <img
+            className="absolute top-[1rem] right-[1.5rem] w-5 h-auto "
+            src={theme === 'dark' ? copyIconDark : copyIconLight}
+            alt="Copy icon"
+          />
           <p className="text-[1.5rem]">{contentValue}</p>
         </section>
       )}

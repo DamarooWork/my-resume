@@ -26,7 +26,7 @@
         "linkHref": "https://t.me/damaroo8",
         "content": "@damaroo8",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-telegram-app-48.png",
+          "src": "src/assets/icons/contacts/tgIcon.png",
           "alt": "Telegram"
         }
       },
@@ -45,7 +45,7 @@
         "linkHref": "https://vk.com/damaroo",
         "content": "Damaroo",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-vk-com-48.png",
+          "src": "src/assets/icons/contacts/vkIcon.png",
           "alt": "ВК"
         }
       },
@@ -54,7 +54,7 @@
         "linkHref": "https://vk.com/damaroo_fanpage",
         "content": "Damaroo fanpage",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-vk-circled-48.png",
+          "src": "src/assets/icons/contacts/vkGroupIcon.png",
           "alt": "Группа VK"
         }
       },
@@ -63,7 +63,7 @@
         "linkHref": "",
         "content": "levkichigin@yandex.ru",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-email-48.png",
+          "src": "src/assets/icons/contacts/emailIcon.png",
           "alt": "Почта"
         }
       },
@@ -82,7 +82,7 @@
         "linkHref": "",
         "content": "damaroo",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-discord-48.png",
+          "src": "src/assets/icons/contacts/discordIcon.png",
           "alt": "Discord"
         }
       }

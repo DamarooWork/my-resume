@@ -35,7 +35,8 @@
         "linkHref": "https://github.com/DamarooWork",
         "content": "DamarooWork",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-github-50.png",
+          "src": "src/assets/icons/github/github-mark-white.png",
+          "srcWhite": "src/assets/icons/github/github-mark.png",
           "alt": "Github"
         }
       },

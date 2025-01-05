@@ -5,6 +5,8 @@ import calendarLight from '/Projects/React/my-resume/src/assets/icons/aboutPage/
 import calendarDark from '/Projects/React/my-resume/src/assets/icons/aboutPage/calendarDark.png'
 import mietLogoBlack from '/Projects/React/my-resume/src/assets/icons/aboutPage/mietLogoBlack.png'
 import mietLogoWhite from '/Projects/React/my-resume/src/assets/icons/aboutPage/mietLogoWhite.png'
+import checkmarkDark from '/Projects/React/my-resume/src/assets/icons/aboutPage/checkmarkDark.png'
+import checkmarkLight from '/Projects/React/my-resume/src/assets/icons/aboutPage/checkmarkLight.png'
 
 export default function EducationUniversity() {
   const { t } = useTranslation()
@@ -27,19 +29,11 @@ export default function EducationUniversity() {
               <h3 className="text-2xl font-black hover:underline cursor-pointer">
                 {t('aboutPage.educationUniversity.university')}
               </h3>
-              {theme === 'dark' ? (
-                <img
-                  className="h-[5.2rem] w-auto"
-                  src={mietLogoWhite}
-                  alt="University logo"
-                />
-              ) : (
-                <img
-                  className="h-20 w-auto"
-                  src={mietLogoBlack}
-                  alt="University logo"
-                />
-              )}
+              <img
+                className="h-[5.2rem] w-auto"
+                src={theme === 'dark' ? mietLogoWhite : mietLogoBlack}
+                alt="University logo"
+              />
             </section>
           </a>
         </hgroup>
@@ -75,53 +69,30 @@ export default function EducationUniversity() {
           </h4>
 
           <ul className="flex flex-col list-none gap-4">
-            {theme === 'dark'
-              ? (coursesArray as string[]).map((course, i) => {
-                  return (
-                    <div
-                      key={i}
-                      className="flex flex-row justify-start items-center gap-2"
-                    >
-                      <img
-                        src="src/assets/icons/aboutPage/checkmarkDark.png"
-                        alt="Checkmark"
-                      />
-                      <li>{course}</li>
-                    </div>
-                  )
-                })
-              : (coursesArray as string[]).map((course, i) => {
-                  return (
-                    <div
-                      key={i}
-                      className="flex flex-row justify-start items-center gap-2"
-                    >
-                      <img
-                        src="src/assets/icons/aboutPage/checkmarkLight.png"
-                        alt="Checkmark"
-                      />
-                      <li>{course}</li>
-                    </div>
-                  )
-                })}
+            {(coursesArray as string[]).map((course, i) => {
+              return (
+                <div
+                  key={i}
+                  className="flex flex-row justify-start items-center gap-2"
+                >
+                  <img
+                    src={theme === 'dark' ? checkmarkDark : checkmarkLight}
+                    alt="Checkmark"
+                  />
+                  <li>{course}</li>
+                </div>
+              )
+            })}
           </ul>
         </section>
 
         <div className="flex flex-row flex-wrap gap-4 "></div>
         <div className="absolute right-5 top-6 flex flex-row  gap-2 justify-end items-center">
-          {theme === 'dark' ? (
-            <img
-              className="w-5 h-auto"
-              src={calendarDark}
-              alt="Calendar icon"
-            />
-          ) : (
-            <img
-              className="w-5 h-auto"
-              src={calendarLight}
-              alt="Calendar icon"
-            />
-          )}
+          <img
+            className="w-5 h-auto"
+            src={theme === 'dark' ? calendarDark : calendarLight}
+            alt="Calendar icon"
+          />
           <time dateTime={t('aboutPage.educationUniversity.date.start')}>
             {t('aboutPage.educationUniversity.date.start')} -
           </time>

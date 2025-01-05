@@ -34,6 +34,7 @@ export default function HeaderMainPage() {
         </div>
         <div className=" relative mt-8 xl:mt-0 xl:basis-[40%]  ">
           <img
+            loading="lazy"
             className=" absolute top-[10%] left-[25%]   xl:top-[10%] 2xl:top-0 xl:left-0 parallax-effect w-[50%] xl:w-[100%] max-w-[600px]  h-auto  "
             src={avatar}
             alt="Beatiful man with long hair"

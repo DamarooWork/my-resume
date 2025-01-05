@@ -40,6 +40,7 @@ interface GiftBoxClick {
 interface IImgContact {
   src: string
   alt: string
+  srcWhite?: string
 }
 interface IContact {
   title: string

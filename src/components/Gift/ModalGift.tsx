@@ -18,7 +18,7 @@ export default function ModalGift({ children, title, onClose }: ModalProps) {
         onClick={onClose}
       />
       <img
-        className="absolute top-10 right-20 w-[100%] max-w-[50px]  h-auto  z-20"
+        className="fixed top-10 right-20 w-[100%] max-w-[50px]  h-auto  z-20"
         src={close}
         alt="Кнопка закрыть"
         onClick={onClose}

@@ -37,7 +37,19 @@ export default function Contact({
           download
         >
           <section className="relative flex flex-col justify-between items-center">
-            <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
+            {img.srcWhite ? (
+              theme === 'dark' ? (
+                <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
+              ) : (
+                <img
+                  className="w-[40px] h-auto"
+                  src={img.srcWhite}
+                  alt={img.alt}
+                />
+              )
+            ) : (
+              <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
+            )}
 
             <h3 className="text-[2rem] ">{title}</h3>
 
@@ -64,7 +76,19 @@ export default function Contact({
           target="_blank"
         >
           <section className="relative flex flex-col justify-between items-center">
-            <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
+            {img.srcWhite ? (
+              theme === 'dark' ? (
+                <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
+              ) : (
+                <img
+                  className="w-[40px] h-auto"
+                  src={img.srcWhite}
+                  alt={img.alt}
+                />
+              )
+            ) : (
+              <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
+            )}
 
             <h3 className="text-[2rem]">{title}</h3>
 
@@ -89,7 +113,19 @@ export default function Contact({
           className=" relative max-w-[30vw] min-w-[15vw] flex flex-col justify-between items-center   bg-[var(--section-color)] dark:bg-[var(--dark-section-color)]   transition ease-in  duration-300  border-0 rounded-3xl py-4 px-6 cursor-pointer hover:scale-[105%] active:scale-[100%] will-change-transform "
           onClick={() => handleCopyText(content)}
         >
-          <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
+          {img.srcWhite ? (
+            theme === 'dark' ? (
+              <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
+            ) : (
+              <img
+                className="w-[40px] h-auto"
+                src={img.srcWhite}
+                alt={img.alt}
+              />
+            )
+          ) : (
+            <img className="w-[40px] h-auto" src={img.src} alt={img.alt} />
+          )}
 
           <h3 className="text-[2rem]">{title}</h3>
           {theme === 'dark' ? (

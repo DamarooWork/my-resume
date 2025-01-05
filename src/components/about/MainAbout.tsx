@@ -20,7 +20,7 @@ export default function MainAbout() {
         <p className="text-2xl">{t('aboutPage.aboutMe')}</p>
       </section>
       <div className=" flex flex-row justify-between">
-        <section className="fade-effect-250 flex flex-col justify-start gap-5 w-[48%]">
+        <section className="fade-effect fade-time-250 flex flex-col justify-start gap-5 w-[48%]">
           <header className="flex items-center gap-5">
             {theme === 'dark' && (
               <img className="w-10 h-auto" src={jobWhiteIcon} alt="Job icon" />
@@ -36,7 +36,7 @@ export default function MainAbout() {
 
           <ProfExp />
         </section>
-        <section className="fade-effect-500 flex flex-col justify-start gap-5 w-[48%]">
+        <section className="fade-effect fade-time-500 flex flex-col justify-start gap-5 w-[48%]">
           <header className="flex items-center gap-5">
             {theme === 'dark' && (
               <img

@@ -1,3 +1,4 @@
-My resume site. Enjoy it!
+# My resume site
+Enjoy it!
 
 https://damaroowork.github.io/my-resume/

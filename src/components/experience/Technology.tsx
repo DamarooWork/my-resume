@@ -1,9 +1,9 @@
 export default function Technology({ img, title }: ITechnology) {
   return (
-    <section className=" m-auto">
+    <section className="m-auto">
       <div className="technology relative   cursor-pointer p-4 rounded-full w-52 h-52  flex shadow-xl hover:shadow-2xl bg-[var(--section-color)] dark:bg-[var(--dark-section-color)]">
         <img
-          className="absolute top-[20%] left-[20%]   w-[60%] h-auto m-auto transition-all ease-linear duration-500  will-change-transform"
+          className="absolute top-[20%] left-[20%]   w-[60%] h-auto m-auto transition-all ease-linear duration-500  will-change-transform "
           src={img.src}
           alt={img.alt}
         />

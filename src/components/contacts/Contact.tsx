@@ -28,6 +28,9 @@ export default function Contact({
       clearTimeout
     }
   }
+  function downloadFile() {
+    window.location.href = `https://yoursite.com/src/assets/files/exampleDoc.pdf`
+  }
   return (
     <>
       {download && linkHref ? (

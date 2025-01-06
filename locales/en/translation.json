@@ -146,50 +146,48 @@
         "backgroundImg": "src/assets/images/knpam.PNG"
       }
     ],
-    "educationHeader": "Образование",
+    "educationHeader": "Education",
     "educationUniversity": {
-      "position": "Студент",
-      "university": "Национальный исследовательский университет «Московский институт электронной техники», Москва",
+      "position": "Student",
+      "university": "National Research University of Electronic Technology, Moscow",
       "linkUniversity": "https://miet.ru/",
       "date": {
-        "start": "Сентябрь 2017",
-        "end": "Июль 2021"
+        "start": "September 2017",
+        "end": "July 2021"
       },
-      "courseTitle": "Направление",
-      "course": "Прикладная информатика",
-      "formTitle": "Форма обучения",
-      "form": "Очная",
-      "typeTitle": "Тип",
-      "type": "Техническая",
-      "keyCoursesTitle": "Ключевые навыки:",
+      "courseTitle": "Direction",
+      "course": "Applied Computer Science",
+      "formTitle": "Form of study",
+      "form": "Full-time",
+      "typeTitle": "Type",
+      "type": "Technical",
+      "keyCoursesTitle": "Key skills:",
       "keyCourses": [
-        "Проектирование, разработка, внедрение и сопровождение информационных систем",
-        "Работа в команде в качестве аналитика-исследователя, постановщика задач, программиста разработчика, тим лидера, продакт менеджера",
-        "Аналитические исследования и оптимизация бизнес-процессов предметной области, разработка технического задания, формирование требований к ИС",
-        "Взаимодействие с Заказчиком и создание всех видов обеспечения ИС (программного, организационного, информационного и др, всего 9 видов)"
-      ],
-      "": ""
+        "Design, development, implementation and support of information systems",
+        "Working in a team as an analyst-researcher, task setter, programmer developer, team leader, product manager",
+        "Analytical research and optimization of business processes in the subject area, development of technical specifications, formation of requirements for the IS",
+        "Interaction with the Customer and creation of all types of IS support (software, organizational, information, etc., 9 types in total)"
+      ]
     },
     "educationSchool": {
-      "position": "Школьник",
-      "school": "Гимназия №12, Тверь",
+      "position": "Schoolboy",
+      "school": "Gymnasium №12, Tver",
       "linkSchool": "https://tverxii.ru/",
       "date": {
-        "start": "Сентябрь 2006",
-        "end": "Июль 2017"
+        "start": "September 2006",
+        "end": "July 2017"
       },
 
-      "courseTitle": "Направление",
-      "course": "Физико-математическое",
+      "courseTitle": "Direction",
+      "course": "Physics and Mathematics",
 
-      "keyCoursesTitle": "Ключевые навыки:",
+      "keyCoursesTitle": "Key skills:",
       "keyCourses": [
-        "Формирование представлений о математике и физике как универсальном языке науки, средстве моделирования явлений и процессов, об идеях и методах математики и физики",
-        "Развитие логического мышления, пространственного воображения, алгоритмической культуры, критичности мышления;",
-        "Овладение математическими знаниями и умениями, необходимыми в повседневной жизни, для изучения школьных естественнонаучных дисциплин;",
-        "Воспитание средствами математики культуры личности: отношения к математике как части общечеловеческой культуры: знакомство с историей развития математики, эволюцией математических идей, понимания значимости математики для общественного прогресса."
-      ],
-      "": ""
+        "Formation of ideas about mathematics and physics as a universal language of science, a means of modeling phenomena and processes, about the ideas and methods of mathematics and physics",
+        "Development of logical thinking, spatial imagination, algorithmic culture, critical thinking;",
+        "Mastery of mathematical knowledge and skills necessary in everyday life, for studying school natural science disciplines;",
+        "Education of the culture of personality by means of mathematics: attitudes towards mathematics as part of universal human culture: acquaintance with the history of the development of mathematics, the evolution of mathematical ideas, understanding the importance of mathematics for social progress."
+      ]
     }
   },
 

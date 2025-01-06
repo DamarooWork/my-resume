@@ -25,7 +25,7 @@ export default function EducationUniversity() {
             href={t('aboutPage.educationUniversity.linkUniversity')}
             target="_blank"
           >
-            <section className="flex flex-row justify-start items-center">
+            <section className="flex flex-row justify-start items-center gap-5">
               <h3 className="text-2xl font-black hover:underline cursor-pointer">
                 {t('aboutPage.educationUniversity.university')}
               </h3>

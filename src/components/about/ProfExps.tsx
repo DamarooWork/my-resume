@@ -22,8 +22,6 @@ export default function ProfExps() {
               description={profExp.description}
               date={profExp.date}
               stack={profExp.stack}
-              backgroundImg={profExp.backgroundImg}
-              
             />
           </FadeInSection>
         )

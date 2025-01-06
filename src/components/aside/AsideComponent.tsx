@@ -1,5 +1,5 @@
 import FooterAsideButtons from './FooterButtons'
-import HeaderAside from './Header'
+import HeaderAside from './HeaderAside'
 import Navigation from './Navigation'
 
 export default function AsideComponent() {

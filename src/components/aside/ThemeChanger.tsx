@@ -6,27 +6,6 @@ import darkmodeLight from '/Projects/React/my-resume/src/assets/icons/theme/dark
 export default function ThemeChanger() {
   const { theme, toggleTheme } = useContext(ThemeContext)
 
-  function handleChangeThemeLight() {
-    localStorage.theme = 'light'
-
-    toggleTheme()
-    document.documentElement.classList.toggle(
-      'dark',
-      localStorage.theme === 'dark' ||
-        (!('theme' in localStorage) &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches)
-    )
-  }
-  function handleChangeThemeDark() {
-    localStorage.theme = 'dark'
-    toggleTheme()
-    document.documentElement.classList.toggle(
-      'dark',
-      localStorage.theme === 'dark' ||
-        (!('theme' in localStorage) &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches)
-    )
-  }
   function handleChangeTheme() {
     if (theme === 'dark') {
       localStorage.theme = 'light'

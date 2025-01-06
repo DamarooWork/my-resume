@@ -24,9 +24,9 @@
       {
         "title": "Telegram",
         "linkHref": "https://t.me/damaroo8",
-        "content": "t.me/damaroo8",
+        "content": "@damaroo8",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-telegram-app-48.png",
+          "src": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAER0lEQVR4nO1ZzW8TRxRfpYVDjy09UThBu2t6Qy0BUuCfqFrRC0LqpYeqt6JccoNKCAkpQQmKoPRYUGkVmHFCZINoGwklfMWJEkLsJHZwjGMH52Oevf56aMZxEn9lZ+y1A5J/0pMsrz37+719782bt5rWRBNN1I6b+IHuhKMGgXaDwF86YeM6hSWdsKQw8RnG+DX+G52yVq0DW7SdxqF+2GcQ9ptBYd6ggCqmEwgYhF04QNlnDSd+gK58ahC4qlNmqhIvEUKZqVPo/rxvZU9DyH9B4LROIFor8RIjENEpfF834odHcJdBodd24rQktHr4vewl34cf6RRovckbmyIIv6c95EdwVyPJGxsi2KDjJu6uWUAjwsaomODQXRN5B4Ufdoq8kTcC31VFXh9c/sSgsLjTAnQC0apKLK/z9STW5orjpckkTixncCGetXoKV5TI893Rjk2q2A45Ac8+SmD/QhpTWdyAb217AZyLow/2K3hftAe2Ef9m3dt+toX1FtwNpiVygV2QY9+BLaJPqZO3y+HiRFJmzXneNFryF11lDcRPrHs7AKWss9kshiJLODnjL/j+zKOE1NqOfva1RPhAey3eTlfw9ioDnPD5cfSlD9cgvikKEVsH41L30SmckxFwW5b4KXfO26/KeDuPZCqFc8HX+HRyGsemZxASZsF1P7OoQFsFELhlHUL84LHNIl9KeDsfLuGlGD6f8gny4945TJjJkt8NLEgk8KaNygiIVvL21ekUhhMWGYmIKyJc5gRxbhMzfvEkyuHyC6kEztuitYAK9T8Utya+NVzy9mJ2HlPpdMX//DhsygsgLFG1gPZREz2xTNmwKQ6XvHkDQcxkthfe5orbLMDitHV4IJcDvd4UjsUyJeGSt9lgSAjbDgtWLURVIWSRxMV2b7yUfCC0iDJwhZQSWC6JVcoot3NDhTH/KhxBWXRNKSWwXBlV3cja7q3ik3Xy7jEfXhuaQtMi7vP4aUQhgXMb2a/WIURZq+JjxT+f+YWAW89m8R/3/9j70INRKK35xTjljqvt+JR9JdnMMb/Kwr/8tygE3Bj2CQHcOt0e9K5VfhJRUy2BdcrmpKd5vHVVWfzIwBo+nvSK8OHkb7iG8bjzDR4ZjONQJFNWwMOwagKz81o9DzR/PAng9X89+LtrGI85YwWtBy+5xeiZTsmTJyxx8A7bq6mATwRUBJx+8Aa77o9iq3O57PUOT7LgXPDzY6UE7tRU4eiPfWz3oZ73/UHIonc1K8LLkPI+RKqem/JZpZ0CqjGHE76tivyGCAI9OyigS7Pl5QWFvxtOnsDdk/fxQ/uGuwRIAwXcsW24WzTk7W5E2Jy0y/PlwGeVdRk5EgjXnLBKc1MCV/gGUztxxtfo5GVbazT47sjbDtXeiVvuP+y88g5bF3RgCx868bkN79n5wYOf7HIv8JgpTnkEnvNrvCUWXeW78Jq1iSa09x9vAV7LaYWk/U+hAAAAAElFTkSuQmCC",
           "alt": "Telegram"
         }
       },
@@ -35,7 +35,8 @@
         "linkHref": "https://github.com/DamarooWork",
         "content": "DamarooWork",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-github-50.png",
+          "srcWhite": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABr0lEQVR4nO2Vu0oDQRSGPxVUFCwUJF4RL621F0RRsDOoqLWNhZdokdbKt1CJF7QSBEWCFoJPYGMVKy3shIgx3mKiEpiFZZiZnd0EscgPQ9jN+c+35zBnBkr6h2oHIsAFkADSYiXEuxWgrZjAFmATyAI/HisHHAEdhUIngRcLoLxSQDgodE1U4Bfqrn41SKW5AqBuuHXlrYr29gG9QMwDFBNxA1Lbm23AquRVUjeGgUagQvyOiPeOqiX/ts3IqHZvN/7UI/mzopNaRTQtHPQJHlLkWDYZzhWGY4LpVMoTNwXfKsD9AcFy1QlTcMpjY/lRreJQ0SqtANcRTA1SnldT8J0CPBEQPC3luTcFxxXgazGXflQD3Eh5zkyGqGacLm1PHzGvV4ocUZMpf59mNPA3YAeYBTolX/55DtgD3hXeDNDk9cUHLsM8cKL4gHHJMwp8GM7wfduLPykMj0A9cCgSPwHrGt+GBvpsU62jGde1uGDp6dJci1O2UEdLwDfwAIxZ7OxyBXSRgAqL9roTmuTEJINUKis/RlvAlwX4E9gFQhRRIXFtVmr+L/Mx6yXxZ/oFDl37po6ZopsAAAAASUVORK5CYII=",
+          "src": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABuUlEQVR4nO2VSytFURiGNwpRBpSOazqYGrskoswIYWxi4D4wNfIvkFuMlCKdGCi/wMToGDEwU+S4X45HqxZntVp77bU3yeC8dTq19/e+z/6+1sXzsvpvAmqBaeAQSAL38peUz6aAmt8EVgGLwDvBSgPbQN1Pof3AHeGVAvqiQmdlB1ElvDNROk3/AKrC3ToHqg3jbQaagJUA0Iqsa9XGXukCNoUXaNPoAMqBPPnfKZ4rNYWaf9lly5hWb4PTuDI5jZr/XUzSZhD71KS2kOB2Q8akzXBgMOyEgSpZe1pOwlZ8ZgC3RATrXSdtxWIF+i6skOBiLSdlKxZnr66SiOAyLefBVnxuAPdGBA9qORe24oQBfCL2ZUhoEXCq5ezbDHOYdeR0+mROvmNDxpzNVAO8+sAfgVVgGIhrvjgwAqwDTwbvK1AR9MWbimEU2DV8QI/m6QKe8deG68V/LQ1XQCmwJYNvgHkf34IP9DawWyVkSLkWxxw99QaoyBhwgipBE8AHcAl0B61sINcAHQ8F/ZK4xOV4v+VZpJRdh+5Ul9hGwBLw5gB+AdaAmPdbAmLy2sz3eZ/jutez8v5Sn8nRzQ3u3U6IAAAAAElFTkSuQmCC",
           "alt": "Github"
         }
       },
@@ -44,7 +45,7 @@
         "linkHref": "https://vk.com/damaroo",
         "content": "Damaroo",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-vk-com-48.png",
+          "src": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAACXBIWXMAAAsTAAALEwEAmpwYAAABBVBMVEUAAAAXd9IXddMad9AZd9EZdtIYdtIYdtIZddIZdtEZddEZdtEZdtEZdtEZddEZdtIZdtIbd9IceNMeedMgetMhe9QnftUnf9UrgdYyhdc5idg9i9k+jNk/jdlBjtpCj9pJkttKk9xNldxOltxSmN1dnt9en+BqpuJwquN3ruR5r+V8seWFtueIuOiJueiMuuiUv+qWweuaw+uexeyfxuykye2myu6tzu+20/G31PG/2fLC2vPD2/PF3fTG3fTI3vTK3/XS5PbW5vfd6/je6/jg7fnh7fni7vnp8vvs9Pvt9Pvu9fzv9fzx9vzx9/zy9/33+v34+/75+/76/P77/f7+/v////8/ciFpAAAAEHRSTlMAS0xNT4OFiL2+v8Dx8vP02HWCqwAAAR1JREFUSMft1ddyglAUhWFLYiyJLlLVxPRCeu/F9G4a5H//R8mFigMTOHrPumT2B8PZG3YiEaeH9BVKCk0pnw7WD8iQTOD+MiblAwUzyPlA0QyGfEBdJAbNSw/g2pIeAe4lSbYDd6HguVV3AIAkTbwDF6HgFGBWmvLADsBSKFgF2JOG22Dyp/OA/0D5C2iMSy1gXQFOLeKUjgA2PLAJsB11rDO/QKPSBNUVF7gdiezDMcBljU7moxtX+SCQBUOn7SB4KhtGY98rrS6/Apxb0cA6aQNp+g1gyzB8o4ce0KIDuHOmabVfvNFYB6gbx3ts7frz+0yStOvATfxNd/2rHPSBvBlkfSBtBkn/gsiY6vuDKyiVi3iPYjYZL/Ve8gcTsoo/KlxSMgAAAABJRU5ErkJggg==",
           "alt": "VK"
         }
       },
@@ -53,7 +54,7 @@
         "linkHref": "https://vk.com/damaroo_fanpage",
         "content": "Damaroo fanpage",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-vk-circled-48.png",
+          "src": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAACXBIWXMAAAsTAAALEwEAmpwYAAABBVBMVEUAAAAXd9IXddMad9AZd9EZdtIYdtIYdtIZddIZdtEZddEZdtEZdtEZdtEZddEZdtIZdtIbd9IceNMeedMgetMhe9QnftUnf9UrgdYyhdc5idg9i9k+jNk/jdlBjtpCj9pJkttKk9xNldxOltxSmN1dnt9en+BqpuJwquN3ruR5r+V8seWFtueIuOiJueiMuuiUv+qWweuaw+uexeyfxuykye2myu6tzu+20/G31PG/2fLC2vPD2/PF3fTG3fTI3vTK3/XS5PbW5vfd6/je6/jg7fnh7fni7vnp8vvs9Pvt9Pvu9fzv9fzx9vzx9/zy9/33+v34+/75+/76/P77/f7+/v////8/ciFpAAAAEHRSTlMAS0xNT4OFiL2+v8Dx8vP02HWCqwAAAR1JREFUSMft1ddyglAUhWFLYiyJLlLVxPRCeu/F9G4a5H//R8mFigMTOHrPumT2B8PZG3YiEaeH9BVKCk0pnw7WD8iQTOD+MiblAwUzyPlA0QyGfEBdJAbNSw/g2pIeAe4lSbYDd6HguVV3AIAkTbwDF6HgFGBWmvLADsBSKFgF2JOG22Dyp/OA/0D5C2iMSy1gXQFOLeKUjgA2PLAJsB11rDO/QKPSBNUVF7gdiezDMcBljU7moxtX+SCQBUOn7SB4KhtGY98rrS6/Apxb0cA6aQNp+g1gyzB8o4ce0KIDuHOmabVfvNFYB6gbx3ts7frz+0yStOvATfxNd/2rHPSBvBlkfSBtBkn/gsiY6vuDKyiVi3iPYjYZL/Ve8gcTsoo/KlxSMgAAAABJRU5ErkJggg==",
           "alt": "VK Group"
         }
       },
@@ -62,7 +63,7 @@
         "linkHref": "",
         "content": "levkichigin@yandex.ru",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-email-48.png",
+          "src": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB3VBMVEUAAADUqqru3d3/zLvww7TVg4PmtrLgsa3eubnSfHzRb2/orqznravn5+fq6urRbW3apaXQZ2fo4ODp6enm5ubNVVXi4uLVi4vWhYXohIHpg4DTe3vLRkbKNzfNSUnOQ0LPRUTQXl7ZYF/Z19fZ2NjZ2dna1dXa2trbZWPb29vcZGPczs7c0M/c3Nzd3d3eaWjezMve3t7fxcXf39/gb23g39/g4ODhwcHh2trh29vh4eHiuLfi0tHi397i4uLj4+PksrDkzs7k1dTk5OTl5eXmqKbmyMfm5ubncW/nc3DnoJ7npKPnw8LoT0voUEzoUU3oUk7oUk/oV1PolpTotrTou7no6OjpU0/pVFDpVVHpVlLpWlbpW1fpW1jpXFjpXFnpXVrpX1vpYFzpY1/pY2DpZ2PpbGnpbmrpbmvpgH3pkpDpq6np6enqY2DqZ2PqaGTqaWbqa2jqcm/qdnPqeXbqfHnqfXrqiYfqjozqmJbqnpzq6urrcGzrcm7rdnPrenfr6+vsfnzsf3zs7Ozth4TtkY/t7e3ul5XuoqDu7u7vqKbwsa/ws7Hwu7nxv77xzMvy0M/y0dDz19bz2tnz3Nvz397z4uL05eX06ur08PD17e318vH18vL19PT19fX8WoS3AAAAHXRSTlMABg8PER8/QkZ/vb/AwMfJ0dbY2Nnz8/b5+vr8/WEBVbEAAAHrSURBVEjH7ZXpOxtRFIe1qqh9abUYJToIamk4CBK1hXI1al9qqa1VW2vf10auXTeq4m91584dMclkjA+++X2695z3nec5Zz5cL6/73FEeBYZHaEh4gLfI+w6h8eOLG3M8jj4/pkI0QshqP1fHz+1Wgr2gwkckZPm3Gv9nhULdVOijZ9S+6/CEO3bbRaaPCikt4g2tnyjzJ+sMaEmlAqfrZYWuAyX+oIu1e3WcKHAvq1kJbZ264mc/pF5VPCcJHJfZwaqjh3L+aIw1PuQI3JXAZU2yRt32Pyf+3/6elb+/5eSCPvFdPet9+ynxv5ZYyTpfDC4CJPN5A6zdtkMX7Nhjy0T9tQBugoHnk4al+Vb/kmVuSLfZfFAQIJvn+ZJOxnTs70tr6GwEUBQggxhpM8glU0XgSQA9MV7VtF7H6xdywbNABid5M+jkJyoB1AQDNZIa6tgvmSsAdUFYlZDCTwLf0wRwk0BXRZL+BaHpUtAgwGvR4Cu+AmgSDHrKZxhBoyAO7o57FsjgyWa4jQAmpe+rCBab5TaCcRFjXKZdMG8SHttMWgWLDdOsaRNMi1jKiJoQy4QyG3amXFGIo0IYFYzNWBazkhBDBZ+n5Ghak/N40+guJPiJD8QD/ychQcGuiXwmz/Oo0If3j+9d5RLhRKrxSLaBGQAAAABJRU5ErkJggg==",
           "alt": "Email"
         }
       },
@@ -72,7 +73,7 @@
         "content": "Download",
         "download": true,
         "img": {
-          "src": "src/assets/icons/contacts/icons8-portfolio-48.png",
+          "src": "data:image/jpeg;base64,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",
           "alt": "My resume"
         }
       },
@@ -81,7 +82,7 @@
         "linkHref": "",
         "content": "damaroo",
         "img": {
-          "src": "src/assets/icons/contacts/icons8-discord-48.png",
+          "src": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADqUlEQVR4nO1Y32scVRReVFT0RS1tClr8A/LSat9sMS+SQvxBwaq0RfMuFWnpS63sk9HOObtNilXazDmzCcSahEqpvohgKYiVVkp/mNIWChUqiDV5CC3EkuQrZ3YSTebH7uzOuinMBwd2597z3e+cO/fOubdQyJEjR44cOVKiOIZHWdHNijILfmLB3+Shq15/60uKSVb8QoJDLHh1YACPFVoNcvE8Kw6S4jYrwIqbvgDFKxZUvTwm1hJAii9IcMu4LCAS9NsYmQsvDeIZFhwmxb1gsPMkeKtYxEM0jDUkeJMFfSw44bcp/mTBVBAk7Lc9sza/j+AT8xkQrDaOkodtfluV28YYOOjhqWzEC3YuZlwwVRK82zeEVST4gBTnWDG3KDS9zbHgLHvY5XN6eGdhLFL85Si2NyWeXPT8Z7AfHMFWVoySYqYJ0ZFGVc5RR/EGK75ffO6ipyHxxSIeIcG1gOgyC05lLZrjg/mRBReD/1fHxvBw+uwr3vu/BHMtc7EjfQCC39ouXAMTXEwn3kNX20XrUjug2Jzm9fmq3YI5PAsjdYkvHsETLLjTdsEasrs0jCdrBsCKt1eAWESZffDqCWC83UI53kYTxdt+u6QEWGFGikkrPWIDKLvYmJL0Z8fDer84c7GBBGda5IMFO6B4ITYAcrE3RTYuLK9A/TL73y9oJj68nEOwJ+n9/y5FAK9FcQS1TGY+vNwEJ+NnIKjN6wpgGGuiOKxEztKHwwH8Hl/zp1lQMWIcD2uz9OEI+3QET4cDELychoRdvJ76dWjER+ssK+xQkWoGYhYkCS5l6cPRr9H74QDsgJ6GpLojnLFtrejhca7gRTukt8KHw8ahAEjwdQNEK6ewY8XpByiAU+EABNdjHCbSbK9ZGdnNhmIisk1wLWoGphMiPsyCYRLMt1y4YJ4UQ6z4MqHfdNQMfFSDXFmwiRXfkGC2BcJnWXDc8fASCyo1+u8LBRDMwu4aWZ6wAowV60ixnwW/NjMrVM32OUveZ0fxnF/cKa4k9XcEHxaSUPKwhRV/JAw8RwIpVfCs9e8fRIf/IbKbOcW4CfLXjN3GCWaDzNrvW0HbmPU1n/5BdBiHiSeFl3RJFqzD7kI9sE+1f2+ZdIEl+MfOzlYaFxqE42E9C44ZV8JiniHF55HlQy34mRFQwi50t1xBZ6MBlCvoNI6EjDsLM90U7BTkL2DBx6T4lhQ3/IFd9DbLzS56/QO74kbAbWtrU+LJK0eOHDly5ChUcR9n/0ooyBneJQAAAABJRU5ErkJggg==",
           "alt": "Discord"
         }
       }
@@ -92,17 +93,20 @@
     "h2": "Let me tell you about myself",
     "aboutMe": "As a Software Engineer with a passion for UI/UX design, I blend technical expertise with creative design thinking to build exceptional digital experiences. I focus on creating intuitive, user-centered solutions that solve real-world problems while maintaining clean, efficient code",
     "profExpHeader": "Professional Experience",
-    "profExpSumTime": "9 месяцев",
-    "stack": "Stack:",
+    "profExpSumTime": "9 months",
+    "stack": "Technologies:",
+    "education": "Bachelor",
     "profExps": [
       {
         "position": "Frontend Developer",
-        "job": "Интернет-агентство «Infospice», Москва",
+        "job": "«Infospice», Moscow",
         "linkJob": "http://www.infospice.ru",
-        "description": "Поддержка и работа над сайтом Третьяковской галереи. Результат работы - https://www.tretyakovgallery.ru/. Я выполнял работу и улучшение дизайна после получения правок и желаемых изменений в дизайне и функционале сайта от клиента.",
+        "workDoneTitle": "Result",
+        "workDone": "https://www.tretyakovgallery.ru/",
+        "description": "Support and work on the Tretyakov Gallery website. I did the work and design improvements after receiving edits and desired changes in the design and functionality of the website from the client",
         "date": {
-          "start": "Май 2021",
-          "end": "Сентябрь 2021"
+          "start": "May 2021",
+          "end": "September 2021"
         },
         "stack": [
           "Vue",
@@ -118,12 +122,14 @@
       },
       {
         "position": "Frontend Developer",
-        "job": "Sensorium, Москва",
+        "job": "Sensorium, Moscow",
         "linkJob": "https://sensorium.cloud/ru/",
-        "description": "Frontend-разработка сайта.Результат моей работы: https://knpam.rusneb.ru/ Выполненные задачи: \n- разработка SPA \n- работа с API(axios) \n- обработка ошибок и перенаправление на страницу 404\n- навигация\n- отрисовка данных, полученных с Backend(списки элементов)\n- глобальный поиск (axios)\n- фильтрация, поиск в фильтрах, и сортировки поиска книг (по типу, дате, языку и т.д.)",
+        "workDoneTitle": "The result of my work",
+        "workDone": "https://knpam.rusneb.ru/",
+        "description": "Frontend website development from scratch. Completed tasks: SPA development, working with API (axios), error handling and redirection to 404 page, navigation, rendering data received from Backend, global search, filtering, searching in filters, and sorting book search (by type, date, language, etc.)",
         "date": {
-          "start": "Январь 2021",
-          "end": "май 2021"
+          "start": "January 2021",
+          "end": "May 2021"
         },
         "stack": [
           "Vue",
@@ -136,9 +142,55 @@
           "HTML",
           "CSS",
           "JavaScript"
-        ]
+        ],
+        "backgroundImg": "src/assets/images/knpam.PNG"
       }
-    ]
+    ],
+    "educationHeader": "Образование",
+    "educationUniversity": {
+      "position": "Студент",
+      "university": "Национальный исследовательский университет «Московский институт электронной техники», Москва",
+      "linkUniversity": "https://miet.ru/",
+      "date": {
+        "start": "Сентябрь 2017",
+        "end": "Июль 2021"
+      },
+      "courseTitle": "Направление",
+      "course": "Прикладная информатика",
+      "formTitle": "Форма обучения",
+      "form": "Очная",
+      "typeTitle": "Тип",
+      "type": "Техническая",
+      "keyCoursesTitle": "Ключевые навыки:",
+      "keyCourses": [
+        "Проектирование, разработка, внедрение и сопровождение информационных систем",
+        "Работа в команде в качестве аналитика-исследователя, постановщика задач, программиста разработчика, тим лидера, продакт менеджера",
+        "Аналитические исследования и оптимизация бизнес-процессов предметной области, разработка технического задания, формирование требований к ИС",
+        "Взаимодействие с Заказчиком и создание всех видов обеспечения ИС (программного, организационного, информационного и др, всего 9 видов)"
+      ],
+      "": ""
+    },
+    "educationSchool": {
+      "position": "Школьник",
+      "school": "Гимназия №12, Тверь",
+      "linkSchool": "https://tverxii.ru/",
+      "date": {
+        "start": "Сентябрь 2006",
+        "end": "Июль 2017"
+      },
+
+      "courseTitle": "Направление",
+      "course": "Физико-математическое",
+
+      "keyCoursesTitle": "Ключевые навыки:",
+      "keyCourses": [
+        "Формирование представлений о математике и физике как универсальном языке науки, средстве моделирования явлений и процессов, об идеях и методах математики и физики",
+        "Развитие логического мышления, пространственного воображения, алгоритмической культуры, критичности мышления;",
+        "Овладение математическими знаниями и умениями, необходимыми в повседневной жизни, для изучения школьных естественнонаучных дисциплин;",
+        "Воспитание средствами математики культуры личности: отношения к математике как части общечеловеческой культуры: знакомство с историей развития математики, эволюцией математических идей, понимания значимости математики для общественного прогресса."
+      ],
+      "": ""
+    }
   },
 
   "experiencePage": {

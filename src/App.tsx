@@ -12,6 +12,7 @@ import { ModalContext } from './hooks/ModalContext'
 import FireworksComponent from './components/gift/Fireworks'
 import ModalGift from './components/gift/ModalGift'
 import { useTranslation } from 'react-i18next'
+import ScrollButton from './components/UI/ScrollButton'
 export default function App() {
   const { t } = useTranslation()
   const { modal, open: openModal, close: closeModal } = useContext(ModalContext)
@@ -32,6 +33,7 @@ export default function App() {
           <FireworksComponent />
         </ModalGift>
       )}
+      <ScrollButton/>
     </>
   )
 }

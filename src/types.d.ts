@@ -60,6 +60,5 @@ interface IProfExp {
     start: string
     end: string
   }
-  stack: string[],
-  backgroundImg?: string
+  stack: string[]
 }

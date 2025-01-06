@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import ProfExp from './ProfExps'
-import jobBlackIcon from '/Projects/React/my-resume/src/assets/icons/aboutPage/jobBlack.png'
-import jobWhiteIcon from '/Projects/React/my-resume/src/assets/icons/aboutPage/jobWhite.png'
+import computerLight from '/Projects/React/my-resume/src/assets/icons/aboutPage/computerLight.png'
+import computerDark from '/Projects/React/my-resume/src/assets/icons/aboutPage/computerDark.png'
 import educationBlackIcon from '/Projects/React/my-resume/src/assets/icons/aboutPage/educationBlack.png'
 import educationWhiteIcon from '/Projects/React/my-resume/src/assets/icons/aboutPage/educationWhite.png'
 import meDarkIcon from '/Projects/React/my-resume/src/assets/icons/aboutPage/meDark.png'
@@ -36,20 +36,11 @@ export default function MainAbout() {
         <section className="fade-effect fade-time-250 flex flex-col justify-start gap-5 w-[48%]">
           <FadeInSection>
             <header className="flex items-center gap-5">
-              {theme === 'dark' && (
-                <img
-                  className="w-10 h-auto"
-                  src={jobWhiteIcon}
-                  alt="Job icon"
-                />
-              )}
-              {theme === 'light' && (
-                <img
-                  className="w-10 h-auto"
-                  src={jobBlackIcon}
-                  alt="Job icon"
-                />
-              )}
+              <img
+                className="w-10 h-auto"
+                src={theme === 'dark' ? computerDark : computerLight}
+                alt="Job icon"
+              />
               <h2 className="text-4xl text-[var(--link-color)] dark:text-[var(--dark-link-color)]">
                 {t('aboutPage.profExpHeader')}
               </h2>

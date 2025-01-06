@@ -1,9 +1,10 @@
+import './style.css'
+import Technologies from './Technologies'
+
 export default function MainExperience() {
   return (
-    <main className="flex justify-center text-center  mt-[25vh]">
-      <h2 className="text-typing text-6xl leading-relaxed text-center">
-        Coding................
-      </h2>
+    <main className="pb-10">
+      <Technologies />
     </main>
   )
 }

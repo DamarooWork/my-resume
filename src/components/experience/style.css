@@ -1,0 +1,19 @@
+.technology {
+  background: radial-gradient(
+    70deg,
+    var(--main-bg-color),
+    var(--hover-bg-color)
+  );
+}
+.technology img {
+  transition: all linear 500ms;
+}
+.technology:hover img {
+  scale: 0.5;
+  opacity: 0.5;
+}
+.technology:hover h3 {
+  transition: all linear 500ms;
+
+  opacity: 1;
+}

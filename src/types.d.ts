@@ -62,3 +62,10 @@ interface IProfExp {
   }
   stack: string[]
 }
+interface ITechnology {
+  title: string
+  img: {
+    src: string
+    alt: string
+  }
+}

@@ -5,7 +5,12 @@ export const ThemeProvider: any = ({ children }: any) => {
   const [theme, setTheme] = useState<Theme>('dark')
 
   useEffect(() => {
-    setTheme(localStorage?.theme)
+    if (localStorage.theme) {
+      setTheme(localStorage?.theme)
+    } else {
+      localStorage.theme = theme
+    }
+
     document.documentElement.classList.toggle(
       'dark',
       localStorage.theme === 'dark' ||

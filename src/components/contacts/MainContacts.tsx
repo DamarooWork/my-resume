@@ -9,7 +9,7 @@ export default function MainContacts() {
     returnObjects: true,
   })
   return (
-    <main className="pt-5 grid grid-cols-3 gap-12 justify-items-center fade-effect">
+    <main className="pt-8 grid grid-cols-3 gap-4 justify-items-center fade-effect">
       {contacts.map((contact) => {
         return (
           <Contact

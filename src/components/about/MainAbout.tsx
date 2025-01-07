@@ -14,7 +14,7 @@ export default function MainAbout() {
   const { t } = useTranslation()
   const { theme } = useContext(ThemeContext)
   return (
-    <main className="">
+    <main className=" ">
       <FadeInSection>
         <section className=" fade-effect mb-16">
           <div className="flex flex-row  gap-5 justify-start items-center  mb-4">
@@ -33,7 +33,7 @@ export default function MainAbout() {
         </section>
       </FadeInSection>
       <div className=" flex flex-row justify-between">
-        <section className="fade-effect fade-time-250 flex flex-col justify-start gap-5 w-[48%]">
+        <section className="fade-effect fade-time-250 flex flex-col justify-start gap-5 w-[48%]  mb-16">
           <FadeInSection>
             <header className="flex items-center gap-5">
               <img

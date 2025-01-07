@@ -4,8 +4,8 @@ import { ThemeContext } from '../../hooks/ThemeContext'
 export default function Technology({ img, title }: ITechnology) {
   const { theme } = useContext(ThemeContext)
   return (
-    <section className="m-auto fade-effect p-16">
-      <div className="technology relative cursor-pointer p-4 rounded-full w-52 h-52  flex shadow-white hover:shadow-white shadow-lg hover:shadow-xl bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] transition-shadow ease-in-out duration-500">
+    <section className="fade-effect p-12 ">
+      <div className="technology relative cursor-pointer p-4 rounded-full w-52 h-52  flex shadow-[0_0_15px_10px_rgba(255,255,255,0.2)] hover:shadow-[0_10px_25px_10px_rgba(255,255,255,0.6)] bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] transition-shadow ease-in-out duration-500 m-auto">
         <img
           className="absolute top-[20%] left-[20%]   w-[60%] h-auto m-auto transition-all ease-linear duration-500  will-change-transform rounded-2xl "
           src={

@@ -89,11 +89,11 @@ const technologiesArray: ITechnology[] = [
 ]
 export default function Technologies() {
   return (
-    <div className="technologies grid grid-cols-1 md:grid-cols-[repeat(2,_1fr)] xl:grid-cols-[repeat(3,_1fr)] 2xl:grid-cols-[repeat(4,_1fr)] ">
+    <div className="technologies grid grid-cols-1  sm:grid-cols-[repeat(2,_1fr)] xl:grid-cols-[repeat(3,_1fr)] 3xl:grid-cols-[repeat(4,_1fr)] flex-nowrap ">
       {technologiesArray.map((tech) => {
         return (
-          <FadeInSection key={tech.title}>
-            <Technology {...tech} />
+          <FadeInSection>
+            <Technology key={tech.title} {...tech} />
           </FadeInSection>
         )
       })}

@@ -17,7 +17,7 @@ export default function ProfExp({
   const { t } = useTranslation()
 
   return (
-    <section className="relative flex flex-col bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] py-4 px-8 border-2 rounded-2xl  border-[var(--link-color)] dark:border-[var(--dark-link-color)] ">
+    <section className="relative flex flex-col bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] py-4 px-8  mb-16 border-2 rounded-2xl  border-[var(--link-color)] dark:border-[var(--dark-link-color)] ">
       <hgroup className="mb-8">
         <h2 className="text-3xl font-semibold text-[var(--link-color)] dark:text-[var(--dark-link-color)] ">
           {position}

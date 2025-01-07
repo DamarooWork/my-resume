@@ -11,8 +11,8 @@ export default function Navigation() {
   const styleNormalNavLink =
     'border-[var(--hover-bg-color)] dark:border-[var(--hover-bg-dark-color)] text-[var(--main-color)] dark:text-[var(--main-dark-color)]'
   return (
-    <nav className="navAside w-[100%] ">
-      <ul className="flex  flex-col text-2xl  gap-[1.6rem]  justify-center items-start pl-4 py-2   ">
+    <nav className="navAside w-[100%]">
+      <ul className="flex  flex-col text-2xl  gap-[1.6rem]     pl-16 lg:pl-4 py-2  ">
         <li>
           <NavLink
             id="home"

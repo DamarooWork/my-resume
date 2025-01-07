@@ -13,6 +13,7 @@ import FireworksComponent from './components/gift/Fireworks'
 import ModalGift from './components/gift/ModalGift'
 import { useTranslation } from 'react-i18next'
 import ScrollButton from './components/UI/ScrollButton'
+import ScrollToTop from './components/UI/ScrollToTop'
 export default function App() {
   const { t } = useTranslation()
   const { modal, open: openModal, close: closeModal } = useContext(ModalContext)
@@ -20,6 +21,7 @@ export default function App() {
   return (
     <>
       <AsideComponent />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -33,7 +35,7 @@ export default function App() {
           <FireworksComponent />
         </ModalGift>
       )}
-      <ScrollButton/>
+      <ScrollButton />
     </>
   )
 }

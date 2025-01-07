@@ -9,7 +9,7 @@ export default function ProfExps() {
     returnObjects: true,
   })
   return (
-    <div className="flex flex-col justify-start gap-10">
+    <div className="flex flex-col justify-start">
       {profExps.map((profExp) => {
         return (
           <FadeInSection key={profExp.date.start}>

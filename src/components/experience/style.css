@@ -1,12 +1,21 @@
 .technology:hover img {
-  scale: 0.5;
+  scale: 0.7;
   opacity: 0.5;
-  animation: spin 3s linear infinite;
+  animation: spin 2s infinite ease-in-out;
 }
 .technology:hover h3 {
   transition: all linear 500ms;
   font-size: 2rem;
   opacity: 1;
+  -webkit-text-stroke: 1px var(--main-bg-color);
+  text-shadow: 3px 3px 0 var(--main-bg-color), -1px -1px 0 var(--main-bg-color),
+    1px -1px 0 var(--main-bg-color), -1px 1px 0 var(--main-bg-color),
+    1px 1px 0 var(--main-bg-color);
+}
+.dark .technology:hover h3 {
+  -webkit-text-stroke: 1px black;
+  text-shadow: 3px 3px 0 black, -1px -1px 0 black, 1px -1px 0 black,
+    -1px 1px 0 black, 1px 1px 0 black;
 }
 @media (min-width: 1920px) {
   .technology:hover h3 {

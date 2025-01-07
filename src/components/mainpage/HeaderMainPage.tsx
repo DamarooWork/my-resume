@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import avatar from '/Projects/React/my-resume/src/assets/images/myAvatar.jpg'
-import hoverIconSrc from '/Projects/React/my-resume/src/assets/icons/Others/hover-icon-png-23.jpg'
+// import hoverIconSrc from '/Projects/React/my-resume/src/assets/icons/Others/hover-icon-png-23.jpg'
 import AppButton from '../UI/AppButton'
 import Resume_Kichigin_LA from '/Projects/React/my-resume/src/assets/files/Resume_Kichigin_LA.pdf'
 
@@ -23,7 +23,7 @@ export default function HeaderMainPage() {
           <div className="fade-effect fade-time-500 py-[8vh]">
             <AppButton
               link_out={Resume_Kichigin_LA}
-              btnClasses="relative border-0 rounded-2xl border-[var(--hover-bg-color)] py-4 px-8  text-2xl gradient-bg text-white transition ease-in-out  duration-150 hover:scale-[105%] active:scale-[95%]"
+              btnClasses="relative border-0 rounded-2xl border-[var(--hover-bg-color)] py-4 px-8  text-2xl gradient-bg text-white transition ease-in-out  duration-150 hover:scale-[105%] active:scale-[95%] shadow-[0_2px_5px_2px_rgba(30,27,75,0.1)] hover:shadow-[0_5px_10px_5px_rgba(30,27,75,0.2)] dark:shadow-[0_2px_5px_2px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_5px_10px_5px_rgba(255,255,255,0.2)]"
             >
               <>
                 {t('home.btnText')}
@@ -36,8 +36,8 @@ export default function HeaderMainPage() {
         <div className=" relative mt-8 xl:mt-0 xl:basis-[40%]  ">
           <img
             loading="lazy"
-            className=" absolute top-[10%] left-[25%]   xl:top-[10%] 2xl:top-0 xl:left-0 parallax-effect w-[50%] xl:w-[100%] max-w-[600px]  h-auto  "
-            src={avatar}
+            className="  parallax-effect absolute top-[10%] left-[25%]   xl:top-[10%] 2xl:top-0 xl:left-0 w-[50%] xl:w-[100%] max-w-[600px]  h-auto  "
+            src={avatar}  
             alt="Beatiful man with long hair"
           />
           {/* <img

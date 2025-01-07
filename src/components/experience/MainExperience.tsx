@@ -3,7 +3,7 @@ import Technologies from './Technologies'
 
 export default function MainExperience() {
   return (
-    <main className="pb-10">
+    <main className="">
       <Technologies />
     </main>
   )

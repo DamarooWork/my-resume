@@ -24,9 +24,9 @@ export default function LanguageChanger() {
   }
   const mainBtnStyle = () => {
     if (isSelectOpen) {
-      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative border-t-0 rounded-t-none  transition-transform ease-in  duration-300 hover:scale-115 will-change-transform'
+      return 'relative h-[40px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative border-t-0 rounded-t-none  transition-transform ease-in  duration-300 hover:scale-115 will-change-transform'
     } else
-      return 'relative h-[42px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative transition-transform ease-in  duration-300 hover:scale-115 will-change-transform'
+      return 'relative h-[40px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl  relative transition-transform ease-in  duration-300 hover:scale-115 will-change-transform'
   }
   const elemsStyle = () => {
     if (isSelectOpen) {
@@ -35,7 +35,7 @@ export default function LanguageChanger() {
       return 'relative flex flex-row justify-start items-center cursor-pointer px-1 pt-1 mr-2  text-nowrap'
   }
   const modalStyle = () => {
-    return 'flex  w-[calc(100%+4px)] flex-col absolute bottom-[38px] left-[-2px] border-2 border-[var(--main-color)] rounded-xl pt-1 px-2   dark:border-[var(--main-dark-color)] rounded-b-none  border-b-0'
+    return 'flex  w-[calc(100%+4px)] flex-col absolute bottom-[36px] left-[-2px] border-2 border-[var(--main-color)] rounded-xl pt-2 px-2   dark:border-[var(--main-dark-color)] rounded-b-none  border-b-0'
   }
   return (
     <section className={mainBtnStyle()} ref={ref}>
@@ -44,7 +44,7 @@ export default function LanguageChanger() {
         onClick={() => setSelectOpen((prev) => !prev)}
       >
         <img
-          className="w-[30px] h-auto"
+          className="w-7 h-auto"
           src={theme === 'dark' ? languageDark : languageLight}
           alt="World icon"
         />

@@ -11,6 +11,7 @@ import html from '/Projects/React/my-resume/src/assets/icons/experiencePage/html
 import css from '/Projects/React/my-resume/src/assets/icons/experiencePage/css.png'
 import githubLight from '/Projects/React/my-resume/src/assets/icons/github/githubLight.png'
 import githubDark from '/Projects/React/my-resume/src/assets/icons/github/githubDark.png'
+import antd from '/Projects/React/my-resume/src/assets/icons/experiencePage/antd.png'
 import { FadeInSection } from '../../hooks/FadeinSection'
 
 const technologiesArray: ITechnology[] = [
@@ -66,6 +67,13 @@ const technologiesArray: ITechnology[] = [
     },
   },
   {
+    title: 'Ant design',
+    img: {
+      src: antd,
+      alt: 'antd icon',
+    },
+  },
+  {
     title: 'JavaScript',
     img: {
       src: js,
@@ -89,7 +97,7 @@ const technologiesArray: ITechnology[] = [
 ]
 export default function Technologies() {
   return (
-    <div className="technologies grid grid-cols-1  sm:grid-cols-[repeat(2,_1fr)] xl:grid-cols-[repeat(3,_1fr)] 3xl:grid-cols-[repeat(4,_1fr)] flex-nowrap ">
+    <div className="technologies grid grid-cols-1  sm:grid-cols-[repeat(2,_1fr)] xl:grid-cols-[repeat(3,_1fr)] 3xl:grid-cols-[repeat(3,_1fr)] 4xl:grid-cols-[repeat(4,_1fr)] flex-nowrap ">
       {technologiesArray.map((tech) => {
         return (
           <FadeInSection>

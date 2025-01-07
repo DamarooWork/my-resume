@@ -5,6 +5,11 @@
 }
 .technology:hover h3 {
   transition: all linear 500ms;
-  font-size: 1.9rem;
+  font-size: 2rem;
   opacity: 1;
+}
+@media (min-width: 1920px) {
+  .technology:hover h3 {
+    font-size: 2.6rem;
+  }
 }

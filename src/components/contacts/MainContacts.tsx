@@ -1,6 +1,5 @@
 import Contact from './Contact'
 import { useTranslation } from 'react-i18next'
-// const Contacts: IContact[] = ContactsJson
 
 export default function MainContacts() {
   const { t } = useTranslation()

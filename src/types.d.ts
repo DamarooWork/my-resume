@@ -66,6 +66,7 @@ interface ITechnology {
   title: string
   img: {
     src: string
+    srcForTheme?: string
     alt: string
   }
 }

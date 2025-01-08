@@ -1,6 +1,6 @@
 {
   "nativeName": "한국인",
-
+"siteTitle": "재개하다 Kichigin L.A.",
   "navigation": {
     "home": "집",
     "about": "에 대한",
@@ -195,5 +195,11 @@
   },
   "portfolioPage": {
     "h1": "포트폴리오"
+  },
+  "page404": {
+    "errorTitle": "404",
+    "text": "어머! 문제가 발생했습니다. 페이지를 찾을 수 없습니다.",
+    "textTitlePage": "페이지를 찾을 수 없습니다",
+    "btnText": "메인 페이지로 돌아가기"
   }
 }

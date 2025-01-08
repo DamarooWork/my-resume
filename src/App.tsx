@@ -14,6 +14,8 @@ import ModalGift from './components/gift/ModalGift'
 import { useTranslation } from 'react-i18next'
 import ScrollButton from './components/UI/ScrollButton'
 import ScrollToTop from './components/UI/ScrollToTop'
+import ProjectPage from './pages/ProjectPage'
+import Page404 from './pages/Page404'
 export default function App() {
   const { t } = useTranslation()
   const { modal, open: openModal, close: closeModal } = useContext(ModalContext)
@@ -23,11 +25,15 @@ export default function App() {
       <AsideComponent />
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/experience" element={<ExperiencePage />} />
-        <Route path="/portfolio" element={<PortfolioPage />} />
-        <Route path="/contacts" element={<ContactsPage />} />
+        <Route index element={<MainPage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="experience" element={<ExperiencePage />} />
+        <Route path="portfolio">
+          <Route index element={<PortfolioPage />} />
+          <Route path=":portfolioName" element={<ProjectPage />} />
+        </Route>
+        <Route path="contacts" element={<ContactsPage />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
       <GiftBox click={() => openModal()} />
       {modal && (

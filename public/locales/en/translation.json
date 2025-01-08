@@ -1,6 +1,6 @@
 {
   "nativeName": "English",
-
+  "siteTitle": "Resume Kichigin L.A.",
   "navigation": {
     "home": "Home",
     "about": "About",
@@ -196,5 +196,11 @@
   },
   "portfolioPage": {
     "h1": "Portfolio"
+  },
+  "page404": {
+    "errorTitle": "404",
+    "text": "Oops! Something is wrong. Page not found.",
+    "textTitlePage": "Page not found",
+    "btnText": "Return to the main page"
   }
 }

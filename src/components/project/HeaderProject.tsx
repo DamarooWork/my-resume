@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
-export default function HeaderPortfolio() {
+export default function HeaderProject() {
   const { t } = useTranslation()
   return (
     <header className="fade-effect-top">

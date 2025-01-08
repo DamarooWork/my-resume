@@ -70,3 +70,20 @@ interface ITechnology {
     alt: string
   }
 }
+type ITypesOfProject = 'Commercial' | 'Mine' | 'ForFun' | 'Old' | ''
+interface IProject {
+  id: string
+  img: {
+    src: string
+    alt: string
+  }
+  title: string
+  link: string
+  date: string
+  description: string
+  stackTitle: string
+  stack: ITypeOfProjects[]
+  categories: string[]
+  myRole: string
+}
+

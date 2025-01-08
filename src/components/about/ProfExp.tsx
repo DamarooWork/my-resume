@@ -41,18 +41,18 @@ export default function ProfExp({
       </section>
       <p className="text-xl mb-8">{description}</p>
       <h4 className="text-2xl mb-4">{t('aboutPage.stack')}</h4>
-      <div className="flex flex-row flex-wrap gap-4 ">
+      <ul className="flex flex-row flex-wrap gap-4 ">
         {stack.map((s) => {
           return (
-            <div
+            <li
               key={s}
               className="border-2 border-[var(--main-color)] dark:border-[var(--dark-main-color)]  rounded-3xl py-2 px-4"
             >
               {s}
-            </div>
+            </li>
           )
         })}
-      </div>
+      </ul>
       <div className="absolute right-5 top-6 flex flex-row  gap-2 justify-end items-center">
         <img
           className="w-5 h-auto"

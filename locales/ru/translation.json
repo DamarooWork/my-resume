@@ -199,20 +199,37 @@
   },
   "portfolioPage": {
     "h1": "Портфолио",
-    "h2": "Проекты, которыми я горжусь, и которые меня послужили моему развитию",
+    "h2": "Проекты, которыми я горжусь, и которые послужили моему развитию",
     "info": "Как Frontend-разработчик я стремлюсь к развитию, пользе от работы и изучению новых технологий. С фокусом на чистый код и ориентированный на пользователя дизайн, я помогаю компаниям и их клиентам реализовать поставленными ими цели, увеличить онлайн  и оптимизировать процесс всей разработки",
+    "filters": [
+      {
+        "type": "All",
+        "name": "Все"
+      },
+      {
+        "type": "Commercial",
+        "name": "Коммерческие"
+      },
+      {
+        "type": "Mine",
+        "name": "Личные"
+      },
+      {
+        "type": "Fun",
+        "name": "Для души"
+      }
+    ],
     "projects": [
       {
         "id": "tretyakovgallery",
         "img": {
-          "src": "src/assets/images/tretyakovskaya.PNG",
-          "alt": "tretyakovgallery"
+          "src": "/my-resume/src/assets/images/tretyakovskaya.PNG",
+          "alt": "Главная страница Третьяковской галереи"
         },
         "title": "Третьяковская галерея",
         "link": "https://www.tretyakovgallery.ru/",
         "date": "Май 2021",
-        "description": "Описание",
-        "stackTitle": "Stack",
+        "description": "Описание Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, a labore! Neque numquam, veniam error architecto assumenda natus dolores nihil.",
         "stack": [
           "Nuxt.js",
           "Vue",
@@ -222,7 +239,7 @@
           "Axios",
           "Figma"
         ],
-        "categories": ["Commercial", "Old"],
+        "categories": ["Commercial"],
         "myRole": "Я делал это и это"
       },
       {
@@ -232,10 +249,10 @@
           "alt": "knpam site"
         },
         "title": "Реестр книжных памятников",
+        "linkTitle": "Сайт",
         "link": "https://knpam.rusneb.ru/",
         "date": "Февраль 2021",
         "description": "Описание",
-        "stackTitle": "Stack",
         "stack": [
           "Nuxt.js",
           "Vue",
@@ -246,7 +263,7 @@
           "Axios",
           "Figma"
         ],
-        "categories": ["Commercial", "Old"],
+        "categories": ["Commercial"],
         "myRole": "Выполненные задачи: разработка SPA, работа с API(axios), обработка ошибок и перенаправление на страницу 404, навигация, отрисовка данных, полученных с Backend(списки элементов), глобальный поиск (axios), фильтрация, поиск в фильтрах, и сортировки поиска книг (по типу, дате, языку и т.д.)"
       },
       {
@@ -259,7 +276,6 @@
         "link": "https://damaroowork.github.io/my-resume/",
         "date": "Декабрь 2024",
         "description": "Полноценный сайт резюме для презентации себя и поиска работы",
-        "stackTitle": "Stack",
         "stack": [
           "React",
           "TypeScript",
@@ -282,7 +298,6 @@
         "link": "https://damaroowork.github.io/mini-games/",
         "date": "Май 2021",
         "description": "Простой сайт со страницами на разные мини игры. Делал изначально на голом JavaScript пять отдельных приложений, потом решил объединить в один проект на React",
-        "stackTitle": "Stack",
         "stack": [
           "React ",
           "TypeScript ",
@@ -304,7 +319,6 @@
         "link": "https://damaroowork.github.io/react-crypto-app/",
         "date": "2024",
         "description": "You can watch actual info about crypto coins, stats, your coins and your wallet, and you can add your new purchased coins",
-        "stackTitle": "Stack",
         "stack": ["React ", "Chart.js", "Ant Design", "Vite"],
         "categories": ["Mine", "Fun"],
         "myRole": "Я делал это и это"
@@ -319,13 +333,18 @@
         "link": "https://damaroowork.github.io/satoru/",
         "date": "2024",
         "description": "Описание",
-        "stackTitle": "Stack",
         "stack": ["HTML", "CSS"],
         "categories": ["Mine", "Fun"],
         "myRole": "Я делал это и это"
       }
     ]
   },
+  "project": {
+    "categoriesTitle": "Категория",
+    "linkTitle": "Сайт",
+    "stackTitle": "Стак"
+  },
+
   "page404": {
     "h1": "404",
     "text": "Упс! Что-то не так. Страница не найдена.",

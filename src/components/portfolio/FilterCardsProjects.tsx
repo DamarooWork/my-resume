@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react'
+import { SetStateAction, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 const BaseClasses =
-  'relative border-0 rounded-2xl border-[var(--hover-bg-color)] py-4 px-8  text-2xl  transition ease-in-out  duration-150 hover:scale-[105%] active:scale-[95%] shadow-[0_2px_5px_2px_rgba(30,27,75,0.1)] hover:shadow-[0_5px_10px_5px_rgba(30,27,75,0.2)] dark:shadow-[0_2px_5px_2px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_5px_10px_5px_rgba(255,255,255,0.2)] cursor-pointer'
+  'relative border-0 rounded-2xl border-[var(--hover-bg-color)] py-4 px-8  text-2xl  transition ease-in-out  duration-150 hover:scale-[105%] active:scale-[95%] shadow-[0_2px_5px_2px_rgba(30,27,75,0.1)] hover:shadow-[0_5px_10px_5px_rgba(30,27,75,0.2)] dark:shadow-[0_2px_5px_2px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_5px_10px_5px_rgba(255,255,255,0.2)] cursor-pointer hover:motion-preset-seesaw '
 // const ActiveClasses =
 //   'text-[var(--link-color)] dark:text-[var(--dark-link-color)]'
 // const NormalClasses = ''
-export default function FilterCardsProjects({ setter }: any) {
+export default function FilterCardsProjects({ setType }: any) {
   const [uniqFiltersArray, setUniqFiltersArray] = useState<ITypesOfProject[]>(
     []
   )
@@ -30,13 +30,20 @@ export default function FilterCardsProjects({ setter }: any) {
     )
   }, [])
   function sortProjects(e: ITypesOfProject) {
-    setter(e)
+    setType(e)
   }
   return (
-    <ul className="flex flex-wrap justify-center gap-5 mb-16">
+    <ul className="flex flex-wrap justify-center gap-5 mb-16 motion-preset-expand  motion-delay-700  ">
+      <li className={BaseClasses} onClick={() => sortProjects('All')}>
+        All
+      </li>
       {uniqFiltersArray.map((e: ITypesOfProject) => {
         return (
-          <li key={e} className={BaseClasses} onClick={() => sortProjects(e as ITypesOfProject)}>
+          <li
+            key={e}
+            className={BaseClasses}
+            onClick={() => sortProjects(e as ITypesOfProject)}
+          >
             {e}
           </li>
         )

@@ -5,6 +5,7 @@ import reduxDark from '/Projects/React/my-resume/src/assets/icons/experiencePage
 import reduxLight from '/Projects/React/my-resume/src/assets/icons/experiencePage/reduxLight.png'
 import vite from '/Projects/React/my-resume/src/assets/icons/experiencePage/vite.png'
 import tailwind from '/Projects/React/my-resume/src/assets/icons/experiencePage/tailwind.png'
+import rombo from '/Projects/React/my-resume/src/assets/icons/experiencePage/rombo.png'
 import nodejs from '/Projects/React/my-resume/src/assets/icons/experiencePage/nodejs.png'
 import js from '/Projects/React/my-resume/src/assets/icons/experiencePage/js.png'
 import html from '/Projects/React/my-resume/src/assets/icons/experiencePage/html.png'
@@ -21,6 +22,7 @@ const technologiesArray: ITechnology[] = [
       src: react,
       alt: 'react icon',
     },
+    link: 'https://react.dev/',
   },
   {
     title: 'TypeScript',
@@ -28,6 +30,7 @@ const technologiesArray: ITechnology[] = [
       src: typescript,
       alt: 'TypeScript icon',
     },
+    link: 'https://www.typescriptlang.org/',
   },
   {
     title: 'Redux',
@@ -36,6 +39,7 @@ const technologiesArray: ITechnology[] = [
       srcForTheme: reduxLight,
       alt: 'Redux icon',
     },
+    link: 'https://redux.js.org/',
   },
   {
     title: 'Vite',
@@ -43,6 +47,7 @@ const technologiesArray: ITechnology[] = [
       src: vite,
       alt: 'vite icon',
     },
+    link: 'https://vite.dev/',
   },
   {
     title: 'Tailwind',
@@ -50,6 +55,15 @@ const technologiesArray: ITechnology[] = [
       src: tailwind,
       alt: 'tailwind icon',
     },
+    link: 'https://tailwindcss.com/',
+  },
+  {
+    title: 'Rombo',
+    img: {
+      src: rombo,
+      alt: 'Rombo icon',
+    },
+    link: 'https://rombo.co/tailwind/',
   },
   {
     title: 'NodeJS',
@@ -57,6 +71,7 @@ const technologiesArray: ITechnology[] = [
       src: nodejs,
       alt: 'nodejs icon',
     },
+    link: 'https://nodejs.org/en',
   },
   {
     title: 'Git',
@@ -65,13 +80,15 @@ const technologiesArray: ITechnology[] = [
       srcForTheme: githubLight,
       alt: 'Git icon',
     },
+    link: 'https://git-scm.com/',
   },
   {
-    title: 'Ant design',
+    title: 'https://ant.design/',
     img: {
       src: antd,
       alt: 'antd icon',
     },
+    link: '',
   },
   {
     title: 'JavaScript',
@@ -79,6 +96,7 @@ const technologiesArray: ITechnology[] = [
       src: js,
       alt: 'js icon',
     },
+    link: 'https://javascript.info/',
   },
   {
     title: 'HTML',
@@ -86,6 +104,7 @@ const technologiesArray: ITechnology[] = [
       src: html,
       alt: 'html icon',
     },
+    link: 'https://wikipedia.org/wiki/HTML',
   },
   {
     title: 'CSS',
@@ -93,6 +112,7 @@ const technologiesArray: ITechnology[] = [
       src: css,
       alt: 'css icon',
     },
+    link: 'https://wikipedia.org/wiki/CSS',
   },
 ]
 export default function Technologies() {

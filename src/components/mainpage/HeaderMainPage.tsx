@@ -33,19 +33,13 @@ export default function HeaderMainPage() {
             </AppButton>
           </div>
         </div>
-        <div className=" relative mt-8 xl:mt-0 xl:basis-[40%]  ">
+        <div  className=" relative mt-8 xl:mt-0 xl:basis-[40%] motion-preset-expand    motion-duration-2000 motion-preset-flomoji-👉  ">
           <img
             loading="lazy"
             className="  parallax-effect absolute top-[10%] left-[25%]   xl:top-[10%] 2xl:top-0 xl:left-0 w-[50%] xl:w-[100%] max-w-[600px]  h-auto  "
-            src={avatar}  
+            src={avatar}
             alt="Beatiful man with long hair"
           />
-          {/* <img
-            loading="lazy"
-            className="absolute top-[20%]  xl:top-[15%] 2xl:top-[5%] right-[30%]  xl:right-[25%] w-[3%] xl:w-[5%] h-auto"
-            src={hoverIconSrc}
-            alt="Hover icon"
-          /> */}
         </div>
       </header>
     </>

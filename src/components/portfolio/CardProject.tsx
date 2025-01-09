@@ -5,14 +5,14 @@ export default function CardProject({
   id,
   img,
   title,
-  link,
-  date,
-  description,
-  stackTitle,
+  // link,
+  // date,
+  // description,
+  // stackTitle,
   stack,
-  categories,
-  myRole,
-}: IProject) {
+}: // categories,
+// myRole
+IProject) {
   const nav = useNavigate()
   function handleClickProject(path: string) {
     nav(path)
@@ -20,30 +20,37 @@ export default function CardProject({
   return (
     <section
       onClick={() => handleClickProject(id)}
-      className="card-project h-96 relative  flex flex-col justify-start gap-2 text-left cursor-pointer "
+      className="card-project group h-96 relative  flex flex-col justify-start  text-left cursor-pointer motion-preset-expand  motion-delay-0 rounded-2xl shadow-[0_0_15px_10px_rgba(30,27,75,0.2)] hover:shadow-[0_0_25px_10px_rgba(30,27,75,0.6)] dark:shadow-[0_0_15px_10px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_10px_25px_10px_rgba(255,255,255,0.6)] "
     >
-      <div className="group w-full h-96 overflow-hidden rounded-2xl shadow-md">
+      <div className=" w-full h-96 overflow-hidden rounded-2xl rounded-b-none ">
         <div className="relative w-full h-full">
           <img
-            className=" absolute inset-0 w-full h-full object-cover  group-hover:scale-110   m-auto transition-all ease-in-out duration-500"
-            src="src\assets\images\tretyakovskaya.JPG"
+            className=" absolute w-full h-full object-cover  group-hover:scale-115   m-auto transition-all ease-in-out duration-500 will-change-transform"
+            src={img.src}
+            alt={img.alt}
           />
         </div>
       </div>
+      <section className=" px-2 py-4 text-center ">
+        <header className="mb-6">
+          <h3 className="text-4xl">{title}</h3>
+        </header>
 
-      <h3 className="text-4xl">{title}</h3>
-      <ul className="flex flex-row flex-wrap gap-4">
-        {stack.slice(0, 3).map((tech, i) => {
-          return (
-            <li
-              key={i}
-              className="border-2 border-[var(--main-color)] dark:border-[var(--dark-main-color)]  rounded-3xl py-2 px-4"
-            >
-              {tech}
-            </li>
-          )
-        })}
-      </ul>
+        <footer>
+          <ul className="flex flex-row gap-4  justify-center ">
+            {stack.slice(0, 3).map((tech, i) => {
+              return (
+                <li
+                  key={i}
+                  className="border-2 border-[var(--main-color)] dark:border-[var(--dark-main-color)]  rounded-3xl py-2 px-4"
+                >
+                  {tech}
+                </li>
+              )
+            })}
+          </ul>
+        </footer>
+      </section>
     </section>
   )
 }

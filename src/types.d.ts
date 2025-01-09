@@ -68,9 +68,10 @@ interface ITechnology {
     src: string
     srcForTheme?: string
     alt: string
-  }
+  },
+  link: string
 }
-type ITypesOfProject = 'Commercial' | 'Mine' | 'ForFun' | 'Old' | ''
+type ITypesOfProject = 'Commercial' | 'Mine' | 'Fun' | 'Old' | 'All'
 interface IProject {
   id: string
   img: {
@@ -86,4 +87,3 @@ interface IProject {
   categories: string[]
   myRole: string
 }
-

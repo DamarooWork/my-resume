@@ -3,7 +3,7 @@ import { giftData } from './giftData'
 export default function GiftBox({ click }: GiftBoxClick) {
   const [isBoxClicked, setBoxClicked] = useState<boolean>(false)
   const [displayBoxStyle, setDisplayBoxStyle] = useState<string>(
-    'fixed flex  bottom-10 right-10 cursor-pointer animate-bounce'
+    'fixed flex  bottom-10 right-10 cursor-pointer animate-bounce '
   )
 
   function handleClick() {

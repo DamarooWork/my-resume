@@ -5,7 +5,7 @@ import ThemeChanger from './ThemeChanger'
 export default function FooterAsideButtons() {
   return (
     <footer className="footerAside h-min-[42px]">
-      <ul className="flex flex-row justify-between items-center gap-4 ">
+      <ul className="flex flex-row justify-between items-center gap-4 motion-preset-expand ">
         <li>
           <ThemeChanger />
         </li>

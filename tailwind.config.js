@@ -17,6 +17,6 @@ export default {
       '4xl': '2100px',
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-motion')],
   darkMode: 'selector',
 }

@@ -201,9 +201,9 @@
     "h1": "Портфолио",
     "projects": [
       {
-        "id": "tretyakovgallery1",
+        "id": "tretyakovgallery",
         "img": {
-          "src": "",
+          "src": "src/assets/images/tretyakovskaya.PNG",
           "alt": "tretyakovgallery"
         },
         "title": "Третьяковская галерея",
@@ -211,23 +211,23 @@
         "date": "Май 2021",
         "description": "Описание",
         "stackTitle": "Stack",
-        "stack": ["Vue", "Nuxt.js", "Vue", "Nuxt.js", "Vue", "Nuxt.js", "Vue"],
+        "stack": ["Nuxt.js", "Vue",  "SCSS", "Vuetify", "Vuex", "Axios" , "Figma"],
         "categories": ["Commercial"],
         "myRole": "Я делал это и это"
       },
       {
-        "id": "tretyakovgallery2",
+        "id": "knpam",
         "img": {
-          "src": "",
-          "alt": "tretyakovgallery"
+          "src": "src/assets/images/knpam.PNG",
+          "alt": "knpam image"
         },
-        "title": "Третьяковская галерея",
-        "link": "https://www.tretyakovgallery.ru/",
-        "date": "Май 2021",
+        "title": "Реестр книжных памятникок",
+        "link": "https://knpam.rusneb.ru/",
+        "date": "Февраль 2021",
         "description": "Описание",
         "stackTitle": "Stack",
-        "stack": ["Vue", "Nuxt.js", "Vue", "Nuxt.js", "Vue", "Nuxt.js", "Vue"],
-        "categories": ["Commercial", "Mine", "ForFun", "Old"],
+        "stack": ["Nuxt.js", "Vue",  "SCSS", "Vuetify", "Vuex", "Vue-splide", "Axios" , "Figma"],
+        "categories": ["Commercial", "Mine", "Fun", "Old"],
         "myRole": "Я делал это и это"
       },
       {
@@ -242,7 +242,7 @@
         "description": "Описание",
         "stackTitle": "Stack",
         "stack": ["Vue", "Vue", "Vue", "Vue", "Vue", "Vue", "Vue"],
-        "categories": ["ForFun", "Old"],
+        "categories": ["Fun", "Old"],
         "myRole": "Я делал это и это"
       },
       {
@@ -257,7 +257,7 @@
         "description": "Описание",
         "stackTitle": "Stack",
         "stack": ["Vue", "Vue", "Vue", "Vue", "Vue", "Vue", "Vue"],
-        "categories": ["Mine", "ForFun"],
+        "categories": ["Mine", "Fun"],
         "myRole": "Я делал это и это"
       },
       {
@@ -272,7 +272,7 @@
         "description": "Описание",
         "stackTitle": "Stack",
         "stack": ["Vue", "Vue", "Vue", "Vue", "Vue", "Vue", "Vue"],
-        "categories": ["ForFun"],
+        "categories": ["Fun"],
         "myRole": "Я делал это и это"
       }
     ]

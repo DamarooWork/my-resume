@@ -26,9 +26,11 @@ export default function ModalGift({ children, title, onClose }: ModalProps) {
       {children}
       <div
         onClick={onClose}
-        className="w-[100vw] h-[100vh]  fixed top-0 pt-[40vh] left-1/2 -translate-x-1/2   text-[var(--main-dark-color)] dark:text-[var(--dark-main-color)] cursor-pointer"
+        className="w-[100vw] h-[100vh]  fixed top-0 left-1/2 -translate-x-1/2   text-[var(--main-dark-color)] dark:text-[var(--dark-main-color)] cursor-pointer"
       >
-        <h2 className=" text-4xl text-center  font-bold z-10 ">{title}</h2>
+        <h2 className="block mt-[40vh] text-4xl text-center  font-bold motion-scale-in-[0.18] motion-translate-x-in-[200%] motion-translate-y-in-[200%] motion-opacity-in-[0%] motion-rotate-in-[-47deg] motion-blur-in-[5px] motion-duration-[1.13s]/scale motion-duration-[1.13s]/translate motion-duration-[1.35s]/rotate motion-ease-spring-bouncy  ">
+          {title}
+        </h2>
       </div>
     </>
   )

@@ -4,10 +4,10 @@ export default function MainPortfolio() {
   return (
     <main className="">
       <section className="flex flex-col justify-start items-center text-center mb-16">
-        <h2 className="text-5xl mb-8">
+        <h2 className="text-5xl mb-8 motion-preset-expand motion-duration-1000 motion-delay-200">
           Projects that made me proud and my clients happy
         </h2>
-        <p className="text-3xl">
+        <p className="text-3xl motion-preset-expand motion-duration-1000 motion-delay-500 ">
           As a fullstack engineer, I've brought ideas to life through custom web
           applications and responsive websites. My projects have ranged from
           e-commerce platforms to portfolio sites for small businesses. With a

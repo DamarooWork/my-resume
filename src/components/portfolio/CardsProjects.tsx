@@ -4,7 +4,6 @@ import FilterCardsProjects from './FilterCardsProjects'
 import { useTranslation } from 'react-i18next'
 
 export default function CardsProjects() {
-  const filteredArray: IProject[] = []
   const [type, setType] = useState<ITypesOfProject>('All')
   const { t } = useTranslation()
   // @ts-ignore
@@ -19,15 +18,12 @@ export default function CardsProjects() {
         {type !== 'All'
           ? projects
               .filter((project: IProject) => project.categories.includes(type))
-              .map((filteredProject) => {
-                filteredProject
-                return (
-                  <CardProject key={filteredProject.id} {...filteredProject} />
-                )
-              })
-          : projects.map((project) => {
-              return <CardProject key={project.id} {...project} />
-            })}
+              .map((filteredProject) => (
+                <CardProject key={filteredProject.id} {...filteredProject} />
+              ))
+          : projects.map((project) => (
+              <CardProject key={project.id} {...project} />
+            ))}
       </section>
     </>
   )

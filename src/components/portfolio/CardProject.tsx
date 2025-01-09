@@ -22,7 +22,7 @@ IProject) {
       onClick={() => handleClickProject(id)}
       className="card-project group h-96 relative  flex flex-col justify-start  text-left cursor-pointer motion-preset-expand  motion-delay-0 rounded-2xl shadow-[0_0_15px_10px_rgba(30,27,75,0.2)] hover:shadow-[0_0_25px_10px_rgba(30,27,75,0.6)] dark:shadow-[0_0_15px_10px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_10px_25px_10px_rgba(255,255,255,0.6)] "
     >
-      <div className=" w-full basis-52 overflow-hidden rounded-2xl rounded-b-none ">
+      <div className=" w-full basis-60 overflow-hidden rounded-2xl rounded-b-none ">
         <div className="relative w-full h-full">
           <img
             className=" absolute w-full h-full object-cover  group-hover:scale-115   m-auto transition-all ease-in-out duration-500 will-change-transform"

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, createRef, LegacyRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 const BaseClasses =
@@ -7,18 +7,23 @@ const ActiveClasses =
   'text-[var(--link-color)] dark:text-[var(--dark-link-color)]'
 // const NormalClasses = ''
 export default function FilterCardsProjects({ setType }: any) {
-  const [uniqFiltersArray, setUniqFiltersArray] = useState<ITypesOfProject[]>(
-    []
-  )
-  const elementsRef = useRef<LegacyRef<HTMLLIElement>[]>(
-    uniqFiltersArray.map(() => createRef())
-  )
-  const All = useRef<HTMLLIElement | null>(null)
   const { t } = useTranslation()
+  // @ts-ignore
+  const filters: IFilter[] = t('portfolioPage.filters', {
+    returnObjects: true,
+  })
   // @ts-ignore
   const projects: IProject[] = t('portfolioPage.projects', {
     returnObjects: true,
   })
+  const [uniqFiltersArray, setUniqFiltersArray] = useState<ITypesOfProject[]>(
+    []
+  )
+  const refs = useRef<(HTMLLIElement | null)[]>(
+    new Array(uniqFiltersArray.length)
+  )
+  const All = useRef<HTMLLIElement>(null)
+
   useEffect(() => {
     const filtersArray: ITypesOfProject[] = []
     projects.map((project) => {
@@ -33,31 +38,55 @@ export default function FilterCardsProjects({ setType }: any) {
     )
   }, [])
   function sortProjects(e: ITypesOfProject | ReactNode) {
-    // let nameActiveFilter = e
-    // console.log(elementsRef.current)
-
-    // elementsRef.current.style.color = 'black'
-    // const Commercial = useRef()
-    // const Mine = useRef()
-    // const Fun = useRef()
-    // const Old = useRef()
+    if (All.current?.dataset.name === e && All.current) {
+      const liActive = All.current
+      liActive.className = `${BaseClasses} + ' ' + ${ActiveClasses}`
+      for (let name in refs.current) {
+        if (refs.current[name]) {
+          const liNormal = refs.current[name]
+          liNormal.className = BaseClasses
+        }
+      }
+    } else {
+      if (All.current) {
+        const AllNormal = All.current
+        AllNormal.className = BaseClasses
+        for (let name in refs.current) {
+          if (refs.current[name]) {
+            if (refs.current[name]?.dataset.name === e) {
+              const liActive = refs.current[name]
+              liActive.className = `${BaseClasses} + ' ' + ${ActiveClasses}`
+            } else {
+              const liNormal = refs.current[name]
+              liNormal.className = BaseClasses
+            }
+          }
+        }
+      }
+    }
 
     setType(e)
   }
   return (
     <ul className="flex flex-wrap justify-center gap-5 mb-16 motion-preset-expand  motion-delay-700  ">
-      <li ref={All} className={BaseClasses} onClick={() => sortProjects('All')}>
-        All
+      <li
+        ref={All}
+        data-name="All"
+        className={`${BaseClasses} + ' ' + ${ActiveClasses}`}
+        onClick={() => sortProjects('All')}
+      >
+        {filters.filter((f) => f.type === 'All').map((f) => f.name)}
       </li>
       {uniqFiltersArray.map((e: ITypesOfProject, i) => {
         return (
           <li
-            ref={elementsRef.current[i]}
+            ref={(e) => (refs.current[i] = e)}
             key={e}
+            data-name={e}
             className={BaseClasses}
             onClick={() => sortProjects(e as ITypesOfProject | ReactNode)}
           >
-            {e}
+            {filters.filter((f) => f.type === e).map((f) => f.name)}
           </li>
         )
       })}

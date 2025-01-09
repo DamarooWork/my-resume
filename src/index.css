@@ -16,6 +16,7 @@ html {
   --dark-link-color: #f0abfc;
   --dark-section-color: #312e81;
   --section-color: #e0e7ff;
+  --scroll-to-top-position: calc(var(--nav-width) + 2vw);
   margin: 0;
   padding: 0;
   min-height: 100%;

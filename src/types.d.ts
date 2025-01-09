@@ -70,8 +70,9 @@ interface ITechnology {
     alt: string
   }
   link: string
+  i?: number
 }
-type ITypesOfProject = 'Commercial' | 'Mine' | 'Fun' | 'Old' | 'All'
+type ITypesOfProject = 'Commercial' | 'Mine' | 'Fun' | 'All'
 interface IProject {
   id: string
   img: {
@@ -82,8 +83,11 @@ interface IProject {
   link: string
   date: string
   description: string
-  stackTitle: string
   stack: ITypeOfProjects[]
   categories: string[]
   myRole: string
+}
+interface IFilter {
+  type: string
+  name: string
 }

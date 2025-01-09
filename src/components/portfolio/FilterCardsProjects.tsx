@@ -1,5 +1,6 @@
 import { SetStateAction, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { NavLink } from 'react-router'
 
 const BaseClasses =
   'relative border-0 rounded-2xl border-[var(--hover-bg-color)] py-4 px-8  text-2xl  transition ease-in-out  duration-150 hover:scale-[105%] active:scale-[95%] shadow-[0_2px_5px_2px_rgba(30,27,75,0.1)] hover:shadow-[0_5px_10px_5px_rgba(30,27,75,0.2)] dark:shadow-[0_2px_5px_2px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_5px_10px_5px_rgba(255,255,255,0.2)] cursor-pointer hover:motion-preset-seesaw '

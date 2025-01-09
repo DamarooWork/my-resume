@@ -199,6 +199,8 @@
   },
   "portfolioPage": {
     "h1": "Портфолио",
+    "h2": "Проекты, которыми я горжусь, и которые меня послужили моему развитию",
+    "info": "Как Frontend-разработчик я стремлюсь к развитию, пользе от работы и изучению новых технологий. С фокусом на чистый код и ориентированный на пользователя дизайн, я помогаю компаниям и их клиентам реализовать поставленными ими цели, увеличить онлайн  и оптимизировать процесс всей разработки",
     "projects": [
       {
         "id": "tretyakovgallery",
@@ -211,68 +213,115 @@
         "date": "Май 2021",
         "description": "Описание",
         "stackTitle": "Stack",
-        "stack": ["Nuxt.js", "Vue",  "SCSS", "Vuetify", "Vuex", "Axios" , "Figma"],
-        "categories": ["Commercial"],
+        "stack": [
+          "Nuxt.js",
+          "Vue",
+          "SCSS",
+          "Vuetify",
+          "Vuex",
+          "Axios",
+          "Figma"
+        ],
+        "categories": ["Commercial", "Old"],
         "myRole": "Я делал это и это"
       },
       {
         "id": "knpam",
         "img": {
           "src": "src/assets/images/knpam.PNG",
-          "alt": "knpam image"
+          "alt": "knpam site"
         },
-        "title": "Реестр книжных памятникок",
+        "title": "Реестр книжных памятников",
         "link": "https://knpam.rusneb.ru/",
         "date": "Февраль 2021",
         "description": "Описание",
         "stackTitle": "Stack",
-        "stack": ["Nuxt.js", "Vue",  "SCSS", "Vuetify", "Vuex", "Vue-splide", "Axios" , "Figma"],
-        "categories": ["Commercial", "Mine", "Fun", "Old"],
+        "stack": [
+          "Nuxt.js",
+          "Vue",
+          "SCSS",
+          "Vuetify",
+          "Vuex",
+          "Vue-splide",
+          "Axios",
+          "Figma"
+        ],
+        "categories": ["Commercial", "Old"],
+        "myRole": "Выполненные задачи: разработка SPA, работа с API(axios), обработка ошибок и перенаправление на страницу 404, навигация, отрисовка данных, полученных с Backend(списки элементов), глобальный поиск (axios), фильтрация, поиск в фильтрах, и сортировки поиска книг (по типу, дате, языку и т.д.)"
+      },
+      {
+        "id": "resume",
+        "img": {
+          "src": "src/assets/images/resume.JPG",
+          "alt": "resume site"
+        },
+        "title": "Мой сайт-резюме",
+        "link": "https://damaroowork.github.io/my-resume/",
+        "date": "Декабрь 2024",
+        "description": "Полноценный сайт резюме для презентации себя и поиска работы",
+        "stackTitle": "Stack",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite",
+          "i18next",
+          "React-router",
+          "Tailwindcss-motion"
+        ],
+        "categories": ["Mine"],
+        "myRole": "Все"
+      },
+      {
+        "id": "minigames",
+        "img": {
+          "src": "src/assets/images/minigames.JPG",
+          "alt": "minigames site"
+        },
+        "title": "Мини приложения",
+        "link": "https://damaroowork.github.io/mini-games/",
+        "date": "Май 2021",
+        "description": "Простой сайт со страницами на разные мини игры. Делал изначально на голом JavaScript пять отдельных приложений, потом решил объединить в один проект на React",
+        "stackTitle": "Stack",
+        "stack": [
+          "React ",
+          "TypeScript ",
+          "Tailwind ",
+          "Vite",
+          "React-router",
+          "React-snow-overlay"
+        ],
+        "categories": ["Fun", "Mine"],
         "myRole": "Я делал это и это"
       },
       {
-        "id": "tretyakovgallery3",
+        "id": "crypto",
         "img": {
-          "src": "",
-          "alt": "tretyakovgallery"
+          "src": "src/assets/images/crypto.JPG",
+          "alt": "crypto site"
         },
-        "title": "Третьяковская галерея",
-        "link": "https://www.tretyakovgallery.ru/",
-        "date": "Май 2021",
-        "description": "Описание",
+        "title": "Крипто приложение",
+        "link": "https://damaroowork.github.io/react-crypto-app/",
+        "date": "2024",
+        "description": "You can watch actual info about crypto coins, stats, your coins and your wallet, and you can add your new purchased coins",
         "stackTitle": "Stack",
-        "stack": ["Vue", "Vue", "Vue", "Vue", "Vue", "Vue", "Vue"],
-        "categories": ["Fun", "Old"],
-        "myRole": "Я делал это и это"
-      },
-      {
-        "id": "tretyakovgallery4",
-        "img": {
-          "src": "",
-          "alt": "tretyakovgallery"
-        },
-        "title": "Третьяковская галерея",
-        "link": "https://www.tretyakovgallery.ru/",
-        "date": "Май 2021",
-        "description": "Описание",
-        "stackTitle": "Stack",
-        "stack": ["Vue", "Vue", "Vue", "Vue", "Vue", "Vue", "Vue"],
+        "stack": ["React ", "Chart.js", "Ant Design", "Vite"],
         "categories": ["Mine", "Fun"],
         "myRole": "Я делал это и это"
       },
       {
-        "id": "tretyakovgallery5",
+        "id": "satoru",
         "img": {
-          "src": "",
-          "alt": "tretyakovgallery"
+          "src": "src/assets/images/satoru.JPG",
+          "alt": "satoru site"
         },
-        "title": "Третьяковская галерея",
-        "link": "https://www.tretyakovgallery.ru/",
-        "date": "Май 2021",
+        "title": "Сайт аниме персонажа Satoru",
+        "link": "https://damaroowork.github.io/satoru/",
+        "date": "2024",
         "description": "Описание",
         "stackTitle": "Stack",
-        "stack": ["Vue", "Vue", "Vue", "Vue", "Vue", "Vue", "Vue"],
-        "categories": ["Fun"],
+        "stack": ["HTML", "CSS"],
+        "categories": ["Mine", "Fun"],
         "myRole": "Я делал это и это"
       }
     ]

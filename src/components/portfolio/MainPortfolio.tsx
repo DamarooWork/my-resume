@@ -1,18 +1,16 @@
+import { useTranslation } from 'react-i18next'
 import CardsProjects from './CardsProjects'
 
 export default function MainPortfolio() {
+  const { t } = useTranslation()
   return (
     <main className="">
       <section className="flex flex-col justify-start items-center text-center mb-16">
         <h2 className="text-5xl mb-8 motion-preset-expand motion-duration-1000 motion-delay-200">
-          Projects that made me proud and my clients happy
+          {t('portfolioPage.h2')}
         </h2>
         <p className="text-3xl motion-preset-expand motion-duration-1000 motion-delay-500 ">
-          As a fullstack engineer, I've brought ideas to life through custom web
-          applications and responsive websites. My projects have ranged from
-          e-commerce platforms to portfolio sites for small businesses. With a
-          focus on clean code and user-centric design, I've helped clients
-          increase their online presence and streamline their operations.
+          {t('portfolioPage.info')}
         </p>
       </section>
       <CardsProjects />

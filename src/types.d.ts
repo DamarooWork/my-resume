@@ -68,7 +68,7 @@ interface ITechnology {
     src: string
     srcForTheme?: string
     alt: string
-  },
+  }
   link: string
 }
 type ITypesOfProject = 'Commercial' | 'Mine' | 'Fun' | 'Old' | 'All'

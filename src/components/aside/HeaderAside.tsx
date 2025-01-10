@@ -5,12 +5,12 @@ export default function HeaderAside() {
   return (
     <>
       <header
-        className="headerAside cursor-pointer   motion-scale-in-0 "
+        className="headerAside cursor-pointer motion-scale-in-0 "
         onClick={() => {
           navigate('/')
         }}
       >
-        <div className="overlay "></div>
+        <div className="overlay"></div>
 
         <div className="text">
           <div className="wrapper">

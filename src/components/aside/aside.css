@@ -16,7 +16,6 @@
     top: 0;
     left: 0;
     z-index: 100;
-
     background: rgb(255, 255, 255);
     background: linear-gradient(
       0deg,
@@ -29,15 +28,11 @@
   .letter {
     color: var(--main-color);
   }
+
   .text {
     font-size: 2rem;
     display: flex;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
     user-select: none;
-
     .wrapper {
       padding-left: 5px;
       padding-right: 5px;
@@ -59,6 +54,42 @@
         .shadow {
           opacity: 0;
           transform: translateY(20%);
+        }
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .text {
+      font-size: 2rem;
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      user-select: none;
+
+      .wrapper {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        .letter {
+          transition: ease-in 1s, ease-out 1s;
+          transform: translateY(40%);
+        }
+        .shadow {
+          transform: scale(1, -1);
+          color: #999;
+          transition: ease-in 1s, ease-out 1s;
+          --tw-shadow: none;
+        }
+        &:hover {
+          .letter {
+            transform: translateY(-20%);
+          }
+          .shadow {
+            opacity: 0;
+            transform: translateY(20%);
+          }
         }
       }
     }

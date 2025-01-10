@@ -4,15 +4,14 @@ import { useTranslation } from 'react-i18next'
 export default function Navigation() {
   const { t } = useTranslation()
   const styleNavLink =
-    'text-[1.5rem]  py-4 px-5   dark:hover:bg-[var(--hover-bg-dark-color)] hover:bg-[var(--hover-bg-color)]   rounded-lg rounded-l-none border-l-4  tracking-wide font-bold transition ease-in  duration-300  '
-
+    'text-[1.5rem] py-2 px-4 lg:py-4 lg:px-5   dark:hover:bg-[var(--hover-bg-dark-color)] hover:bg-[var(--hover-bg-color)] rounded-lg lg:rounded-l-none lg:border-l-4 tracking-wide font-bold transition ease-in  duration-300 text-nowrap '
   const styleActiveNavLink =
     'border-[var(--link-color)] text-[var(--link-color)]  dark:border-[var(--dark-link-color)] dark:text-[var(--dark-link-color)]'
   const styleNormalNavLink =
     'border-[var(--hover-bg-color)] dark:border-[var(--hover-bg-dark-color)] text-[var(--main-color)] dark:text-[var(--main-dark-color)] '
   return (
-    <nav className="navAside w-[100%]">
-      <ul className="flex  flex-col text-2xl  gap-[1.6rem]     pl-16 lg:pl-4 py-2  motion-preset-expand ">
+    <nav className="xl:w-[100%]">
+      <ul className="flex items-center lg:items-start lg:flex-col text-2xl  lg:gap-[1.6rem] lg:pl-4 py-2  motion-preset-expand ">
         <li>
           <NavLink
             id="home"

@@ -8,18 +8,18 @@ export default function HeaderMainPage() {
 
   return (
     <>
-      <header className=" basis-[100%] headerHomePage flex flex-col-reverse xl:flex-row  justify-between  text-center   ">
-        <div className=" xl:basis-[50%] mt-8 mb-8 ">
+      <header className=" basis-[100%] headerHomePage flex flex-col-reverse xl:flex-row  justify-between  text-center items-center  xl:items-start">
+        <div className="basis-[70%] xl:basis-[50%] xl:mt-8 xl:mb-8 ">
           <div className="fade-effect">
-            <h1 className="text-6xl mb-8">{t('home.h1')}</h1>
+            <h1 className="text-6xl mb-4 xl:mb-8">{t('home.h1')}</h1>
             <hr className="border-[var(--main-color)] dark:border-[var(--dakr-main-color)]" />
-            <h2 className="text-4xl text-typing mb-4 mt-4 m-auto">
+            <h2 className="text-4xl text-typing my-2 xl:my-4 m-auto">
               {t('home.h2')}
             </h2>
             <hr className="border-[var(--main-color)] dark:border-[var(--dakr-main-color)]" />
-            <h3 className="text-3xl mt-8">{t('home.about')}</h3>
+            <h3 className="text-3xl mt-4 xl:mt-8">{t('home.about')}</h3>
           </div>
-          <div className="fade-effect fade-time-500 py-[8vh]">
+          <div className="fade-effect fade-time-500 py-[4vh] xl:py-[8vh]">
             <AppButton
               link_out={Resume_Kichigin_LA}
               btnClasses="relative border-0 rounded-2xl border-[var(--hover-bg-color)] py-4 px-8  text-2xl gradient-bg text-white transition ease-in-out  duration-150 hover:scale-[105%] active:scale-[95%] shadow-[0_2px_5px_2px_rgba(30,27,75,0.1)] hover:shadow-[0_5px_10px_5px_rgba(30,27,75,0.2)] dark:shadow-[0_2px_5px_2px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_5px_10px_5px_rgba(255,255,255,0.2)]"
@@ -32,10 +32,10 @@ export default function HeaderMainPage() {
             </AppButton>
           </div>
         </div>
-        <div className=" relative mt-8 xl:mt-0 xl:basis-[40%] motion-preset-expand    motion-duration-2000 motion-preset-flomoji-👉  ">
+        <div className="relative lg:ml-[30%]  lg:mt-20 xl:ml-0 xl:mt-[15vh] 2xl:mt-[10vh] 3xl:mt-20 4xl:mt-0 xl:basis-[40%] motion-preset-expand motion-duration-2000 motion-preset-flomoji-👉">
           <img
             loading="lazy"
-            className="  parallax-effect absolute top-[10%] left-[25%]   xl:top-[10%] 2xl:top-0 xl:left-0 w-[50%] xl:w-[100%] max-w-[600px]  h-auto  "
+            className="parallax-effect  w-[50%] xl:w-[100%] max-w-[600px] h-auto  "
             src={avatar}
             alt="Beatiful man with long hair"
           />

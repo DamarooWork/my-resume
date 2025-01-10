@@ -4,7 +4,8 @@
 
 html {
   font-family: monospace;
-  --nav-width: 250px;
+  --nav-width: 0;
+  --nav-height: 80px;
   --main-color: #1e1b4b;
   --main-dark-color: white;
   --main-bg-dark-color: #1e1b4b;
@@ -41,6 +42,8 @@ html {
   }
   @media (min-width: 1024px) {
     font-size: 16px;
+    --nav-height: 0;
+    --nav-width: 250px;
   }
   @media (min-width: 1280px) {
     font-size: 14px;
@@ -53,6 +56,7 @@ body {
   height: 100%;
 }
 #root {
+  padding-top: var(--nav-height);
   padding-left: var(--nav-width);
 }
 html.dark {
@@ -183,35 +187,9 @@ html.dark {
     width: 0ch;
   }
 }
-.slice-effect {
-  --_g: 10% /50% 50% no-repeat linear-gradient(#000 0 0);
-  --m: left var(--_i, 0%) top var(--_g), bottom var(--_i, 0%) left var(--_g),
-    top var(--_i, 0%) right var(--_g), right var(--_i, 0%) bottom var(--_g);
-  -webkit-mask: var(--m);
-  mask: var(--m);
-  transition: 0.5s linear;
-  cursor: pointer;
-}
-.slice-effect:hover {
-  --_i: -50%;
-}
-.shine-effect {
-  --a: 8deg;
-  transform: perspective(600px)
-    rotate3d(var(--r, 1, -1), 0, calc(var(--i, 1) * var(--a)));
-  -webkit-mask: linear-gradient(135deg, #000c 20%, #000, #000c 50%) 100% 100%/250%
-    250%;
-  transition: 0.4s;
-  cursor: pointer;
-}
-.shine-effect:hover {
-  --i: -1;
-  -webkit-mask-position: 0 0;
-}
 .parallax-effect {
   --f: 0.05; /* the parallax factor (the smaller the better) */
   --r: 20px; /* radius */
-
   --_f: calc(100% * var(--f) / (1 + var(--f)));
   --_a: calc(-90deg * var(--f));
   aspect-ratio: calc(1 + var(--f));
@@ -225,14 +203,12 @@ html.dark {
   clip-path: inset(0 0 0 var(--_f) round var(--r));
   --_t: translateX(calc(-1 * var(--_f))) rotateY(calc(-1 * var(--_a)));
 }
-
 .left-section .inner-content {
   position: absolute;
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
   left: 50%;
 }
-
 .background {
   position: absolute;
   top: 0;
@@ -240,13 +216,11 @@ html.dark {
   width: calc(100% - var(--nav-width));
   height: 100%;
 }
-
 @media (max-width: 768px) {
   .background .ground {
     height: 0vh;
   }
 }
-
 .container {
   position: relative;
   margin: 0 auto;
@@ -381,7 +355,6 @@ html.dark {
     text-shadow: 0 0 1rem #fefefe;
   }
 }
-
 .stars {
   position: fixed;
   top: 0;
@@ -390,7 +363,6 @@ html.dark {
   height: 100%;
   transform: rotate(-80deg) translateX(20vh);
 }
-
 .star {
   --star-color: var(--primary-color);
   --star-tail-length: 6em;

@@ -23,7 +23,7 @@ export default function ThemeChanger() {
   return (
     <>
       <img
-        className="w-10 h-auto cursor-pointer flex-none transition-transform ease-in  duration-300 hover:scale-115"
+        className="w-[38px] xl:w-10 h-auto cursor-pointer flex-none transition-transform ease-in  duration-300 hover:scale-115"
         onClick={() => handleChangeTheme()}
         src={theme === 'dark' ? darkmodeDark : darkmodeLight}
         alt="Dark mode icon"

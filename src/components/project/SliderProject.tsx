@@ -1,11 +1,11 @@
 import { useRef } from 'react'
 
 const normal =
-  ' cursor-pointer  flex-[1_1_2%]  transition-all ease-in-out duration-500 will-change-transform rounded-2xl'
+  ' cursor-pointer  flex-[1_1_2%]  transition-all ease-in-out duration-500 will-change-transform rounded-2xl '
 const active =
-  ' cursor-pointer  flex-[6_6_0%]   transition-all ease-in-out duration-500 will-change-transform rounded-2xl'
+  ' cursor-pointer  flex-[6_6_0%]   transition-all ease-in-out duration-500 will-change-transform rounded-2xl motion-preset-compress motion-duration-1000'
 
-export default function SlidesProject({ imagesSourses }: IProject) {
+export default function SliderProject({ imagesSourses }: IProject) {
   const refs = useRef<(HTMLDivElement | null)[]>(
     new Array(imagesSourses.length)
   )
@@ -25,7 +25,7 @@ export default function SlidesProject({ imagesSourses }: IProject) {
 
   return (
     <>
-      <section className="flex w-full gap-5 overflow-hidden items-center h-80  rounded-3xl ">
+      <section className="flex w-full gap-5 overflow-hidden items-center h-80  rounded-3xl mb-12 intersect-once intersect:motion-preset-expand ">
         {imagesSourses.map((image, i) => {
           return (
             <div

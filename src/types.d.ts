@@ -87,6 +87,8 @@ interface IProject {
   stack: ITypeOfProjects[]
   categories: string[]
   myRole: string
+  overview: string
+
 }
 interface IFilter {
   type: string

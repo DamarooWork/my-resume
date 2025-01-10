@@ -216,7 +216,7 @@
       },
       {
         "type": "Fun",
-        "name": "Для души"
+        "name": "Практика"
       }
     ],
     "projects": [
@@ -235,7 +235,8 @@
         "title": "Третьяковская галерея",
         "link": "https://www.tretyakovgallery.ru/",
         "date": "Май 2021",
-        "description": "Описание Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, a labore! Neque numquam, veniam error architecto assumenda natus dolores nihil.",
+        "description": "Официальный сайт Третьяковской галереи, предназначенный для удобного пользования главной  галереей России.",
+        "overview": "Официальный сайт Третьяковской галереи, предназначенный для знакомства с главной галереей, комплексами, малыми музеями и филиалами. Посетители сайта могут узнать о всех выставках, событиях, фильмах, программах, лекциях, коллекциях и др. Здесь вы сможете приобрести билеты на мероприятия, а также можете поддержать музей через пожертвования.",
         "stack": [
           "Nuxt.js",
           "Vue",
@@ -246,7 +247,7 @@
           "Figma"
         ],
         "categories": ["Commercial"],
-        "myRole": "Я делал это и это"
+        "myRole": "Поддержка и работа над сайтом. Я выполнял работу и улучшение дизайна после получения правок и желаемых изменений в дизайне и функционале сайта от клиента. Фиксы: навигации, слайдеров на главной страницы, карточек мероприятий, уведомлений, страницы с оплатами и другие."
       },
       {
         "id": "knpam",
@@ -254,11 +255,17 @@
           "src": "/my-resume/images/knpam/knpam.PNG",
           "alt": "knpam site"
         },
+        "imagesSourses": [
+          "/my-resume/images/knpam/knpam.PNG",
+          "/my-resume/images/knpam/knpam1.JPG",
+          "/my-resume/images/knpam/knpam2.JPG",
+          "/my-resume/images/knpam/knpam3.JPG"
+        ],
         "title": "Реестр книжных памятников",
-        "linkTitle": "Сайт",
         "link": "https://knpam.rusneb.ru/",
         "date": "Февраль 2021",
-        "description": "Описание",
+        "description": "Реестр книжных памятников является частью федеральной государственной информационной системы «Национальная электронная библиотека».",
+        "overview": "Книжные памятники являются особо ценной частью национального библиотечного фонда. Книжные памятники подразделяются на единичные книжные памятники и книжные памятники - коллекции, которые являются совокупностью документов, приобретающих свойства книжного памятника только при их соединении вместе в силу своего происхождения, видового родства либо по иным признакам.",
         "stack": [
           "Nuxt.js",
           "Vue",
@@ -270,7 +277,7 @@
           "Figma"
         ],
         "categories": ["Commercial"],
-        "myRole": "Выполненные задачи: разработка SPA, работа с API(axios), обработка ошибок и перенаправление на страницу 404, навигация, отрисовка данных, полученных с Backend(списки элементов), глобальный поиск (axios), фильтрация, поиск в фильтрах, и сортировки поиска книг (по типу, дате, языку и т.д.)"
+        "myRole": "Выполненные задачи: разработка SPA, работа с API(axios), обработка ошибок и перенаправление на страницу 404, навигация, отрисовка данных, полученных с Backend(списки элементов), глобальный поиск (axios), фильтрация, поиск в фильтрах, сортировки поиска книг (по типу, дате, языку и т.д.) и другое."
       },
       {
         "id": "resume",
@@ -278,10 +285,18 @@
           "src": "/my-resume/images/resume/resume.JPG",
           "alt": "resume site"
         },
-        "title": "Мой сайт-резюме",
+        "imagesSourses": [
+          "/my-resume/images/resume/resume.JPG",
+          "/my-resume/images/resume/resume1.JPG",
+          "/my-resume/images/resume/resume2.JPG",
+          "/my-resume/images/resume/resume3.JPG",
+          "/my-resume/images/resume/resume4.JPG"
+        ],
+        "title": "Сайт-резюме",
         "link": "https://damaroowork.github.io/my-resume/",
         "date": "Декабрь 2024",
-        "description": "Полноценный сайт резюме для презентации себя и поиска работы",
+        "description": "Сайт-резюме для презентации себя и для поиска работы.",
+        "overview": "Я разработал сайт-резюме для практики, дополнительного опыта и возможности показать себя. Этим проектом я хочу продемонстрировать свои возможности для его посетителей, особенно для работодателей.",
         "stack": [
           "React",
           "TypeScript",
@@ -292,7 +307,7 @@
           "Tailwindcss-motion"
         ],
         "categories": ["Mine"],
-        "myRole": "Все"
+        "myRole": "Благодаря этому проекту я закрепил работу с React, TypeScript, Vite и Git, открыл для себя новые возможности для анимаций, такие как Tailwind, Tailwind Motion и Intersect, а также побывал в роли лидера и дизайнера для нового проекта."
       },
       {
         "id": "minigames",
@@ -300,10 +315,17 @@
           "src": "/my-resume/images/minigames/minigames.JPG",
           "alt": "minigames site"
         },
+        "imagesSourses": [
+          "/my-resume/images/minigames/minigames.JPG",
+          "/my-resume/images/minigames/minigames2.JPG",
+          "/my-resume/images/minigames/minigames3.JPG",
+          "/my-resume/images/minigames/minigames4.JPG"
+        ],
         "title": "Мини приложения",
         "link": "https://damaroowork.github.io/mini-games/",
-        "date": "Май 2021",
-        "description": "Простой сайт со страницами на разные мини игры. Делал изначально на голом JavaScript пять отдельных приложений, потом решил объединить в один проект на React",
+        "date": "2024",
+        "description": "Простой сайт со страницами на разные мини игры. ",
+        "overview": "Делал изначально на голом JavaScript пять отдельных приложений, потом решил объединить в один проект на React.",
         "stack": [
           "React ",
           "TypeScript ",
@@ -313,7 +335,7 @@
           "React-snow-overlay"
         ],
         "categories": ["Fun", "Mine"],
-        "myRole": "Я делал это и это"
+        "myRole": "Моей изначальной целбю было практика навыков JavaScript, а позже навыков React'a. Благодаря этим 5 играм я стал лучше понимать, как правильно работать с react-router, с анимациями, обработкой событий и кликов, а также с DragAndDrop."
       },
       {
         "id": "crypto",
@@ -321,13 +343,20 @@
           "src": "/my-resume/images/crypto/crypto.JPG",
           "alt": "crypto site"
         },
+        "imagesSourses": [
+          "/my-resume/images/crypto/crypto.JPG",
+          "/my-resume/images/crypto/crypto2.JPG",
+          "/my-resume/images/crypto/crypto3.JPG",
+          "/my-resume/images/crypto/crypto4.JPG"
+        ],
         "title": "Крипто приложение",
         "link": "https://damaroowork.github.io/react-crypto-app/",
         "date": "2024",
-        "description": "You can watch actual info about crypto coins, stats, your coins and your wallet, and you can add your new purchased coins",
+        "description": "Сайт для работы с криптовалютами.",
+        "overview": "С помощью этого сайта вы можете смотреть актуальную информация о криптовалютах, статистику, ваши монеты и ваш общий банк, а также вы можете добавить себе свои новые купленные криптовалюты. Также вы можете просмотреть свою свои статистику в удобной круговой схеме, а также в таблице с сортировками.",
         "stack": ["React ", "Chart.js", "Ant Design", "Vite"],
         "categories": ["Mine", "Fun"],
-        "myRole": "Я делал это и это"
+        "myRole": "Данный проект нацелен на практику в изучении React. Также я работал с эксперементиваро с компонентами от Ant Design, с формами и таблицами, а также работал с библиотекой Chart.js. для создания круговых диаграмм."
       },
       {
         "id": "satoru",
@@ -335,20 +364,29 @@
           "src": "/my-resume/images/satoru/satoru.JPG",
           "alt": "satoru site"
         },
+        "imagesSourses": [
+          "/my-resume/images/satoru/satoru.JPG",
+          "/my-resume/images/satoru/satoru2.JPG",
+          "/my-resume/images/satoru/satoru3.JPG",
+          "/my-resume/images/satoru/satoru4.JPG"
+        ],
         "title": "Сайт аниме персонажа Satoru",
         "link": "https://damaroowork.github.io/satoru/",
         "date": "2024",
-        "description": "Описание",
+        "description": "Сайт аниме персонажа Satoru от w3school.",
+        "overview": "Лендинг сайта от w3school под персонажа Сатору Годжо из аниме Магическая битва.",
         "stack": ["HTML", "CSS"],
         "categories": ["Mine", "Fun"],
-        "myRole": "Я делал это и это"
+        "myRole": "В данном проекте я практиковал знания HTML и CSS."
       }
     ]
   },
   "project": {
-    "categoriesTitle": "Категория",
-    "linkTitle": "Сайт",
-    "stackTitle": "Стак"
+    "categoriesTitle": "Категория проекта",
+    "linkTitle": "Ссылка на сайт",
+    "stackTitle": "Технологии",
+    "overviewTitle": "Обзор на проект",
+    "myRoleTitle": "Моя роль и вклад"
   },
 
   "page404": {

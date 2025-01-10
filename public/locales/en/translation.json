@@ -195,7 +195,195 @@
     "h1": "Experience"
   },
   "portfolioPage": {
-    "h1": "Portfolio"
+    "h1": "Portfolio",
+    "h2": "Projects I am proud of and that have contributed to my development",
+    "info": "As a Frontend Developer, I strive to grow, benefit from work and learn new technologies. With a focus on clean code and user-oriented design, I help companies and their clients achieve their goals, increase online and optimize the entire development process.",
+    "filters": [
+      {
+        "type": "All",
+        "name": "All"
+      },
+      {
+        "type": "Commercial",
+        "name": "Commercial"
+      },
+      {
+        "type": "Mine",
+        "name": "Personal"
+      },
+      {
+        "type": "Fun",
+        "name": "Practice"
+      }
+    ],
+    "projects": [
+      {
+        "id": "tretyakovgallery",
+        "img": {
+          "src": "/my-resume/images/tretyakovskaya/tretyakovskayaEN.JPG",
+          "alt": "Main page of the Tretyakov Gallery"
+        },
+        "imagesSourses": [
+          "/my-resume/images/tretyakovskaya/tretyakovskayaEN.JPG",
+          "/my-resume/images/tretyakovskaya/tretyakovskayaEN2.JPG",
+          "/my-resume/images/tretyakovskaya/tretyakovskayaEN3.JPG",
+          "/my-resume/images/tretyakovskaya/tretyakovskayaEN4.JPG"
+        ],
+        "title": "Tretyakov Gallery",
+        "link": "https://www.tretyakovgallery.ru/",
+        "date": "May 2021",
+        "description": "The official website of the Tretyakov Gallery, designed for convenient use of the main gallery of Russia.",
+        "overview": "The official website of the Tretyakov Gallery, designed to introduce the main gallery, complexes, small museums and branches. Visitors to the site can learn about all exhibitions, events, films, programs, lectures, collections, etc. Here you can buy tickets for events, and you can also support the museum through donations.",
+        "stack": [
+          "Nuxt.js",
+          "Vue",
+          "SCSS",
+          "Vuetify",
+          "Vuex",
+          "Axios",
+          "Figma"
+        ],
+        "categories": ["Commercial"],
+        "myRole": "Support and work on the site. I did the work and design improvement after receiving edits and desired changes in the design and functionality of the site from the client. Fixes: navigation, sliders on the main page, event cards, notifications, payment page and others."
+      },
+      {
+        "id": "knpam",
+        "img": {
+          "src": "/my-resume/images/knpam/knpam.PNG",
+          "alt": "Knpam site"
+        },
+        "imagesSourses": [
+          "/my-resume/images/knpam/knpam.PNG",
+          "/my-resume/images/knpam/knpam1.JPG",
+          "/my-resume/images/knpam/knpam2.JPG",
+          "/my-resume/images/knpam/knpam3.JPG"
+        ],
+        "title": "Register of book monuments",
+        "link": "https://knpam.rusneb.ru/",
+        "date": "February 2021",
+        "description": "The register of book monuments is part of the federal state information system “National Electronic Library”.",
+        "overview": "Book monuments are a particularly valuable part of the national library collection. Book monuments are divided into individual book monuments and book monuments - collections, which are a set of documents that acquire the properties of a book monument only when they are combined together due to their origin, species relationship or other characteristics.",
+        "stack": [
+          "Nuxt.js",
+          "Vue",
+          "SCSS",
+          "Vuetify",
+          "Vuex",
+          "Vue-splide",
+          "Axios",
+          "Figma"
+        ],
+        "categories": ["Commercial"],
+        "myRole": "Completed tasks: SPA development, working with API (axios), error handling and redirection to 404 page, navigation, rendering data received from Backend (lists of elements), global search (axios), filtering, searching in filters, sorting book searches (by type, date, language, etc.) and more."
+      },
+      {
+        "id": "resume",
+        "img": {
+          "src": "/my-resume/images/resume/resumeEN.JPG",
+          "alt": "resume site"
+        },
+        "imagesSourses": [
+          "/my-resume/images/resume/resumeEN.JPG",
+          "/my-resume/images/resume/resumeEN2.JPG",
+          "/my-resume/images/resume/resumeEN3.JPG",
+          "/my-resume/images/resume/resumeEN4.JPG",
+          "/my-resume/images/resume/resumeEN5.JPG"
+        ],
+        "title": "Resume website",
+        "link": "https://damaroowork.github.io/my-resume/",
+        "date": "December 2024",
+        "description": "A resume website for presenting yourself and finding a job.",
+        "overview": "I have developed a resume website for practice, additional experience and the opportunity to show myself. With this project I want to demonstrate my capabilities to its visitors, especially to employers.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite",
+          "i18next",
+          "React-router",
+          "Tailwindcss-motion"
+        ],
+        "categories": ["Mine"],
+        "myRole": "Through this project, I gained experience with React, TypeScript, Vite, and Git, discovered new animation features like Tailwind, Tailwind Motion and Intersect, and took on the role of lead and designer for a new project."
+      },
+      {
+        "id": "minigames",
+        "img": {
+          "src": "/my-resume/images/minigames/minigames.JPG",
+          "alt": "minigames site"
+        },
+        "imagesSourses": [
+          "/my-resume/images/minigames/minigames.JPG",
+          "/my-resume/images/minigames/minigames2.JPG",
+          "/my-resume/images/minigames/minigames3.JPG",
+          "/my-resume/images/minigames/minigames4.JPG"
+        ],
+        "title": "Mini applications",
+        "link": "https://damaroowork.github.io/mini-games/",
+        "date": "2024",
+        "description": "A simple site with pages on different mini games. ",
+        "overview": "Initially, I made five separate applications in bare JavaScript, then decided to combine them into one project in React.",
+        "stack": [
+          "React ",
+          "TypeScript ",
+          "Tailwind ",
+          "Vite",
+          "React-router",
+          "React-snow-overlay"
+        ],
+        "categories": ["Fun", "Mine"],
+        "myRole": "My initial goal was to practice JavaScript skills, and later React skills. Thanks to these 5 games, I began to better understand how to properly work with react-router, with animations, event and click handling, and with DragAndDrop."
+      },
+      {
+        "id": "crypto",
+        "img": {
+          "src": "/my-resume/images/crypto/crypto.JPG",
+          "alt": "crypto site"
+        },
+        "imagesSourses": [
+          "/my-resume/images/crypto/crypto.JPG",
+          "/my-resume/images/crypto/crypto2.JPG",
+          "/my-resume/images/crypto/crypto3.JPG",
+          "/my-resume/images/crypto/crypto4.JPG"
+        ],
+        "title": "Crypto application",
+        "link": "https://damaroowork.github.io/react-crypto-app/",
+        "date": "2024",
+        "description": "A site for working with cryptocurrencies.",
+        "overview": "With this site you can view up-to-date information about cryptocurrencies, statistics, your coins and your total bank, and you can also add your newly purchased cryptocurrencies. You can also view your statistics in a convenient circular diagram, as well as in a table with sorting.",
+        "stack": ["React ", "Chart.js", "Ant Design", "Vite"],
+        "categories": ["Mine", "Fun"],
+        "myRole": "This project is aimed at practicing learning React. I also worked with experimental components from Ant Design, with forms and tables, and also worked with the Chart.js library to create pie charts."
+      },
+      {
+        "id": "satoru",
+        "img": {
+          "src": "/my-resume/images/satoru/satoru.JPG",
+          "alt": "satoru site"
+        },
+        "imagesSourses": [
+          "/my-resume/images/satoru/satoru.JPG",
+          "/my-resume/images/satoru/satoru2.JPG",
+          "/my-resume/images/satoru/satoru3.JPG",
+          "/my-resume/images/satoru/satoru4.JPG"
+        ],
+        "title": "Anime Character Satoru Website",
+        "link": "https://damaroowork.github.io/satoru/",
+        "date": "2024",
+        "description": "Anime character Satoru website by w3school.",
+        "overview": "Landing page of a website from w3school for the character Satoru Gojo from the anime Jujutsu Kaisen.",
+        "stack": ["HTML", "CSS"],
+        "categories": ["Mine", "Fun"],
+        "myRole": "In this project I practiced my knowledge of HTML and CSS."
+      }
+    ]
+  },
+  "project": {
+    "categoriesTitle": "Project category",
+    "linkTitle": "Link to the site",
+    "stackTitle": "Stack",
+    "overviewTitle": "Project overview",
+    "myRoleTitle": "My role and contribution"
   },
   "page404": {
     "errorTitle": "404",

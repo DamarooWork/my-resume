@@ -17,6 +17,6 @@ export default {
       '4xl': '2100px',
     },
   },
-  plugins: [require('tailwindcss-motion')],
+  plugins: [require('tailwindcss-motion'), require('tailwindcss-intersect')],
   darkMode: 'selector',
 }

@@ -7,6 +7,7 @@ import './i18n'
 import { ThemeProvider } from './hooks/ThemeContext.tsx'
 import { ModalState } from './hooks/ModalContext'
 import AppLoading from './components/UI/AppLoading.tsx'
+import ObserverProvider from './hooks/ObserverProvider.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,7 +15,9 @@ createRoot(document.getElementById('root')!).render(
       <ThemeProvider>
         <Suspense fallback={<AppLoading />}>
           <ModalState>
-            <App />
+            <ObserverProvider>
+              <App />
+            </ObserverProvider>
           </ModalState>
         </Suspense>
       </ThemeProvider>

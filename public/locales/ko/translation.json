@@ -1,6 +1,6 @@
 {
   "nativeName": "한국인",
-"siteTitle": "재개하다 Kichigin L.A.",
+  "siteTitle": "재개하다 Kichigin L.A.",
   "navigation": {
     "home": "집",
     "about": "에 대한",
@@ -194,7 +194,195 @@
     "h1": "기술"
   },
   "portfolioPage": {
-    "h1": "포트폴리오"
+    "h1": "포트폴리오",
+    "h2": "내가 자랑스러워하고 내 발전에 기여한 프로젝트",
+    "info": "프런트엔드 개발자로서 저는 성장하고, 일에서 이익을 얻고, 새로운 기술을 배우기 위해 노력합니다. 깨끗한 코드와 사용자 중심 디자인에 중점을 두고, 저는 회사와 고객이 목표를 달성하고, 온라인에서 성장하고, 전체 개발 프로세스를 최적화하도록 돕습니다.",
+    "filters": [
+      {
+        "type": "All",
+        "name": "모두"
+      },
+      {
+        "type": "Commercial",
+        "name": "광고"
+      },
+      {
+        "type": "Mine",
+        "name": "개인의"
+      },
+      {
+        "type": "Fun",
+        "name": "관행"
+      }
+    ],
+    "projects": [
+      {
+        "id": "tretyakovgallery",
+        "img": {
+          "src": "/my-resume/images/tretyakovskaya/tretyakovskayaEN.JPG",
+          "alt": "트레티야코프 갤러리 메인 페이지"
+        },
+        "imagesSourses": [
+          "/my-resume/images/tretyakovskaya/tretyakovskayaEN.JPG",
+          "/my-resume/images/tretyakovskaya/tretyakovskayaEN2.JPG",
+          "/my-resume/images/tretyakovskaya/tretyakovskayaEN3.JPG",
+          "/my-resume/images/tretyakovskaya/tretyakovskayaEN4.JPG"
+        ],
+        "title": "트레티야코프 갤러리",
+        "link": "https://www.tretyakovgallery.ru/",
+        "date": "2021년 5월",
+        "description": "러시아의 주요 미술관을 편리하게 이용할 수 있도록 설계된 트레티야코프 미술관 공식 웹사이트입니다.",
+        "overview": "트레티야코프 미술관의 공식 웹사이트로, 주요 갤러리, 단지, 소규모 박물관 및 지점을 소개하기 위해 설계되었습니다. 이 사이트를 방문하는 사람들은 모든 전시, 이벤트, 영화, 프로그램, 강의, 컬렉션 등에 대해 알아볼 수 있습니다. 여기에서 이벤트 티켓을 구매할 수 있으며 기부를 통해 박물관을 지원할 수도 있습니다.",
+        "stack": [
+          "Nuxt.js",
+          "Vue",
+          "SCSS",
+          "Vuetify",
+          "Vuex",
+          "Axios",
+          "Figma"
+        ],
+        "categories": ["Commercial"],
+        "myRole": "사이트 지원 및 작업. 클라이언트로부터 사이트 디자인 및 기능에 대한 편집 및 원하는 변경 사항을 받은 후 작업 및 디자인 개선을 수행했습니다. 수정 사항: 탐색, 메인 페이지의 슬라이더, 이벤트 카드, 알림, 결제 페이지 등."
+      },
+      {
+        "id": "knpam",
+        "img": {
+          "src": "/my-resume/images/knpam/knpam.PNG",
+          "alt": "Knpam 대지"
+        },
+        "imagesSourses": [
+          "/my-resume/images/knpam/knpam.PNG",
+          "/my-resume/images/knpam/knpam1.JPG",
+          "/my-resume/images/knpam/knpam2.JPG",
+          "/my-resume/images/knpam/knpam3.JPG"
+        ],
+        "title": "도서기념물등록부",
+        "link": "https://knpam.rusneb.ru/",
+        "date": "2021년 2월",
+        "description": "도서 기념물 등록부는 연방 국가 정보 시스템인 “국립 전자 도서관”의 일부입니다.",
+        "overview": "도서 기념물은 국립 도서관 소장품의 특히 귀중한 부분입니다. 도서 기념물은 개별 도서 기념물과 도서 기념물(컬렉션)로 나뉩니다. 도서 기념물은 기원, 종 관계 또는 기타 특성으로 인해 결합될 때만 도서 기념물의 속성을 획득하는 문서 세트입니다.",
+        "stack": [
+          "Nuxt.js",
+          "Vue",
+          "SCSS",
+          "Vuetify",
+          "Vuex",
+          "Vue-splide",
+          "Axios",
+          "Figma"
+        ],
+        "categories": ["Commercial"],
+        "myRole": "완료된 작업: SPA 개발, API 작업(axios), 오류 처리 및 404 페이지로의 리디렉션, 탐색, 백엔드에서 수신한 데이터 렌더링(요소 목록), 글로벌 검색(axios), 필터링, 필터로 검색, 도서 검색 정렬(유형, 날짜, 언어 등에 따라) 등."
+      },
+      {
+        "id": "resume",
+        "img": {
+          "src": "/my-resume/images/resume/resumeKO.JPG",
+          "alt": "resume site"
+        },
+        "imagesSourses": [
+          "/my-resume/images/resume/resumeKO.JPG",
+          "/my-resume/images/resume/resumeKO2.JPG",
+          "/my-resume/images/resume/resumeKO3.JPG",
+          "/my-resume/images/resume/resumeKO4.JPG",
+          "/my-resume/images/resume/resumeKO5.JPG"
+        ],
+        "title": "이력서 웹사이트",
+        "link": "https://damaroowork.github.io/my-resume/",
+        "date": "2024년 12월",
+        "description": "자신을 소개하고 일자리를 찾을 수 있는 이력서 웹사이트입니다.",
+        "overview": "저는 연습, 추가 경험 및 제 자신을 보여줄 기회를 위해 이력서 웹사이트를 개발했습니다. 이 프로젝트를 통해 저는 방문자, 특히 고용주에게 제 역량을 보여주고 싶습니다.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "Tailwind",
+          "Vite",
+          "i18next",
+          "React-router",
+          "Tailwindcss-motion"
+        ],
+        "categories": ["Mine"],
+        "myRole": "이 프로젝트를 통해 React, TypeScript, Vite, Git에 대한 경험을 얻었고, Tailwind, Tailwind Motion, Intersect와 같은 새로운 애니메이션 기능을 발견했으며, 새로운 프로젝트의 리드 및 디자이너 역할을 맡았습니다."
+      },
+      {
+        "id": "minigames",
+        "img": {
+          "src": "/my-resume/images/minigames/minigames.JPG",
+          "alt": "minigames site"
+        },
+        "imagesSourses": [
+          "/my-resume/images/minigames/minigames.JPG",
+          "/my-resume/images/minigames/minigames2.JPG",
+          "/my-resume/images/minigames/minigames3.JPG",
+          "/my-resume/images/minigames/minigames4.JPG"
+        ],
+        "title": "미니 애플리케이션",
+        "link": "https://damaroowork.github.io/mini-games/",
+        "date": "2024",
+        "description": "다양한 미니 게임에 대한 페이지가 있는 간단한 사이트입니다.",
+        "overview": "처음에는 순수 JavaScript로 다섯 개의 별도 애플리케이션을 만든 다음, 이를 React로 하나의 프로젝트로 통합하기로 했습니다.",
+        "stack": [
+          "React ",
+          "TypeScript ",
+          "Tailwind ",
+          "Vite",
+          "React-router",
+          "React-snow-overlay"
+        ],
+        "categories": ["Fun", "Mine"],
+        "myRole": "제 초기 목표는 JavaScript 기술을 연습하는 것이었고, 나중에는 React 기술을 연습하는 것이었습니다. 이 5가지 게임 덕분에 React 라우터, 애니메이션, 이벤트 및 클릭 처리, DragAndDrop을 올바르게 사용하는 방법을 더 잘 이해하기 시작했습니다."
+      },
+      {
+        "id": "crypto",
+        "img": {
+          "src": "/my-resume/images/crypto/crypto.JPG",
+          "alt": "crypto site"
+        },
+        "imagesSourses": [
+          "/my-resume/images/crypto/crypto.JPG",
+          "/my-resume/images/crypto/crypto2.JPG",
+          "/my-resume/images/crypto/crypto3.JPG",
+          "/my-resume/images/crypto/crypto4.JPG"
+        ],
+        "title": "암호화 응용 프로그램",
+        "link": "https://damaroowork.github.io/react-crypto-app/",
+        "date": "2024",
+        "description": "암호화폐를 다루는 사이트.",
+        "overview": "이 사이트에서는 암호화폐, 통계, 코인, 총 은행에 대한 최신 정보를 볼 수 있으며, 새로 구매한 암호화폐를 추가할 수도 있습니다. 편리한 원형 다이어그램과 정렬 기능이 있는 표에서 통계를 볼 수도 있습니다.",
+        "stack": ["React ", "Chart.js", "Ant Design", "Vite"],
+        "categories": ["Mine", "Fun"],
+        "myRole": "이 프로젝트는 React를 배우는 연습을 목표로 합니다. 저는 또한 Ant Design의 실험적 구성 요소, 폼 및 테이블로 작업했고, Chart.js 라이브러리로 파이 차트를 만들기도 했습니다."
+      },
+      {
+        "id": "satoru",
+        "img": {
+          "src": "/my-resume/images/satoru/satoru.JPG",
+          "alt": "satoru site"
+        },
+        "imagesSourses": [
+          "/my-resume/images/satoru/satoru.JPG",
+          "/my-resume/images/satoru/satoru2.JPG",
+          "/my-resume/images/satoru/satoru3.JPG",
+          "/my-resume/images/satoru/satoru4.JPG"
+        ],
+        "title": "애니메이션 캐릭터 사토루 웹사이트",
+        "link": "https://damaroowork.github.io/satoru/",
+        "date": "2024",
+        "description": "w3school이 만든 애니메이션 캐릭터 사토루 웹사이트입니다.",
+        "overview": "애니메이션 주술회전의 사토루 고조 캐릭터를 위한 w3school 웹사이트의 랜딩 페이지입니다.",
+        "stack": ["HTML", "CSS"],
+        "categories": ["Mine", "Fun"],
+        "myRole": "이 프로젝트에서 저는 HTML과 CSS에 대한 지식을 연습했습니다."
+      }
+    ]
+  },
+  "project": {
+    "categoriesTitle": "프로젝트 카테고리",
+    "linkTitle": "사이트 링크",
+    "stackTitle": "기술",
+    "overviewTitle": "프로젝트 개요",
+    "myRoleTitle": "내 역할과 기여"
   },
   "page404": {
     "errorTitle": "404",

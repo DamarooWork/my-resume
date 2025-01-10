@@ -1,4 +1,3 @@
-import { FadeInSection } from '../../hooks/FadeinSection'
 import Contact from './Contact'
 import { useTranslation } from 'react-i18next'
 

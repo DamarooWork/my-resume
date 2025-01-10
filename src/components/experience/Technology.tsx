@@ -1,13 +1,9 @@
 import { useContext } from 'react'
 import { ThemeContext } from '../../hooks/ThemeContext'
 
-export default function Technology({ img, title, link, i }: ITechnology) {
+export default function Technology({ img, title, link }: ITechnology) {
   const { theme } = useContext(ThemeContext)
-  let motionDelay: any = ''
-  if (typeof i === 'number') {
-    motionDelay = i * 100
-  }
-  console.log(motionDelay)
+
 
   return (
     <section

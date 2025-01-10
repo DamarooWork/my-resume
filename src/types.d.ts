@@ -70,8 +70,7 @@ interface ITechnology {
     alt: string
   }
   link: string
-  i?: number
-}
+ }
 type ITypesOfProject = 'Commercial' | 'Mine' | 'Fun' | 'All'
 interface IProject {
   id: string

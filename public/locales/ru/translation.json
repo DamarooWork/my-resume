@@ -223,9 +223,15 @@
       {
         "id": "tretyakovgallery",
         "img": {
-          "src": "./images/tretyakovskaya.JPG",
+          "src": "/my-resume/images/tretyakovskaya/tretyakovskaya.JPG",
           "alt": "Главная страница Третьяковской галереи"
         },
+        "imagesSourses": [
+          "/my-resume/images/tretyakovskaya/tretyakovskaya.JPG",
+          "/my-resume/images/tretyakovskaya/tretyakovskaya2.JPG",
+          "/my-resume/images/tretyakovskaya/tretyakovskaya3.JPG",
+          "/my-resume/images/tretyakovskaya/tretyakovskaya4.JPG"
+        ],
         "title": "Третьяковская галерея",
         "link": "https://www.tretyakovgallery.ru/",
         "date": "Май 2021",
@@ -245,7 +251,7 @@
       {
         "id": "knpam",
         "img": {
-          "src": "./images/knpam.PNG",
+          "src": "/my-resume/images/knpam/knpam.PNG",
           "alt": "knpam site"
         },
         "title": "Реестр книжных памятников",
@@ -269,7 +275,7 @@
       {
         "id": "resume",
         "img": {
-          "src": "./images/resume.JPG",
+          "src": "/my-resume/images/resume/resume.JPG",
           "alt": "resume site"
         },
         "title": "Мой сайт-резюме",
@@ -291,7 +297,7 @@
       {
         "id": "minigames",
         "img": {
-          "src": "./images/minigames.JPG",
+          "src": "/my-resume/images/minigames/minigames.JPG",
           "alt": "minigames site"
         },
         "title": "Мини приложения",
@@ -312,7 +318,7 @@
       {
         "id": "crypto",
         "img": {
-          "src": "./images/crypto.JPG",
+          "src": "/my-resume/images/crypto/crypto.JPG",
           "alt": "crypto site"
         },
         "title": "Крипто приложение",
@@ -326,7 +332,7 @@
       {
         "id": "satoru",
         "img": {
-          "src": "./images/satoru.JPG",
+          "src": "/my-resume/images/satoru/satoru.JPG",
           "alt": "satoru site"
         },
         "title": "Сайт аниме персонажа Satoru",

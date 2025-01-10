@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { useParams } from 'react-router'
+import SlidesProject from './SlidesProject'
 
 export default function MainProject() {
   const { t } = useTranslation()
@@ -11,14 +12,12 @@ export default function MainProject() {
   const filters: IFilter[] = t('portfolioPage.filters', {
     returnObjects: true,
   })
-
   let params = useParams()
-
   const project = projects.filter(
     (project) => project.id === params.portfolioName
   )[0]
   return (
-    <main>
+    <main className="pb-12">
       <header className="mb-12">
         <time className="text-2xl" dateTime={project.date}>
           {project.date}
@@ -26,11 +25,11 @@ export default function MainProject() {
         <h2 className="text-5xl mt-4">{project.title}</h2>
       </header>
 
-      <section>
+      <section className="mb-12">
         <p className="text-xl mb-6">{project.description}</p>
-        <div className="flex gap-4 mb-4 items-center ">
+        <div className="flex gap-4 mb-4  ">
           <span className="text-2xl">{t('project.stackTitle')}:</span>
-          <ul className="flex flex-nowrap gap-5 ">
+          <ul className="flex flex-wrap gap-5 items-center ">
             {project.stack.map((s) => {
               return (
                 <li className="border-2 border-[var(--main-color)] dark:border-[var(--dark-main-color)]  rounded-3xl py-2 px-4">
@@ -61,18 +60,17 @@ export default function MainProject() {
           </ul>
         </div>
       </section>
-      <div
+      <SlidesProject {...project} />
+      {/* <div
         className="group
        w-full h-auto overflow-hidden rounded-2xl "
       >
-        <div className="relative w-full h-auto">
-          <img
-            className=" w-full h-full object-cover  group-hover:scale-115   m-auto transition-all ease-in-out duration-500 will-change-transform"
-            src={project.img.src}
-            alt={project.img.alt}
-          />
-        </div>
-      </div>
+        <img
+          className=" w-full h-full object-cover  group-hover:scale-105   m-auto transition-all ease-in-out duration-500 will-change-transform"
+          src={project.img.src}
+          alt={project.img.alt}
+        />
+      </div> */}
     </main>
   )
 }

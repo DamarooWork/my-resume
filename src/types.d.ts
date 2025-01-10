@@ -79,6 +79,7 @@ interface IProject {
     src: string
     alt: string
   }
+  imagesSourses: string[]
   title: string
   link: string
   date: string

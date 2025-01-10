@@ -9,7 +9,7 @@ export default function ExperiencePage() {
     document.title = t('navigation.experience')
   }, [localStorage.i18nextLng])
   return (
-    <section className="h-[100vh] box-border m-auto pt-12 max-w-[80%]">
+    <section className="h-[100vh] box-border m-auto pt-12 max-w-[90%] lg:max-w-[80%]">
       <HeaderExperience />
       <MainExperience />
     </section>

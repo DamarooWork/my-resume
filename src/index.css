@@ -187,22 +187,25 @@ html.dark {
     width: 0ch;
   }
 }
-.parallax-effect {
-  --f: 0.05; /* the parallax factor (the smaller the better) */
-  --r: 20px; /* radius */
-  --_f: calc(100% * var(--f) / (1 + var(--f)));
-  --_a: calc(-90deg * var(--f));
-  aspect-ratio: calc(1 + var(--f));
-  object-fit: cover;
-  clip-path: inset(0 var(--_f) 0 0 round var(--r));
-  transform: perspective(400px) var(--_t, rotateY(var(--_a)));
-  transition: 0.5s;
-  cursor: pointer;
+@media (min-width: 1024px) {
+  .parallax-effect {
+    --f: 0.05; /* the parallax factor (the smaller the better) */
+    --r: 20px; /* radius */
+    --_f: calc(100% * var(--f) / (1 + var(--f)));
+    --_a: calc(-90deg * var(--f));
+    aspect-ratio: calc(1 + var(--f));
+    object-fit: cover;
+    clip-path: inset(0 var(--_f) 0 0 round var(--r));
+    transform: perspective(400px) var(--_t, rotateY(var(--_a)));
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .parallax-effect:hover {
+    clip-path: inset(0 0 0 var(--_f) round var(--r));
+    --_t: translateX(calc(-1 * var(--_f))) rotateY(calc(-1 * var(--_a)));
+  }
 }
-.parallax-effect:hover {
-  clip-path: inset(0 0 0 var(--_f) round var(--r));
-  --_t: translateX(calc(-1 * var(--_f))) rotateY(calc(-1 * var(--_a)));
-}
+
 .left-section .inner-content {
   position: absolute;
   top: 50%;

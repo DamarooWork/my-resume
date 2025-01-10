@@ -9,7 +9,7 @@ export default function AboutPage() {
     document.title = t('navigation.about')
   }, [localStorage.i18nextLng])
   return (
-    <section className="min-h-[100vh] box-border m-auto pt-10 max-w-[80%]">
+    <section className="min-h-[100vh] box-border m-auto pt-10 max-w-[90%] lg:max-w-[80%]">
       <HeaderAbout />
       <MainAbout />
     </section>

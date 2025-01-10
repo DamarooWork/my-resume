@@ -9,7 +9,7 @@ export default function MainPage() {
   }, [localStorage.i18nextLng])
   return (
     <main className="max-h-[100vh] h-[100vh] box-border ">
-      <section className="h-[100vh] m-auto max-w-[80%]  flex  xl:items-center ">
+      <section className="h-[100vh] m-auto max-w-[90%] lg:max-w-[80%]  flex  xl:items-center ">
         <HeaderMainPage />
       </section>
     </main>

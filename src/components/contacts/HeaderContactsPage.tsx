@@ -4,7 +4,7 @@ export default function HeaderContactsPage() {
   const { t } = useTranslation()
   return (
     <header className="fade-effect-top">
-      <h1 className=" text-[4rem] text-center mb-8">{t('contactsPage.h1')}</h1>
+      <h1 className=" text-[4rem] text-center">{t('contactsPage.h1')}</h1>
     </header>
   )
 }

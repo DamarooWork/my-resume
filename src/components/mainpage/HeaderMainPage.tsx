@@ -8,8 +8,8 @@ export default function HeaderMainPage() {
 
   return (
     <>
-      <header className=" basis-[100%] headerHomePage flex flex-col-reverse xl:flex-row  justify-between  text-center items-center  xl:items-start">
-        <div className="basis-[70%] xl:basis-[50%] xl:mt-8 xl:mb-8 ">
+      <header className="flex flex-col-reverse xl:flex-row justify-start lg:justify-between text-center items-center xl:items-start mt-16 lg:mt-0">
+        <div className=" basis-[60%] lg:basis-[50%] xl:mt-8 xl:mb-8 ">
           <div className="fade-effect">
             <h1 className="text-6xl mb-4 xl:mb-8">{t('home.h1')}</h1>
             <hr className="border-[var(--main-color)] dark:border-[var(--dakr-main-color)]" />
@@ -32,10 +32,10 @@ export default function HeaderMainPage() {
             </AppButton>
           </div>
         </div>
-        <div className="relative lg:ml-[30%]  lg:mt-20 xl:ml-0 xl:mt-[15vh] 2xl:mt-[10vh] 3xl:mt-20 4xl:mt-0 xl:basis-[40%] motion-preset-expand motion-duration-2000 motion-preset-flomoji-👉">
+        <div className=" basis-[40%]  lg:ml-[20%]  lg:mt-20 xl:ml-0 xl:mt-[15vh] 2xl:mt-[10vh] 3xl:mt-20 4xl:mt-0  motion-preset-expand motion-duration-2000 lg:motion-preset-flomoji-👉 max-lg:flex  max-lg:justify-center">
           <img
             loading="lazy"
-            className="parallax-effect  w-[50%] xl:w-[100%] max-w-[600px] h-auto  "
+            className="parallax-effect max-lg:rounded-2xl  w-[70%] xl:w-[100%] h-auto max-w-[600px] "
             src={avatar}
             alt="Beatiful man with long hair"
           />

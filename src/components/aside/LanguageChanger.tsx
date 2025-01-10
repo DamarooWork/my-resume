@@ -36,7 +36,7 @@ export default function LanguageChanger() {
         />
         {isSelectSmallOpen && (
           <div
-            className={`flex w-24 flex-col absolute top-[44px] right-[-20px] bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] border-2 border-[var(--main-color)] rounded-xl py-2 px-2  dark:border-[var(--main-dark-color)]`}
+            className={`flex w-24 h-auto flex-col absolute top-[44px] right-[-20px] bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] border-2 border-[var(--main-color)] rounded-xl py-2 px-2  dark:border-[var(--main-dark-color)]`}
           >
             {Object.keys(lngs).map((lng: string) => (
               <button

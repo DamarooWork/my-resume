@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import avatar from '/Projects/React/my-resume/src/assets/images/myAvatar.jpg'
-// import hoverIconSrc from '/Projects/React/my-resume/src/assets/icons/Others/hover-icon-png-23.jpg'
+import avatar from '/images/myAvatar.jpg'
 import AppButton from '../UI/AppButton'
 import Resume_Kichigin_LA from '/Projects/React/my-resume/src/assets/files/Resume_Kichigin_LA.pdf'
 
@@ -33,7 +32,7 @@ export default function HeaderMainPage() {
             </AppButton>
           </div>
         </div>
-        <div  className=" relative mt-8 xl:mt-0 xl:basis-[40%] motion-preset-expand    motion-duration-2000 motion-preset-flomoji-👉  ">
+        <div className=" relative mt-8 xl:mt-0 xl:basis-[40%] motion-preset-expand    motion-duration-2000 motion-preset-flomoji-👉  ">
           <img
             loading="lazy"
             className="  parallax-effect absolute top-[10%] left-[25%]   xl:top-[10%] 2xl:top-0 xl:left-0 w-[50%] xl:w-[100%] max-w-[600px]  h-auto  "

@@ -14,10 +14,10 @@ export default function HeaderProject() {
     (project) => project.id === params.portfolioName
   )[0]
 
-
   return (
-    <header className="fade-effect-top">
+    <header className="fade-effect-top  relative">
       <h1 className="text-[4rem] text-center mb-12">{project.title}</h1>
+      
     </header>
   )
 }

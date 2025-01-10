@@ -386,7 +386,8 @@
     "linkTitle": "Ссылка на сайт",
     "stackTitle": "Технологии",
     "overviewTitle": "Обзор на проект",
-    "myRoleTitle": "Моя роль и вклад"
+    "myRoleTitle": "Моя роль и вклад",
+    "btnBackToProjects": "Вернуться к проектам"
   },
 
   "page404": {

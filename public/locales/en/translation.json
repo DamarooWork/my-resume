@@ -383,7 +383,8 @@
     "linkTitle": "Link to the site",
     "stackTitle": "Stack",
     "overviewTitle": "Project overview",
-    "myRoleTitle": "My role and contribution"
+    "myRoleTitle": "My role and contribution",
+    "btnBackToProjects": "Back to projects"
   },
   "page404": {
     "errorTitle": "404",

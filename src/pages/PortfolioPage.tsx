@@ -9,7 +9,7 @@ export default function PortfolioPage() {
     document.title = t('navigation.portfolio')
   }, [localStorage.i18nextLng])
   return (
-    <section className="h-[100vh] box-border m-auto py-20 max-w-[80%]">
+    <section className="h-[100vh] box-border m-auto py-12 max-w-[80%]">
       <HeaderPortfolio />
       <MainPortfolio />
     </section>

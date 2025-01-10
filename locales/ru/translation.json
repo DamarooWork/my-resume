@@ -223,7 +223,7 @@
       {
         "id": "tretyakovgallery",
         "img": {
-          "src": "./images/tretyakovskaya.JPG",
+          "src": "/my-resume/images/tretyakovskaya.JPG",
           "alt": "Главная страница Третьяковской галереи"
         },
         "title": "Третьяковская галерея",
@@ -245,7 +245,7 @@
       {
         "id": "knpam",
         "img": {
-          "src": "./images/knpam.PNG",
+          "src": "/my-resume/images/knpam.PNG",
           "alt": "knpam site"
         },
         "title": "Реестр книжных памятников",
@@ -269,7 +269,7 @@
       {
         "id": "resume",
         "img": {
-          "src": "./images/resume.JPG",
+          "src": "/my-resume/images/resume.JPG",
           "alt": "resume site"
         },
         "title": "Мой сайт-резюме",
@@ -291,7 +291,7 @@
       {
         "id": "minigames",
         "img": {
-          "src": "./images/minigames.JPG",
+          "src": "/my-resume/images/minigames.JPG",
           "alt": "minigames site"
         },
         "title": "Мини приложения",
@@ -312,7 +312,7 @@
       {
         "id": "crypto",
         "img": {
-          "src": "./images/crypto.JPG",
+          "src": "/my-resume/images/crypto.JPG",
           "alt": "crypto site"
         },
         "title": "Крипто приложение",
@@ -326,7 +326,7 @@
       {
         "id": "satoru",
         "img": {
-          "src": "./images/satoru.JPG",
+          "src": "/my-resume/images/satoru.JPG",
           "alt": "satoru site"
         },
         "title": "Сайт аниме персонажа Satoru",

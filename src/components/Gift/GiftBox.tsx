@@ -1,9 +1,12 @@
-import { useEffect, useState } from 'react'
-import { giftData } from './giftData'
+import { useContext, useEffect, useState } from 'react'
+import giftLight from '/images/others/giftLight.png'
+import giftDark from '/images/others/giftDark.png'
+import { ThemeContext } from '../../hooks/ThemeContext'
 export default function GiftBox({ click }: GiftBoxClick) {
+  const { theme } = useContext(ThemeContext)
   const [isBoxClicked, setBoxClicked] = useState<boolean>(false)
   const [displayBoxStyle, setDisplayBoxStyle] = useState<string>(
-    'fixed flex  bottom-10 right-10 cursor-pointer animate-bounce '
+    'fixed flex  bottom-10 right-10 cursor-pointer motion-preset-oscillate motion-duration-2000'
   )
 
   function handleClick() {
@@ -19,10 +22,14 @@ export default function GiftBox({ click }: GiftBoxClick) {
     <div className={displayBoxStyle} onClick={() => setBoxClicked(true)}>
       <img
         className="w-[70px] h-auto absolute hover:animate-ping inline-flex opacity-70"
-        src={giftData}
+        src={theme === 'dark' ? giftDark : giftLight}
         alt="Gift"
       />
-      <img className="w-[70px] h-auto" src={giftData} alt="Gift" />
+      <img
+        className="w-[70px] h-auto"
+        src={theme === 'dark' ? giftDark : giftLight}
+        alt="Gift"
+      />
     </div>
   )
 }

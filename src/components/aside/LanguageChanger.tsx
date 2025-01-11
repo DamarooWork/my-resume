@@ -77,7 +77,7 @@ export default function LanguageChanger() {
         >
           <div
             className={` relative flex flex-row justify-start items-center   text-nowrap  cursor-pointer  ${
-              isSelectOpen ? 'pt-[8px]' : 'pt-[6px]'
+              isSelectOpen ? 'pt-[10px] 2xl:pt-[8px]' : 'pt-[8px] 2xl:pt-[6px]'
             }`}
             ref={ref}
           >

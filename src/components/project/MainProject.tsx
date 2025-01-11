@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { useParams } from 'react-router'
-import SliderProject from './SliderProject'
+import SwiperProject from './Swiper'
 
 export default function MainProject() {
   const { t } = useTranslation()
@@ -70,8 +70,8 @@ export default function MainProject() {
           </ul>
         </div>
       </section>
-      <SliderProject {...project} />
-      <section className="mb-12 intersect-once intersect:motion-preset-pop">
+      <SwiperProject images={project.imagesSourses} />
+      <section className="mb-12 mt-12 intersect-once intersect:motion-preset-pop">
         <h3 className="text-2xl mb-4 text-[var(--link-color)] dark:text-[var(--dark-link-color)]">
           {t('project.overviewTitle')}
         </h3>

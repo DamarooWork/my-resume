@@ -43,10 +43,4 @@ export default function AsideComponent() {
     </aside>
   )
 }
-function componentDidMount() {
-  throw new Error('Function not implemented.')
-}
 
-function componentWillUnmount() {
-  throw new Error('Function not implemented.')
-}

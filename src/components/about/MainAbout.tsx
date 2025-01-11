@@ -35,7 +35,7 @@ export default function MainAbout() {
       <div className=" flex flex-col 3xl:flex-row justify-between">
         <section className="fade-effect fade-time-250 flex flex-col justify-start gap-5 3xl:w-[48%]  3xl:mb-16">
           <FadeInSection>
-            <header className="flex items-center gap-5 text-center">
+            <header className="flex max-[380px]:flex-col items-center gap-5 text-center ">
               <img
                 className="w-10 h-auto"
                 src={theme === 'dark' ? computerDark : computerLight}

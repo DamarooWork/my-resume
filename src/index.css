@@ -33,12 +33,12 @@ html {
   color: var(--main-color);
 
   position: relative;
-  font-size: 8px;
+  font-size: 10px;
   @media (min-width: 640px) {
-    font-size: 10px;
+    font-size: 12px;
   }
   @media (min-width: 768px) {
-    font-size: 12px;
+    font-size: 14px;
   }
   @media (min-width: 1024px) {
     font-size: 16px;
@@ -145,12 +145,12 @@ html.dark {
 .text-typing {
   border-right-width: 4px;
   border-right-style: solid;
-  animation: cursor 1s infinite step-end, typing 7s infinite steps(22);
+  animation: cursor 1s infinite step-end, typing 8s infinite steps(22);
   white-space: nowrap;
   overflow: hidden;
 }
 .dark .text-typing {
-  animation: cursorDark 1s infinite step-end, typing 7s infinite steps(22);
+  animation: cursorDark 1s infinite step-end, typing 8s infinite steps(22);
 }
 @keyframes cursor {
   0%,
@@ -174,7 +174,7 @@ html.dark {
   0% {
     width: 0ch;
   }
-  20% {
+  30% {
     width: 22.1ch;
   }
   80% {

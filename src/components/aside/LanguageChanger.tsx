@@ -36,7 +36,7 @@ export default function LanguageChanger() {
         />
         {isSelectSmallOpen && (
           <div
-            className={`flex w-24 h-auto flex-col absolute top-[44px] right-[-20px] bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] border-2 border-[var(--main-color)] rounded-xl py-2 px-2  dark:border-[var(--main-dark-color)]`}
+            className={`flex w-24 h-auto flex-col absolute top-[37px] right-[-18px] md:right-[-24px] bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] border-2 border-[var(--main-color)] rounded-xl py-2 px-2 m-0  dark:border-[var(--main-dark-color)]`}
           >
             {Object.keys(lngs).map((lng: string) => (
               <button
@@ -54,24 +54,26 @@ export default function LanguageChanger() {
         )}
       </section>
       <section
-        className={`hidden lg:block relative h-[40px] grow  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl   transition-transform ease-in  duration-300 hover:scale-115 will-change-transform ${
+        className={`hidden lg:block relative h-[40px] grow px-1  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl   transition-transform ease-in  duration-300 hover:scale-115 will-change-transform ${
           isSelectOpen ? 'border-t-0 rounded-t-none' : ''
         }`}
         ref={ref}
       >
         <div
-          className={` relative flex flex-row justify-start items-center cursor-pointer px-1 mr-2 text-nowrap ${
-            isSelectOpen ? 'pt-1.5' : 'pt-1'
+          className={` relative flex flex-row justify-start items-center   text-nowrap  cursor-pointer  ${
+            isSelectOpen ? 'pt-[8px] 2xl:pt-[6px]' : 'pt-[6px] 2xl:pt-[4px]'
           }`}
           onClick={() => setSelectOpen((prev) => !prev)}
         >
           <img
-            className="w-7 h-auto"
+            className="w-7 h-auto will-change-transform"
             src={theme === 'dark' ? languageDark : languageLight}
             alt="World icon"
           />
 
-          <span className="ml-0.5 font-medium">{t('nativeName')} </span>
+          <span className="ml-0.5 font-medium text-[16px] will-change-transform">
+            {t('nativeName')}
+          </span>
         </div>
 
         {isSelectOpen && (

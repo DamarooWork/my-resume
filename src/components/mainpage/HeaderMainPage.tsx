@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import avatar from '/images/others/myAvatar.jpg'
 import AppButton from '../UI/AppButton'
-import Resume_Kichigin_LA from '/Projects/React/my-resume/src/assets/files/Resume_Kichigin_LA.pdf'
+import Resume_Kichigin_LA from '/files/Resume_Kichigin_LA.pdf'
 
 export default function HeaderMainPage() {
   const { t } = useTranslation()

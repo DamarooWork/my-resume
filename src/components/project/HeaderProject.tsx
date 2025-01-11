@@ -15,9 +15,8 @@ export default function HeaderProject() {
   )[0]
 
   return (
-    <header className="fade-effect-top  relative">
-      <h1 className="text-[4rem] text-center mb-12">{project.title}</h1>
-      
+    <header className="fade-effect-top  relative lg:w-[80%] lg:mx-[10%] ">
+      <h1 className="text-6xl text-center mb-12">{project.title}</h1>
     </header>
   )
 }

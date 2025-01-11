@@ -14,11 +14,11 @@ export default function ModalGift({ children, title, onClose }: ModalProps) {
   return (
     <>
       <div
-        className="fixed bg-black/90 top-0 right-0 left-0 bottom-0 cursor-pointer"
+        className="z-20 fixed bg-black/90 top-0 right-0 left-0 bottom-0 cursor-pointer"
         onClick={onClose}
       />
       <img
-        className="fixed top-10 right-10 w-[100%] max-w-[50px]  h-auto  z-20  will-change-contents hover:scale-110 active:scale-95 cursor-pointer transition-transform ease-in duration-150"
+        className="z-30 fixed top-10 right-10 w-[100%] max-w-[50px]  h-auto will-change-contents hover:scale-110 active:scale-95 cursor-pointer transition-transform ease-in duration-150 motion-preset-pop "
         src={close}
         alt="Кнопка закрыть"
         onClick={onClose}
@@ -26,9 +26,9 @@ export default function ModalGift({ children, title, onClose }: ModalProps) {
       {children}
       <div
         onClick={onClose}
-        className="w-[100vw] h-[100vh]  fixed top-0 left-1/2 -translate-x-1/2   text-[var(--main-dark-color)] dark:text-[var(--dark-main-color)] cursor-pointer"
+        className="z-30 w-[100vw] h-[100vh]  fixed top-0 left-1/2 -translate-x-1/2   text-[var(--main-dark-color)] dark:text-[var(--dark-main-color)] cursor-pointer"
       >
-        <h2 className="block mt-[40vh] text-4xl text-center  font-bold motion-scale-in-[0.18] motion-translate-x-in-[200%] motion-translate-y-in-[200%] motion-opacity-in-[0%] motion-rotate-in-[-47deg] motion-blur-in-[5px] motion-duration-[1.13s]/scale motion-duration-[1.13s]/translate motion-duration-[1.35s]/rotate motion-ease-spring-bouncy  ">
+        <h2 className=" block mt-[40vh] text-4xl text-center  font-bold motion-scale-in-[0.18] motion-translate-x-in-[200%] motion-translate-y-in-[200%] motion-opacity-in-[0%] motion-rotate-in-[-47deg] motion-blur-in-[5px] motion-duration-[1.13s]/scale motion-duration-[1.13s]/translate motion-duration-[1.35s]/rotate motion-ease-spring-bouncy  ">
           {title}
         </h2>
       </div>

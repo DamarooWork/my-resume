@@ -6,7 +6,7 @@ export default function GiftBox({ click }: GiftBoxClick) {
   const { theme } = useContext(ThemeContext)
   const [isBoxClicked, setBoxClicked] = useState<boolean>(false)
   const [displayBoxStyle, setDisplayBoxStyle] = useState<string>(
-    'fixed flex  bottom-10 right-10 cursor-pointer motion-preset-oscillate motion-duration-2000'
+    'fixed flex  bottom-10 right-5 lg:right-10 cursor-pointer motion-preset-oscillate motion-duration-2000'
   )
 
   function handleClick() {
@@ -21,12 +21,12 @@ export default function GiftBox({ click }: GiftBoxClick) {
   return (
     <div className={displayBoxStyle} onClick={() => setBoxClicked(true)}>
       <img
-        className="w-[70px] h-auto absolute hover:animate-ping inline-flex opacity-70"
+        className="w-[50px] lg:w-[70px] h-auto absolute hover:animate-ping inline-flex opacity-70"
         src={theme === 'dark' ? giftDark : giftLight}
         alt="Gift"
       />
       <img
-        className="w-[70px] h-auto"
+        className="w-[50px] lg:w-[70px] h-auto"
         src={theme === 'dark' ? giftDark : giftLight}
         alt="Gift"
       />

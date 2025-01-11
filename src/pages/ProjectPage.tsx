@@ -25,15 +25,14 @@ export default function ProjectPage() {
     <section className="h-[100vh] box-border m-auto py-12 max-w-[80%] lg:max-w-[60%]">
       <AppButton
         href="/portfolio"
-        btnClasses="fixed top-20 left-[var(--scroll-to-top-position)] rounded-2xl  border-[var(--hover-bg-color)] py-2 px-4  text-lg transition ease-in-out  duration-150 will-change-transform hover:scale-[105%] active:scale-[95%] shadow-[0_2px_5px_2px_rgba(30,27,75,0.1)] hover:shadow-[0_5px_10px_5px_rgba(30,27,75,0.2)] dark:shadow-[0_2px_5px_2px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_5px_10px_5px_rgba(255,255,255,0.2)] motion-opacity-in-0 motion-translate-x-in-100"
+        btnClasses="fixed max-lg:left-5 left-[var(--scroll-to-top-position)] w-30 lg:top-20  rounded-2xl  border-[var(--hover-bg-color)] py-4 px-3 lg:px-6  text-lg transition ease-in-out  duration-150 will-change-transform hover:scale-[105%] active:scale-[95%] shadow-[0_2px_5px_2px_rgba(30,27,75,0.1)] hover:shadow-[0_5px_10px_5px_rgba(30,27,75,0.2)] dark:shadow-[0_2px_5px_2px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_5px_10px_5px_rgba(255,255,255,0.2)] motion-opacity-in-0 motion-translate-x-in-100"
       >
-        <div className="flex flex-row gap-2 items-center">
+        <div className="flex justify-center gap-2  ">
           <img
             className="w-8 h-auto"
             src={theme === 'dark' ? arrowLeftDark : arrowLeftLight}
             alt="Left arrow"
           />
-          <span>{t('project.btnBackToProjects')}</span>
         </div>
       </AppButton>
       <HeaderProject />

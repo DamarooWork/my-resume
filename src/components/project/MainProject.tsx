@@ -19,7 +19,7 @@ export default function MainProject() {
   return (
     <main className="pb-12">
       <header className="mb-12 motion-preset-pop  motion-duration-1000 motion-delay-100">
-        <time className="text-2xl  " dateTime={project.date}>
+        <time className="text-2xl" dateTime={project.date}>
           {project.date}
         </time>
         <h2 className="text-5xl text-[var(--link-color)] dark:text-[var(--dark-link-color)] ">
@@ -27,7 +27,7 @@ export default function MainProject() {
         </h2>
       </header>
 
-      <section className="mb-12 ">
+      <section className="mb-2 sm:mb-6 lg:mb-12 ">
         <p className="text-xl mb-6 motion-preset-pop  motion-duration-1000 motion-delay-200">
           {project.description}
         </p>
@@ -54,7 +54,7 @@ export default function MainProject() {
             </a>
           </span>
         </div>
-        <div className="flex gap-4 mb-4 items-center motion-preset-pop  motion-duration-1000 motion-delay-700">
+        <div className="flex gap-4 lg:mb-4 items-center motion-preset-pop  motion-duration-1000 motion-delay-700">
           <h3 className="text-2xl">{t('project.categoriesTitle')}:</h3>
           <ul className="flex flex-nowrap gap-5">
             {project.categories.map((s, i) => {
@@ -85,10 +85,10 @@ export default function MainProject() {
       </section>
       <div
         className="group
-       w-full h-auto overflow-hidden rounded-2xl intersect-once intersect:motion-preset-slide-up"
+       w-full h-auto intersect-once intersect:motion-preset-slide-up"
       >
         <img
-          className=" w-full h-full object-cover  group-hover:scale-105   m-auto transition-all ease-in-out duration-500 will-change-transform"
+          className=" w-full h-auto   rounded-2xl group-hover:scale-[102%]   m-auto transition-all ease-in-out duration-500 will-change-transform"
           src={project.img.src}
           alt={project.img.alt}
         />

@@ -25,7 +25,7 @@ export default function SliderProject({ imagesSourses }: IProject) {
 
   return (
     <>
-      <section className="flex w-full gap-5 overflow-hidden items-center h-80  rounded-3xl mb-12 intersect-once intersect:motion-preset-expand ">
+      <section className="flex w-full gap-5 items-center h-80  rounded-3xl sm:mb-6  lg:mb-12 intersect-once intersect:motion-preset-expand ">
         {imagesSourses.map((image, i) => {
           return (
             <div
@@ -34,7 +34,7 @@ export default function SliderProject({ imagesSourses }: IProject) {
               className={i === 0 ? active : normal}
             >
               <img
-                className="w-full h-full rounded-2xl "
+                className="w-full h-auto rounded-2xl "
                 src={image}
                 onClick={() => handleClick(i)}
               />

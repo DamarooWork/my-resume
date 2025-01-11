@@ -15,7 +15,7 @@ export default function LanguageChanger() {
   const [isMobile, setIsMobile] = useState(false)
   const { t, i18n } = useTranslation()
   const { theme } = useContext(ThemeContext)
-  const ref = useRef<HTMLElement>(null)
+  const ref = useRef<HTMLDivElement>(null)
   const refSmall = useRef<HTMLElement>(null)
   useClickOutside(ref, () => setSelectOpen(false))
   useClickOutside(refSmall, () => setSelectSmallOpen(false))
@@ -70,16 +70,16 @@ export default function LanguageChanger() {
         </section>
       ) : (
         <section
-          className={`relative h-[42px] grow px-1  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl   transition-transform ease-in  duration-300 hover:scale-115 will-change-transform ${
+          className={`relative h-[44px] grow px-1  border-2 border-[var(--main-color)] dark:border-[var(--main-dark-color)] rounded-2xl   transition-transform ease-in  duration-300 hover:scale-115 will-change-transform ${
             isSelectOpen ? 'border-t-0 rounded-t-none' : ''
           }`}
-          ref={ref}
+          onClick={() => setSelectOpen((prev) => !prev)}
         >
           <div
             className={` relative flex flex-row justify-start items-center   text-nowrap  cursor-pointer  ${
-              isSelectOpen ? 'pt-[8px] 2xl:pt-[7px]' : 'pt-[6px] 2xl:pt-[5px]'
+              isSelectOpen ? 'pt-[8px]' : 'pt-[6px]'
             }`}
-            onClick={() => setSelectOpen((prev) => !prev)}
+            ref={ref}
           >
             <img
               className="w-7 h-auto will-change-transform"

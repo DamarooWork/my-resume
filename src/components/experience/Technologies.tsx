@@ -117,7 +117,7 @@ const technologiesArray: ITechnology[] = [
 ]
 export default function Technologies() {
   return (
-    <div className="technologies grid grid-cols-1  sm:grid-cols-[repeat(2,_1fr)] xl:grid-cols-[repeat(3,_1fr)] 3xl:grid-cols-[repeat(3,_1fr)] 4xl:grid-cols-[repeat(4,_1fr)] flex-nowrap ">
+    <div className="technologies grid    min-[460px]:grid-cols-[repeat(2,_1fr)] xl:grid-cols-[repeat(3,_1fr)] 3xl:grid-cols-[repeat(3,_1fr)] 4xl:grid-cols-[repeat(4,_1fr)] flex-nowrap ">
       {technologiesArray.map((tech) => {
         return (
           <FadeInSection key={tech.title}>

@@ -7,13 +7,11 @@
   transition: all linear 500ms;
   font-size: 2rem;
   opacity: 1;
-  -webkit-text-stroke: 1px var(--main-bg-color);
   text-shadow: 3px 3px 0 var(--main-bg-color), -1px -1px 0 var(--main-bg-color),
     1px -1px 0 var(--main-bg-color), -1px 1px 0 var(--main-bg-color),
     1px 1px 0 var(--main-bg-color);
 }
 .dark .technology:hover h3 {
-  -webkit-text-stroke: 1px black;
   text-shadow: 3px 3px 0 black, -1px -1px 0 black, 1px -1px 0 black,
     -1px 1px 0 black, 1px 1px 0 black;
 }

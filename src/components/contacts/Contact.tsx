@@ -33,11 +33,11 @@ export default function Contact({
     <>
       {download && linkHref ? (
         <a
-          className=" min-w-80 bg-[var(--section-color)] dark:bg-[var(--dark-section-color)]   border-0 rounded-3xl py-4 px-6  transition ease-in  duration-300 hover:scale-[105%] active:scale-[100%] will-change-transform shadow-[0_0_15px_10px_rgba(30,27,75,0.2)] hover:shadow-[0_0_25px_10px_rgba(30,27,75,0.6)] dark:shadow-[0_0_15px_10px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_10px_25px_10px_rgba(255,255,255,0.6)] mb-12 motion-preset-pop intersect-once intersect:motion-preset-slide-up "
+          className=" min-w-80 bg-[var(--section-color)] dark:bg-[var(--dark-section-color)]   border-0 rounded-3xl py-4 px-6  transition ease-in  duration-300 hover:scale-[105%] active:scale-[100%] will-change-transform shadow-[0_0_15px_10px_rgba(30,27,75,0.2)] hover:shadow-[0_0_25px_10px_rgba(30,27,75,0.6)] dark:shadow-[0_0_15px_10px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_10px_25px_10px_rgba(255,255,255,0.6)] mb-12 motion-preset-pop intersect-once intersect:motion-preset-slide-up motion-duration-2000 "
           href={linkHref}
           download
         >
-          <section className="relative flex flex-col justify-between items-center">
+          <section className="relative flex flex-col justify-between items-center ">
             <img
               className="w-[40px] h-auto"
               src={
@@ -60,7 +60,7 @@ export default function Contact({
         </a>
       ) : linkHref ? (
         <a
-          className="  min-w-80 bg-[var(--section-color)] dark:bg-[var(--dark-section-color)]  border-0 rounded-3xl py-4 px-6 transition ease-in  duration-300 hover:scale-[105%] active:scale-[100%] will-change-transform shadow-[0_0_15px_10px_rgba(30,27,75,0.2)] hover:shadow-[0_0_25px_10px_rgba(30,27,75,0.6)] dark:shadow-[0_0_15px_10px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_10px_25px_10px_rgba(255,255,255,0.6)] mb-12 motion-preset-pop  intersect-once intersect:motion-preset-slide-up"
+          className="  min-w-80 bg-[var(--section-color)] dark:bg-[var(--dark-section-color)]  border-0 rounded-3xl py-4 px-6 transition ease-in  duration-300 hover:scale-[105%] active:scale-[100%] will-change-transform shadow-[0_0_15px_10px_rgba(30,27,75,0.2)] hover:shadow-[0_0_25px_10px_rgba(30,27,75,0.6)] dark:shadow-[0_0_15px_10px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_10px_25px_10px_rgba(255,255,255,0.6)] mb-12 motion-preset-pop  intersect-once intersect:motion-preset-slide-up "
           href={linkHref}
           target="_blank"
         >

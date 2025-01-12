@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html {
   font-family: monospace;
   --nav-width: 0;

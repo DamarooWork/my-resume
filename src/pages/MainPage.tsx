@@ -8,8 +8,8 @@ export default function MainPage() {
     document.title = t('siteTitle')
   }, [localStorage.i18nextLng])
   return (
-    <main className="max-h-[100vh] h-[100vh] box-border ">
-      <section className="h-[100vh] m-auto max-w-[90%] lg:max-w-[80%]  flex  xl:items-center ">
+    <main className="max-h-[100vh] lg:h-[100vh] box-border ">
+      <section className="lg:h-[100vh] m-auto max-w-[90%] lg:max-w-[80%]  flex  xl:items-center ">
         <HeaderMainPage />
       </section>
     </main>

@@ -6,14 +6,14 @@ import '/Projects/React/my-resume/node_modules/swiper/modules/autoplay.css'
 export default function SwiperProject({ images }: { images: string[] }) {
   return (
     <Swiper
-      className="mySwiper "
+      className="mySwiper"
       spaceBetween={50}
       slidesPerView={1}
       effect={'cards'}
       grabCursor={true}
       modules={[EffectCards, Autoplay]}
       autoplay={{
-        delay: 1500,
+        delay: 3000,
       }}
     >
       {images.map((image, i) => {

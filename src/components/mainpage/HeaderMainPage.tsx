@@ -34,7 +34,7 @@ export default function HeaderMainPage() {
             <hr className="border-[var(--main-color)] dark:border-[var(--dakr-main-color)]" />
             <h3 className="text-3xl mt-4 xl:mt-8">{t('home.about')}</h3>
           </div>
-          <div className="fade-effect fade-time-500 py-[4vh] xl:py-[8vh]">
+          <div className="fade-effect fade-time-500  py-[4vh] xl:py-[8vh]">
             <AppButton
               link_out={Resume_Kichigin_LA}
               btnClasses="relative border-0 rounded-2xl border-[var(--hover-bg-color)] py-4 px-8  text-2xl gradient-bg text-white transition ease-in-out  duration-150 hover:scale-[105%] active:scale-[95%] shadow-[0_2px_5px_2px_rgba(30,27,75,0.1)] hover:shadow-[0_5px_10px_5px_rgba(30,27,75,0.2)] dark:shadow-[0_2px_5px_2px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_5px_10px_5px_rgba(255,255,255,0.2)]"

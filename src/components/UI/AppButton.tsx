@@ -4,7 +4,7 @@ export default function AppButton({
   href,
   link_out,
   btnClasses,
-  download,
+  download = false,
   children,
 }: IButtonProps) {
   const navigate = useNavigate()

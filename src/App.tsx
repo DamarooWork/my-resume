@@ -5,7 +5,6 @@ import ContactsPage from './pages/ContactsPage'
 import ExperiencePage from './pages/ExperiencePage'
 import AboutPage from './pages/AboutPage'
 import AsideComponent from './components/aside/AsideComponent'
-
 import GiftBox from './components/gift/GiftBox'
 import { useContext } from 'react'
 import { ModalContext } from './hooks/ModalContext'
@@ -17,6 +16,7 @@ import ScrollToTop from './components/UI/ScrollToTop'
 import ProjectPage from './pages/ProjectPage'
 import Page404 from './pages/Page404'
 export default function App() {
+ 
   const { t } = useTranslation()
   const { modal, open: openModal, close: closeModal } = useContext(ModalContext)
 

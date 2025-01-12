@@ -7,13 +7,6 @@
   transition: all linear 500ms;
   font-size: 2rem;
   opacity: 1;
-  text-shadow: 3px 3px 0 var(--main-bg-color), -1px -1px 0 var(--main-bg-color),
-    1px -1px 0 var(--main-bg-color), -1px 1px 0 var(--main-bg-color),
-    1px 1px 0 var(--main-bg-color);
-}
-.dark .technology:hover h3 {
-  text-shadow: 3px 3px 0 black, -1px -1px 0 black, 1px -1px 0 black,
-    -1px 1px 0 black, 1px 1px 0 black;
 }
 @media (min-width: 1920px) {
   .technology:hover h3 {

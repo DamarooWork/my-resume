@@ -31,12 +31,12 @@ IProject) {
           />
         </div>
       </div>
-      <section className=" px-2 py-4 text-center ">
+      <section className="px-2 py-4 text-center">
         <header className="mb-6">
           <h3 className="text-4xl">{title}</h3>
         </header>
 
-        <footer className="">
+        <footer>
           <ul className="flex flex-row gap-4  justify-center ">
             {stack.slice(0, 3).map((tech, i) => {
               return (

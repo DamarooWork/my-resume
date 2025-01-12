@@ -30,7 +30,6 @@ export default function ProfExp({
       </hgroup>
       <section className="flex flex-row flex-wrap gap-2 text-xl mb-4">
         <h3>{workDoneTitle}</h3>
-        {'-'}
         <a
           className="text-[var(--link-color)] dark:text-[var(--dark-link-color)] hover:underline"
           href={workDone}
@@ -40,19 +39,22 @@ export default function ProfExp({
         </a>
       </section>
       <p className="text-xl mb-8">{description}</p>
-      <h4 className="text-2xl mb-4">{t('aboutPage.stack')}</h4>
-      <ul className="flex flex-row flex-wrap gap-4 ">
-        {stack.map((s) => {
-          return (
-            <li
-              key={s}
-              className="border-2 border-[var(--main-color)] dark:border-[var(--dark-main-color)]  rounded-3xl py-2 px-4"
-            >
-              {s}
-            </li>
-          )
-        })}
-      </ul>
+      <footer>
+        <h4 className="text-2xl mb-4">{t('aboutPage.stack')}</h4>
+        <ul className="flex flex-row flex-wrap gap-4 ">
+          {stack.map((s) => {
+            return (
+              <li
+                key={s}
+                className="border-2 border-[var(--main-color)] dark:border-[var(--dark-main-color)]  rounded-3xl py-2 px-4"
+              >
+                {s}
+              </li>
+            )
+          })}
+        </ul>
+      </footer>
+
       <div className="absolute right-5 top-6 flex flex-row  gap-2 justify-end items-center">
         <img
           className="w-5 h-auto"

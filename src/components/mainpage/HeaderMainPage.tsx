@@ -26,11 +26,11 @@ export default function HeaderMainPage() {
       <header className="flex flex-col-reverse xl:flex-row justify-start lg:justify-between text-center items-center xl:items-start mt-16 lg:mt-0">
         <div className=" basis-[65%] lg:basis-[50%] xl:mt-8 xl:mb-8 ">
           <div className="fade-effect">
-            <h1 className="text-6xl mb-4 xl:mb-8">{t('home.h1')}</h1>
+            <h2 className="text-6xl mb-4 xl:mb-8">{t('home.h1')}</h2>
             <hr className="border-[var(--main-color)] dark:border-[var(--dakr-main-color)]" />
-            <h2 className="text-4xl text-typing my-4  m-auto">
+            <h1 className="text-4xl text-typing my-4  m-auto">
               {t('home.h2')}
-            </h2>
+            </h1>
             <hr className="border-[var(--main-color)] dark:border-[var(--dakr-main-color)]" />
             <h3 className="text-3xl mt-4 xl:mt-8">{t('home.about')}</h3>
           </div>

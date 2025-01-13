@@ -6,7 +6,7 @@ import '/Projects/React/my-resume/node_modules/swiper/modules/autoplay.css'
 export default function SwiperProject({ images }: { images: string[] }) {
   return (
     <Swiper
-      className="mySwiper"
+      className="mySwiper intersect-once intersect:motion-preset-slide-up intersect:motion-delay-1000"
       spaceBetween={50}
       slidesPerView={1}
       effect={'cards'}

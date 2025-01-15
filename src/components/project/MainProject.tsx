@@ -74,7 +74,7 @@ export default function MainProject() {
         <SwiperProject images={project.imagesSourses} />
       </section>
 
-      <section className="mb-12 mt-12 intersect-once intersect:motion-preset-pop">
+      <section className="mb-12 mt-12 intersect-once intersect:motion-preset-pop ">
         <h3 className="text-2xl mb-4 text-[var(--link-color)] dark:text-[var(--dark-link-color)]">
           {t('project.overviewTitle')}
         </h3>

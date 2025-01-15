@@ -86,8 +86,8 @@ export default function Contact({
           </section>
         </a>
       ) : (
-        <section
-          className=" relative  min-w-80 flex flex-col justify-between items-center   bg-[var(--section-color)] dark:bg-[var(--dark-section-color)]   transition ease-in  duration-300  border-0 rounded-3xl py-4 px-6 cursor-pointer hover:scale-[105%] active:scale-[100%] will-change-transform shadow-[0_0_15px_10px_rgba(30,27,75,0.2)] hover:shadow-[0_0_25px_10px_rgba(30,27,75,0.6)] dark:shadow-[0_0_15px_10px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_10px_25px_10px_rgba(255,255,255,0.6)] mb-12 motion-preset-pop  intersect-once intersect:motion-preset-slide-up"
+        <section 
+          className="relative  min-w-80 flex flex-col justify-between items-center   bg-[var(--section-color)] dark:bg-[var(--dark-section-color)]   transition ease-in  duration-300  border-0 rounded-3xl py-4 px-6 cursor-pointer hover:scale-[105%] active:scale-[100%] will-change-transform shadow-[0_0_15px_10px_rgba(30,27,75,0.2)] hover:shadow-[0_0_25px_10px_rgba(30,27,75,0.6)] dark:shadow-[0_0_15px_10px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_10px_25px_10px_rgba(255,255,255,0.6)] mb-12 motion-preset-pop  intersect-once intersect:motion-preset-slide-up"
           onClick={() => handleCopyText(content)}
         >
           <img

@@ -11,7 +11,7 @@ export default function Navigation() {
     'border-[var(--hover-bg-color)] dark:border-[var(--hover-bg-dark-color)] text-[var(--main-color)] dark:text-[var(--main-dark-color)] '
   return (
     <nav className="xl:w-[100%]">
-      <ul className="flex flex-col items-end lg:items-start text-2xl  gap-[1.6rem] pr-4 lg:pr-0 lg:pl-4 py-4  motion-preset-expand ">
+      <ul className="flex flex-col items-end lg:items-start text-2xl  gap-[1.6rem] pr-4 lg:pr-0 lg:pl-4 py-4  motion-preset-expand  ">
         <li>
           <NavLink
             id="home"

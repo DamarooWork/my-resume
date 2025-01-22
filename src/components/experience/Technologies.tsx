@@ -5,6 +5,7 @@ import reduxDark from '/Projects/React/my-resume/src/assets/icons/experiencePage
 import reduxLight from '/Projects/React/my-resume/src/assets/icons/experiencePage/reduxLight.png'
 import vite from '/Projects/React/my-resume/src/assets/icons/experiencePage/vite.png'
 import tailwind from '/Projects/React/my-resume/src/assets/icons/experiencePage/tailwind.png'
+import rtl from '/Projects/React/my-resume/src/assets/icons/experiencePage/rtl.jpg'
 import rombo from '/Projects/React/my-resume/src/assets/icons/experiencePage/rombo.png'
 import nodejs from '/Projects/React/my-resume/src/assets/icons/experiencePage/nodejs.png'
 import js from '/Projects/React/my-resume/src/assets/icons/experiencePage/js.png'
@@ -56,6 +57,14 @@ const technologiesArray: ITechnology[] = [
       alt: 'tailwind icon',
     },
     link: 'https://tailwindcss.com/',
+  },
+  {
+    title: 'Testing',
+    img: {
+      src: rtl,
+      alt: 'RTL icon',
+    },
+    link: 'https://testing-library.com/docs/react-testing-library/intro/',
   },
   {
     title: 'Rombo',

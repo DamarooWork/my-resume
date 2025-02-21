@@ -93,7 +93,7 @@
     "h2": "Let me tell you about myself",
     "aboutMe": "As a Software Engineer with a passion for UI/UX design, I blend technical expertise with creative design thinking to build exceptional digital experiences. I focus on creating intuitive, user-centered solutions that solve real-world problems while maintaining clean, efficient code. My future plans include not only studying Frontend development, but also adding backend technologies to become a full-fledged FullStack developer who is ready to solve any task on his own.",
     "profExpHeader": "Professional Experience",
-    "profExpSumTime": "9 months",
+    "profExpSumTime": "1 year and 1 m.",
     "stack": "Technologies:",
     "education": "Bachelor",
     "profExps": [
@@ -106,7 +106,7 @@
         "description": "Support and work on the Tretyakov Gallery website. I did the work and design improvements after receiving edits and desired changes in the design and functionality of the website from the client",
         "date": {
           "start": "May 2021",
-          "end": "September 2021"
+          "end": "January 2022"
         },
         "stack": [
           "Vue",

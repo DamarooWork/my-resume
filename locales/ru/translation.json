@@ -98,7 +98,7 @@
     "education": "Бакалавр",
     "profExps": [
       {
-        "position": "Frontend-разработчик",
+        "position": "Middle Frontend-разработчик",
         "job": "Интернет-агентство «Infospice», Москва",
         "linkJob": "http://www.infospice.ru",
         "workDoneTitle": "Результат работы",
@@ -122,7 +122,7 @@
         "backgroundImg": "src/assets/images/tretyakovskaya.PNG"
       },
       {
-        "position": "Frontend-разработчик",
+        "position": "Junior Frontend-разработчик",
         "job": "Sensorium, Москва",
         "linkJob": "https://sensorium.cloud/ru/",
         "workDoneTitle": "Результат моей работы",

@@ -19,9 +19,21 @@ export default function ProfExp({
   return (
     <section className="relative flex flex-col bg-[var(--section-color)] dark:bg-[var(--dark-section-color)] py-4 px-8  mb-16 border-2 rounded-2xl  border-[var(--link-color)] dark:border-[var(--dark-link-color)] ">
       <hgroup className="max-[455px]:mt-12 mb-8">
-        <h2 className="text-3xl font-semibold text-[var(--link-color)] dark:text-[var(--dark-link-color)] ">
-          {position}
-        </h2>
+        <header className="flex flex-wrap justify-between items-center">
+          <h2 className="text-3xl font-semibold text-[var(--link-color)] dark:text-[var(--dark-link-color)] ">
+            {position}
+          </h2>
+          <div className="flex flex-row  gap-2 justify-end items-center">
+            <img
+              className="w-5 h-auto"
+              src={theme === 'dark' ? calendarDark : calendarLight}
+              alt="Calendar icon"
+            />
+            <time dateTime={date.start}>{date.start} -</time>
+            <time dateTime={date.end}>{date.end}</time>
+          </div>
+        </header>
+
         <h3 className="text-2xl font-black ">
           <a className="hover:underline" href={linkJob} target="_blank">
             {job}
@@ -54,16 +66,6 @@ export default function ProfExp({
           })}
         </ul>
       </footer>
-
-      <div className="absolute right-5 top-6 flex flex-row  gap-2 justify-end items-center">
-        <img
-          className="w-5 h-auto"
-          src={theme === 'dark' ? calendarDark : calendarLight}
-          alt="Calendar icon"
-        />
-        <time dateTime={date.start}>{date.start} -</time>
-        <time dateTime={date.end}>{date.end}</time>
-      </div>
     </section>
   )
 }

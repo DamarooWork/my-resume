@@ -27,4 +27,4 @@
 
 ## Деплой проекта
 
-** https://damaroowork.github.io/my-resume/ **
+https://damaroowork.github.io/my-resume/

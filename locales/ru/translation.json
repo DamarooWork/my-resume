@@ -93,10 +93,36 @@
     "h2": "Обо мне",
     "aboutMe": "Как инженер-программист со страстью к дизайну UI/UX, я совмещаю техническую экспертизу с креативным дизайн-мышлением для создания исключительных цифровых впечатлений. Я сосредоточен на создании интуитивных, ориентированных на пользователя опций, которые решают реальные проблемы, сохраняя при этом чистый и эффективный код. В моих будущих планах не только изучение Frontend-разработки, а также и добавление backend-технологий, чтобы стать полноценным FullStack-разработчиком, который готов решить любую поставленную задачу самостоятельно.",
     "profExpHeader": "Профессиональный опыт",
-    "profExpSumTime": "1 год и 1 мес.",
+    "profExpSumTime": "Более 1 года и 5 мес.",
     "stack": "Технологии:",
     "education": "Бакалавр",
     "profExps": [
+      {
+        "position": "Middle Frontend-разработчик",
+        "job": "Pet-разработка, Москва",
+        "linkJob": "https://github.com/DamarooWork",
+        "workDoneTitle": "Результат работы (пример)",
+        "workDone": "https://airbnb-damaroo.vercel.app//",
+        "description": "Разработал frontend/fullstack-приложения Проекты: Резюме - https://damaroowork.github.io/my-resume/ , Airbnb clone (fullstack) - https://airbnb-damaroo.vercel.app/ , Project for practice GSAP - https://damaroo-gsap-animations.vercel.app/ ",
+        "date": {
+          "start": "Декабрь 2024",
+          "end": "Сейчас"
+        },
+        "stack": [
+          "React",
+          "Next",
+          "TypeScript",
+          "Tailwind",
+          "Vite",
+          "Redux/Mobx/Zustand",
+          "React Testing Library/Vitest/Jest",
+          "Git/Github/Verce",
+          "Antd/MUI",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
       {
         "position": "Middle Frontend-разработчик",
         "job": "Интернет-агентство «Infospice», Москва",

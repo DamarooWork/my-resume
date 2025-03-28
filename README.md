@@ -28,3 +28,6 @@
 ## Деплой проекта
 
 https://damaroowork.github.io/my-resume/
+
+## Контакты
+Если у вас есть вопросы или предложения, не стесняйтесь связаться со мной через telegram: @damaroo8 или по электронной почте: levkichigin@yandex.ru.

@@ -93,10 +93,36 @@
     "h2": "Let me tell you about myself",
     "aboutMe": "As a Software Engineer with a passion for UI/UX design, I blend technical expertise with creative design thinking to build exceptional digital experiences. I focus on creating intuitive, user-centered solutions that solve real-world problems while maintaining clean, efficient code. My future plans include not only studying Frontend development, but also adding backend technologies to become a full-fledged FullStack developer who is ready to solve any task on his own.",
     "profExpHeader": "Professional Experience",
-    "profExpSumTime": "1 year and 1 m.",
+    "profExpSumTime": "> 1 y. and 5 m.",
     "stack": "Technologies:",
     "education": "Bachelor",
     "profExps": [
+      {
+        "position": "Middle Frontend Developer",
+        "job": "Pet Development, Moscow",
+        "linkJob": "https://github.com/DamarooWork",
+        "workDoneTitle": "Work Result (Example)",
+        "workDone": "https://airbnb-damaroo.vercel.app//",
+        "description": "Developed frontend/fullstack applications. Projects: Resume - https://damaroowork.github.io/my-resume/, Airbnb clone (fullstack) - https://airbnb-damaroo.vercel.app/, Project for practice GSAP - https://damaroo-gsap-animations.vercel.app/",
+        "date": {
+            "start": "December 2024",
+            "end": "Present"
+        },
+        "stack": [
+            "React",
+            "Next",
+            "TypeScript",
+            "Tailwind",
+            "Vite",
+            "Redux/Mobx/Zustand",
+            "React Testing Library/Vitest/Jest",
+            "Git/Github/Verce",
+            "Antd/MUI",
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    },
       {
         "position": "Middle Frontend Developer",
         "job": "«Infospice», Moscow",

@@ -6,7 +6,7 @@ export default function Technology({ img, title, link }: ITechnology) {
 
   return (
     <section
-      className={` p-12  motion-scale-in-[0] motion-translate-x-in-[-29%] motion-translate-y-in-[8%] motion-opacity-in-[0%] motion-rotate-in-[360deg] motion-duration-[0.74s]/opacity motion-ease-spring-bouncy `}
+      className={` p-12   motion-scale-in-[0] motion-translate-x-in-[-29%] motion-translate-y-in-[8%] motion-opacity-in-[0%] motion-rotate-in-[360deg] motion-duration-[0.74s]/opacity motion-ease-spring-bouncy `}
     >
       <a
         href={link}

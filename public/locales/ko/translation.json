@@ -93,10 +93,36 @@
     "h2": "내 자신에 대해 말해보자",
     "aboutMe": "UI/UX 디자인에 대한 열정을 가진 소프트웨어 엔지니어로서, 저는 기술적 전문성과 창의적인 디자인 사고를 결합하여 뛰어난 디지털 경험을 구축합니다. 저는 깔끔하고 효율적인 코드를 유지하면서 실제 문제를 해결하는 직관적이고 사용자 중심적인 솔루션을 만드는 데 중점을 둡니다. 저의 미래 계획에는 프론트엔드 개발을 공부하는 것뿐만 아니라, 백엔드 기술을 추가해서 어떤 과제든 스스로 해결할 수 있는 본격적인 풀스택 개발자가 되는 것이 포함되어 있습니다.",
     "profExpHeader": "전문적 경험",
-    "profExpSumTime": "1년 1개월",
+    "profExpSumTime": "1년 5개월 이상",
     "stack": "기술:",
     "education": "미혼 남자",
     "profExps": [
+      {
+        "position": "중급 프론트엔드 개발자",
+        "job": "펫 개발, 모스크바",
+        "linkJob": "https://github.com/DamarooWork",
+        "workDoneTitle": "작업 결과 (예시)",
+        "workDone": "https://airbnb-damaroo.vercel.app//",
+        "description": "프론트엔드/풀스택 애플리케이션 개발. 프로젝트: 이력서 - https://damaroowork.github.io/my-resume/, 에어비앤비 클론 (풀스택) - https://airbnb-damaroo.vercel.app/, GSAP 연습 프로젝트 - https://damaroo-gsap-animations.vercel.app/",
+        "date": {
+          "start": "2024년 12월",
+          "end": "현재"
+        },
+        "stack": [
+          "React",
+          "Next",
+          "TypeScript",
+          "Tailwind",
+          "Vite",
+          "Redux/Mobx/Zustand",
+          "React Testing Library/Vitest/Jest",
+          "Git/Github/Verce",
+          "Antd/MUI",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
       {
         "position": "중간 프론트엔드 개발자",
         "job": "«Infospice», 모스크바",

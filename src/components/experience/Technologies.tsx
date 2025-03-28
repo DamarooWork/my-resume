@@ -14,6 +14,11 @@ import css from '/Projects/React/my-resume/src/assets/icons/experiencePage/css.p
 import githubLight from '/Projects/React/my-resume/src/assets/icons/github/githubLight.png'
 import githubDark from '/Projects/React/my-resume/src/assets/icons/github/githubDark.png'
 import antd from '/Projects/React/my-resume/src/assets/icons/experiencePage/antd.png'
+import Nextjs from '/Projects/React/my-resume/src/assets/icons/experiencePage/Nextjs.png'
+import Zustand from '/Projects/React/my-resume/src/assets/icons/experiencePage/Zustand.jpg'
+import FramerMotion from '/Projects/React/my-resume/src/assets/icons/experiencePage/FramerMotion.png'
+import gsap from '/Projects/React/my-resume/src/assets/icons/experiencePage/gsap.png'
+
 import { FadeInSection } from '../../hooks/FadeinSection'
 
 const technologiesArray: ITechnology[] = [
@@ -26,12 +31,28 @@ const technologiesArray: ITechnology[] = [
     link: 'https://react.dev/',
   },
   {
+    title: 'Next',
+    img: {
+      src: Nextjs,
+      alt: 'Next icon',
+    },
+    link: 'https://nextjs.org/',
+  },
+  {
     title: 'TypeScript',
     img: {
       src: typescript,
       alt: 'TypeScript icon',
     },
     link: 'https://www.typescriptlang.org/',
+  },
+  {
+    title: 'Tailwind',
+    img: {
+      src: tailwind,
+      alt: 'tailwind icon',
+    },
+    link: 'https://tailwindcss.com/',
   },
   {
     title: 'Redux',
@@ -43,6 +64,14 @@ const technologiesArray: ITechnology[] = [
     link: 'https://redux.js.org/',
   },
   {
+    title: 'Zustand',
+    img: {
+      src: Zustand,
+      alt: 'Zustand icon',
+    },
+    link: 'https://zustand-demo.pmnd.rs/',
+  },
+  {
     title: 'Vite',
     img: {
       src: vite,
@@ -50,16 +79,25 @@ const technologiesArray: ITechnology[] = [
     },
     link: 'https://vite.dev/',
   },
+
   {
-    title: 'Tailwind',
+    title: 'GSAP',
     img: {
-      src: tailwind,
-      alt: 'tailwind icon',
+      src: gsap,
+      alt: 'gsap icon',
     },
-    link: 'https://tailwindcss.com/',
+    link: 'https://gsap.com/',
   },
   {
-    title: 'Testing',
+    title: 'Motion',
+    img: {
+      src: FramerMotion,
+      alt: 'FramerMotion icon',
+    },
+    link: 'https://motion.dev/',
+  },
+  {
+    title: 'RTL',
     img: {
       src: rtl,
       alt: 'RTL icon',

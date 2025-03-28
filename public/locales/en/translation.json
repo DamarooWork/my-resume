@@ -121,7 +121,8 @@
             "HTML",
             "CSS",
             "JavaScript"
-        ]
+        ],
+        "backgroundImg": "src/assets/images/tretyakovskaya.PNG"
     },
       {
         "position": "Middle Frontend Developer",

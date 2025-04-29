@@ -41,24 +41,6 @@
         }
       },
       {
-        "title": "VK",
-        "linkHref": "https://vk.com/damaroo",
-        "content": "Damaroo",
-        "img": {
-          "src": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAACXBIWXMAAAsTAAALEwEAmpwYAAABBVBMVEUAAAAXd9IXddMad9AZd9EZdtIYdtIYdtIZddIZdtEZddEZdtEZdtEZdtEZddEZdtIZdtIbd9IceNMeedMgetMhe9QnftUnf9UrgdYyhdc5idg9i9k+jNk/jdlBjtpCj9pJkttKk9xNldxOltxSmN1dnt9en+BqpuJwquN3ruR5r+V8seWFtueIuOiJueiMuuiUv+qWweuaw+uexeyfxuykye2myu6tzu+20/G31PG/2fLC2vPD2/PF3fTG3fTI3vTK3/XS5PbW5vfd6/je6/jg7fnh7fni7vnp8vvs9Pvt9Pvu9fzv9fzx9vzx9/zy9/33+v34+/75+/76/P77/f7+/v////8/ciFpAAAAEHRSTlMAS0xNT4OFiL2+v8Dx8vP02HWCqwAAAR1JREFUSMft1ddyglAUhWFLYiyJLlLVxPRCeu/F9G4a5H//R8mFigMTOHrPumT2B8PZG3YiEaeH9BVKCk0pnw7WD8iQTOD+MiblAwUzyPlA0QyGfEBdJAbNSw/g2pIeAe4lSbYDd6HguVV3AIAkTbwDF6HgFGBWmvLADsBSKFgF2JOG22Dyp/OA/0D5C2iMSy1gXQFOLeKUjgA2PLAJsB11rDO/QKPSBNUVF7gdiezDMcBljU7moxtX+SCQBUOn7SB4KhtGY98rrS6/Apxb0cA6aQNp+g1gyzB8o4ce0KIDuHOmabVfvNFYB6gbx3ts7frz+0yStOvATfxNd/2rHPSBvBlkfSBtBkn/gsiY6vuDKyiVi3iPYjYZL/Ve8gcTsoo/KlxSMgAAAABJRU5ErkJggg==",
-          "alt": "VK"
-        }
-      },
-      {
-        "title": "VK Group",
-        "linkHref": "https://vk.com/damaroo_fanpage",
-        "content": "Damaroo fanpage",
-        "img": {
-          "src": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAACXBIWXMAAAsTAAALEwEAmpwYAAABBVBMVEUAAAAXd9IXddMad9AZd9EZdtIYdtIYdtIZddIZdtEZddEZdtEZdtEZdtEZddEZdtIZdtIbd9IceNMeedMgetMhe9QnftUnf9UrgdYyhdc5idg9i9k+jNk/jdlBjtpCj9pJkttKk9xNldxOltxSmN1dnt9en+BqpuJwquN3ruR5r+V8seWFtueIuOiJueiMuuiUv+qWweuaw+uexeyfxuykye2myu6tzu+20/G31PG/2fLC2vPD2/PF3fTG3fTI3vTK3/XS5PbW5vfd6/je6/jg7fnh7fni7vnp8vvs9Pvt9Pvu9fzv9fzx9vzx9/zy9/33+v34+/75+/76/P77/f7+/v////8/ciFpAAAAEHRSTlMAS0xNT4OFiL2+v8Dx8vP02HWCqwAAAR1JREFUSMft1ddyglAUhWFLYiyJLlLVxPRCeu/F9G4a5H//R8mFigMTOHrPumT2B8PZG3YiEaeH9BVKCk0pnw7WD8iQTOD+MiblAwUzyPlA0QyGfEBdJAbNSw/g2pIeAe4lSbYDd6HguVV3AIAkTbwDF6HgFGBWmvLADsBSKFgF2JOG22Dyp/OA/0D5C2iMSy1gXQFOLeKUjgA2PLAJsB11rDO/QKPSBNUVF7gdiezDMcBljU7moxtX+SCQBUOn7SB4KhtGY98rrS6/Apxb0cA6aQNp+g1gyzB8o4ce0KIDuHOmabVfvNFYB6gbx3ts7frz+0yStOvATfxNd/2rHPSBvBlkfSBtBkn/gsiY6vuDKyiVi3iPYjYZL/Ve8gcTsoo/KlxSMgAAAABJRU5ErkJggg==",
-          "alt": "VK Group"
-        }
-      },
-      {
         "title": "Email",
         "linkHref": "",
         "content": "levkichigin@yandex.ru",

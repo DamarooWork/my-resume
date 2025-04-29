@@ -105,25 +105,46 @@
         "workDone": "https://airbnb-damaroo.vercel.app//",
         "description": "Developed frontend/fullstack applications. Projects: Resume - https://damaroowork.github.io/my-resume/, Airbnb clone (fullstack) - https://airbnb-damaroo.vercel.app/, Project for practice GSAP - https://damaroo-gsap-animations.vercel.app/",
         "date": {
-            "start": "December 2024",
-            "end": "Present"
+          "start": "December 2024",
+          "end": "Present"
         },
         "stack": [
-            "React",
-            "Next",
-            "TypeScript",
-            "Tailwind",
-            "Vite",
-            "Redux/Mobx/Zustand",
-            "React Testing Library/Vitest/Jest",
-            "Git/Github/Verce",
-            "Antd/MUI",
-            "HTML",
-            "CSS",
-            "JavaScript"
+          "React",
+          "Next",
+          "TypeScript",
+          "Tailwind",
+          "Vite",
+          "Redux/Mobx/Zustand",
+          "React Testing Library/Vitest/Jest",
+          "Git/Github/Vercel",
+          "AntD/MUI/shadcn",
+          "HTML",
+          "CSS",
+          "JavaScript"
         ],
         "backgroundImg": "src/assets/images/tretyakovskaya.PNG"
-    },
+      },
+      {
+        "position": "Middle Frontend Developer",
+        "job": "Only",
+        "linkJob": "https://only.digital/",
+        "description": "I was actively involved in developing and supporting client web applications and internal projects, creating responsive interfaces using JavaScript, TypeScript, React and Next.js. My responsibilities included laying out pages according to mockups, optimizing animations and making changes to the existing code base. This allowed me to develop teamwork skills and technical expertise in the field of Frontend development.",
+        "date": {
+          "start": "March 2023",
+          "end": "November 2024"
+        },
+        "stack": [
+          "TypeScript",
+          "JavaScript",
+          "SCSS",
+          "React",
+          "Next",
+          "Figma",
+          "HTML",
+          "CSS",
+          "Git"
+        ]
+      },
       {
         "position": "Middle Frontend Developer",
         "job": "«Infospice», Moscow",

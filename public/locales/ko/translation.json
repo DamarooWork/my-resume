@@ -80,41 +80,15 @@
     "education": "미혼 남자",
     "profExps": [
       {
-        "position": "중급 프론트엔드 개발자",
-        "job": "펫 개발, 모스크바",
-        "linkJob": "https://github.com/DamarooWork",
-        "workDoneTitle": "작업 결과 (예시)",
-        "workDone": "https://airbnb-damaroo.vercel.app//",
-        "description": "프론트엔드/풀스택 애플리케이션 개발. 프로젝트: 이력서 - https://damaroowork.github.io/my-resume/, 에어비앤비 클론 (풀스택) - https://airbnb-damaroo.vercel.app/, GSAP 연습 프로젝트 - https://damaroo-gsap-animations.vercel.app/",
-        "date": {
-          "start": "2024년 12월",
-          "end": "현재"
-        },
-        "stack": [
-          "React",
-          "Next",
-          "TypeScript",
-          "Tailwind",
-          "Vite",
-          "Redux/Mobx/Zustand",
-          "React Testing Library/Vitest/Jest",
-          "Git/Github/Vercel",
-          "AntD/MUI/shadcn",
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ],
-        "backgroundImg": "src/assets/images/tretyakovskaya.PNG"
-      },
-
-      {
         "position": "중간 프론트엔드 개발자",
         "job": "Only",
         "linkJob": "https://only.digital/",
+        "workDoneTitle": "결과(예시)",
+        "workDone": "https://kobor.com/",
         "description": "JavaScript, TypeScript, React 및 Next.js를 사용하여 반응형 인터페이스를 구축하면서 클라이언트 웹 애플리케이션 및 내부 프로젝트의 개발 및 유지 관리에 적극적으로 참여했습니다. 제 책임에는 디자인에 따른 페이지 레이아웃, 애니메이션 최적화 및 기존 코드베이스 수정이 포함되었습니다. 이를 통해 프론트엔드 개발 분야에서 팀워크 및 기술적 전문성을 발전시킬 수 있었습니다.",
         "date": {
           "start": "2023년 3월",
-          "end": "2024년 11월"
+          "end": "지금"
         },
         "stack": [
           "TypeScript",

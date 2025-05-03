@@ -82,38 +82,14 @@
     "profExps": [
       {
         "position": "Middle Frontend-разработчик",
-        "job": "Pet-разработка, Москва",
-        "linkJob": "https://github.com/DamarooWork",
-        "workDoneTitle": "Результат работы (пример)",
-        "workDone": "https://airbnb-damaroo.vercel.app//",
-        "description": "Разработал frontend/fullstack-приложения Проекты: Резюме - https://damaroowork.github.io/my-resume/ , Airbnb clone (fullstack) - https://airbnb-damaroo.vercel.app/ , Project for practice GSAP - https://damaroo-gsap-animations.vercel.app/ ",
-        "date": {
-          "start": "Декабрь 2024",
-          "end": "Сейчас"
-        },
-        "stack": [
-          "React",
-          "Next",
-          "TypeScript",
-          "Tailwind",
-          "Vite",
-          "Redux/Mobx/Zustand",
-          "React Testing Library/Vitest/Jest",
-          "Git/Github/Vercel",
-          "AntD/MUI/shadcn",
-          "HTML",
-          "CSS",
-          "JavaScript"
-        ]
-      },
-      {
-        "position": "Middle Frontend-разработчик",
         "job": "Only",
         "linkJob": "https://only.digital/",
+        "workDoneTitle": "Результат (пример):",
+        "workDone": "https://kobor.com/",
         "description": "Я активно участвовал в разработке и поддержке клиентских веб-приложений и внутренних проектов, создавая адаптивные интерфейсы с использованием JavaScript, TypeScript, React и Next.js. Мои обязанности включали верстку страниц по макетам, оптимизацию анимаций и внесение изменений в существующую кодовую базу. Это позволило мне развить навыки командной работы и технической экспертизы в области Frontend-разработки.",
         "date": {
           "start": "Март 2023",
-          "end": "Ноябрь 2024"
+          "end": "Сейчас"
         },
         "stack": [
           "TypeScript",
